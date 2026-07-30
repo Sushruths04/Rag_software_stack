@@ -1,0 +1,29 @@
+.pdf-page-view {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.pdf-page-view__canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pdf-page-view__error {
+  padding: 8px 12px;
+  color: var(--color-danger, #c0392b);
+  font-family: var(--font-mono, monospace);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Task 12: --pdf-highlight-color is set inline per-highlight (dataset
+   inspector's QA-pair overlay, one CSS token color per fact); a plain
+   single-fact click leaves it unset and falls back to the original amber. */
+.pdf-highlight {
+  position: absolute;
+  background: color-mix(in srgb, var(--pdf-highlight-color, #ffd600) 35%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--pdf-highlight-color, #d69e00) 90%, transparent);
+  pointer-events: none;
+}

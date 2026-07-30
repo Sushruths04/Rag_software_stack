@@ -1,0 +1,2124 @@
+{
+  "pairs": [
+    {
+      "qa_id": "V2Q00001",
+      "hop_type": "bridge",
+      "evidence_strategy": "cluster_2plus2",
+      "bridge_entity": "JSON syntax",
+      "question": "For what purpose does the ECMA-404 JSON standard enforce semantic restrictions, maintain alignment with RFC 8259, disregard value ordering, and require comma-separated values?",
+      "answer": "RFC 8259 also defines various semantic restrictions on the use of the JSON syntax; if either document is changed in the future, Ecma International and the IETF will work together to ensure that the two documents stay aligned through the change; the JSON syntax does not define any specific meaning to the ordering of the values; the values are separated by commas.",
+      "answer_clauses": [
+        {
+          "text": "RFC 8259 also defines various semantic restrictions on the use of the JSON syntax.",
+          "fact_id": "ecma404_json_F000035",
+          "nli": 0.996
+        },
+        {
+          "text": "If either document is changed in the future, Ecma International and the IETF will work together to ensure that the two documents stay aligned through the change.",
+          "fact_id": "ecma404_json_F000034",
+          "nli": 0.994
+        },
+        {
+          "text": "The JSON syntax does not define any specific meaning to the ordering of the values.",
+          "fact_id": "ecma404_json_F000051",
+          "nli": 0.998
+        },
+        {
+          "text": "The values are separated by commas.",
+          "fact_id": "ecma404_json_F000050",
+          "nli": 0.995
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000035",
+        "ecma404_json_F000034",
+        "ecma404_json_F000051",
+        "ecma404_json_F000050"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000013",
+        "ecma404_json_c000013",
+        "ecma404_json_c000019",
+        "ecma404_json_c000019"
+      ],
+      "gold_pages": [
+        9,
+        9,
+        11,
+        11
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000035": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 638.4862060546875,
+            "r": 561.208740234375,
+            "b": 718.5916137695312,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000034": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 638.4862060546875,
+            "r": 561.208740234375,
+            "b": 718.5916137695312,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000051": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 447.53619384765625,
+            "r": 563.9888916015625,
+            "b": 481.8016052246094,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000050": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 447.53619384765625,
+            "r": 563.9888916015625,
+            "b": 481.8016052246094,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "nli_joint": 0.998,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000035",
+          "ecma404_json_F000034",
+          "ecma404_json_F000051",
+          "ecma404_json_F000050"
+        ],
+        "loo_entailment": [
+          0.003,
+          0.0,
+          0.345,
+          0.0
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": true,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.996,
+            0.994,
+            0.998,
+            0.995
+          ],
+          "joint": 0.998,
+          "max_pairwise_jaccard": 0.182
+        }
+      },
+      "source_pair_id": "BP0429",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00002",
+      "hop_type": "bridge",
+      "evidence_strategy": "cluster_2plus2",
+      "bridge_entity": "Defining specific",
+      "question": "What constraints and agreements are necessary for meaningful information exchange using JSON, and how does the JSON syntax handle name/value pairs?",
+      "answer": "Defining specific semantic interpretations of JSON is potentially a topic for other specifications; meaningful interchange of information using JSON requires agreement among the involved parties on the specific semantics to be applied; these are all semantic considerations that may be defined by JSON processors or in specifications defining specific uses of JSON for data interchange; the JSON syntax does not impose any restrictions on the strings used as names, does not require that name strings be unique, and does not assign any significance to the ordering of name/value pairs.",
+      "answer_clauses": [
+        {
+          "text": "Defining specific semantic interpretations of JSON is potentially a topic for other specifications.",
+          "fact_id": "ecma404_json_F000018",
+          "nli": 0.977
+        },
+        {
+          "text": "Meaningful interchange of information using JSON requires agreement among the involved parties on the specific semantics to be applied.",
+          "fact_id": "ecma404_json_F000017",
+          "nli": 0.99
+        },
+        {
+          "text": "These are all semantic considerations that may be defined by JSON processors or in specifications defining specific uses of JSON for data interchange.",
+          "fact_id": "ecma404_json_F000048",
+          "nli": 0.973
+        },
+        {
+          "text": "The JSON syntax does not impose any restrictions on the strings used as names, does not require that name strings be unique, and does not assign any significance to the ordering of name/value pairs.",
+          "fact_id": "ecma404_json_F000047",
+          "nli": 0.998
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000018",
+        "ecma404_json_F000017",
+        "ecma404_json_F000048",
+        "ecma404_json_F000047"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000008",
+        "ecma404_json_c000008",
+        "ecma404_json_c000018",
+        "ecma404_json_c000018"
+      ],
+      "gold_pages": [
+        9,
+        9,
+        11,
+        11
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000018": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000017": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000048": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 110.88616180419922,
+            "r": 563.4357299804688,
+            "b": 179.4716033935547,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000047": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 110.88616180419922,
+            "r": 563.4357299804688,
+            "b": 179.4716033935547,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.005,
+          0.003,
+          0.002,
+          0.053
+        ],
+        "nli_joint": 0.994,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000018",
+          "ecma404_json_F000017",
+          "ecma404_json_F000048",
+          "ecma404_json_F000047"
+        ],
+        "loo_entailment": [
+          0.012,
+          0.009,
+          0.004,
+          0.005
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": true,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.977,
+            0.99,
+            0.973,
+            0.998
+          ],
+          "joint": 0.994,
+          "max_pairwise_jaccard": 0.25
+        }
+      },
+      "source_pair_id": "BP0471",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00003",
+      "hop_type": "bridge",
+      "bridge_entity": "IEC 10646",
+      "question": "What standard defines both the Universal Coded Character Set and the interpretation of hexadecimal numbers?",
+      "answer": "ISO/IEC 10646 is a standard for the Universal Coded Character Set (UCS); the meaning of a hexadecimal number is determined by ISO/IEC 10646.",
+      "answer_clauses": [
+        {
+          "text": "ISO/IEC 10646 is a standard for the Universal Coded Character Set (UCS).",
+          "fact_id": "ecma404_json_F000027",
+          "nli": 0.998
+        },
+        {
+          "text": "The meaning of a hexadecimal number is determined by ISO/IEC 10646.",
+          "fact_id": "ecma404_json_F000070",
+          "nli": 0.995
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000027",
+        "ecma404_json_F000070"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000011",
+        "ecma404_json_c000024"
+      ],
+      "gold_pages": [
+        9,
+        12
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000027": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 567.80615234375,
+            "r": 430.9989013671875,
+            "b": 578.9115600585938,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 591.326171875,
+            "r": 463.9089050292969,
+            "b": 602.4315795898438,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000070": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 728.9862060546875,
+            "r": 527.1336669921875,
+            "b": 775.0115966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_a": 0.001,
+        "nli_b": 0.004,
+        "nli_joint": 0.998,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000027",
+          "ecma404_json_F000070"
+        ],
+        "loo_entailment": [
+          0.004,
+          0.001
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_in_both": true,
+        "necessity_passed": true,
+        "bridge_hidden": true,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clause_a": 0.998,
+          "clause_b": 0.995,
+          "joint": 0.998,
+          "a_to_b": 0.001,
+          "b_to_a": 0.001,
+          "clause_jaccard": 0.316
+        }
+      },
+      "source_pair_id": "BP0003",
+      "doc": "ecma404_json_full",
+      "evidence_strategy": "bridge_pair_v1"
+    },
+    {
+      "qa_id": "V2Q00004",
+      "hop_type": "bridge",
+      "bridge_entity": "character may be represented",
+      "question": "How can a single reverse solidus character and a forward slash be represented in the ECMA-404 JSON standard?",
+      "answer": "A string containing only a single reverse solidus character may be represented as \"\\u005C\"; the following four cases all produce the same result: \"\\u002F\", \"\\u002f\", \"\\/\", and \"/\".",
+      "answer_clauses": [
+        {
+          "text": "A string containing only a single reverse solidus character may be represented as \"\\u005C\".",
+          "fact_id": "ecma404_json_F000073",
+          "nli": 0.924
+        },
+        {
+          "text": "The following four cases all produce the same result: \"\\u002F\", \"\\u002f\", \"\\/\", and \"/\".",
+          "fact_id": "ecma404_json_F000074",
+          "nli": 0.992
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000073",
+        "ecma404_json_F000074"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000026",
+        "ecma404_json_c000027"
+      ],
+      "gold_pages": [
+        12,
+        13
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000073": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 728.9862060546875,
+            "r": 527.1336669921875,
+            "b": 775.0115966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000074": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 133.566162109375,
+            "r": 307.0188903808594,
+            "b": 144.6715545654297,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 13,
+            "l": 90.86399841308594,
+            "t": 157.28297424316406,
+            "r": 139.45999145507812,
+            "b": 166.4719696044922,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 13,
+            "l": 90.86399841308594,
+            "t": 179.8429718017578,
+            "r": 139.45999145507812,
+            "b": 189.03196716308594,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 13,
+            "l": 90.86399841308594,
+            "t": 202.28297424316406,
+            "r": 117.86000061035156,
+            "b": 211.4719696044922,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 13,
+            "l": 90.86399841308594,
+            "t": 224.8429718017578,
+            "r": 112.45999908447266,
+            "b": 234.03196716308594,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 247.1162109375,
+            "r": 561.2288818359375,
+            "b": 305.1416015625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_a": 0.03,
+        "nli_b": 0.037,
+        "nli_joint": 0.994,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000073",
+          "ecma404_json_F000074"
+        ],
+        "loo_entailment": [
+          0.037,
+          0.03
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_in_both": true,
+        "necessity_passed": true,
+        "bridge_hidden": true,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clause_a": 0.924,
+          "clause_b": 0.992,
+          "joint": 0.994,
+          "a_to_b": 0.0,
+          "b_to_a": 0.002,
+          "clause_jaccard": 0.0
+        }
+      },
+      "source_pair_id": "BP0027",
+      "doc": "ecma404_json_full",
+      "evidence_strategy": "bridge_pair_v1"
+    },
+    {
+      "qa_id": "V2Q00005",
+      "hop_type": "bridge",
+      "bridge_entity": "processor of JSON texts",
+      "question": "What are the two key requirements for processors of JSON texts regarding input validation and surrogate pair interpretation?",
+      "answer": "A conforming processor of JSON texts should not accept any inputs that are not conforming JSON texts; whether a processor of JSON texts interprets a surrogate pair as a single code point or as an explicit surrogate pair is a semantic decision determined by the specific processor.",
+      "answer_clauses": [
+        {
+          "text": "A conforming processor of JSON texts should not accept any inputs that are not conforming JSON texts.",
+          "fact_id": "ecma404_json_F000022",
+          "nli": 0.996
+        },
+        {
+          "text": "Whether a processor of JSON texts interprets a surrogate pair as a single code point or as an explicit surrogate pair is a semantic decision determined by the specific processor.",
+          "fact_id": "ecma404_json_F000076",
+          "nli": 0.982
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000022",
+        "ecma404_json_F000076"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000009",
+        "ecma404_json_c000028"
+      ],
+      "gold_pages": [
+        9,
+        13
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000022": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 435.89617919921875,
+            "r": 561.2134399414062,
+            "b": 470.469970703125,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000076": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 247.1162109375,
+            "r": 561.2288818359375,
+            "b": 305.1416015625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_a": 0.006,
+        "nli_b": 0.001,
+        "nli_joint": 0.997,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000022",
+          "ecma404_json_F000076"
+        ],
+        "loo_entailment": [
+          0.001,
+          0.006
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_in_both": true,
+        "necessity_passed": true,
+        "bridge_hidden": true,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clause_a": 0.996,
+          "clause_b": 0.982,
+          "joint": 0.997,
+          "a_to_b": 0.001,
+          "b_to_a": 0.0,
+          "clause_jaccard": 0.161
+        }
+      },
+      "source_pair_id": "BP0042",
+      "doc": "ecma404_json_full",
+      "evidence_strategy": "bridge_pair_v1"
+    },
+    {
+      "qa_id": "V2Q00006",
+      "hop_type": "bridge",
+      "bridge_entity": "does not",
+      "question": "What are two ways the ECMA-404 JSON standard permits flexibility in data representation?",
+      "answer": "The ordering of values in JSON has no defined meaning; JSON allows code points that Unicode does not currently assign characters to.",
+      "answer_clauses": [
+        {
+          "text": "The ordering of values in JSON has no defined meaning.",
+          "fact_id": "ecma404_json_F000051",
+          "nli": 0.998
+        },
+        {
+          "text": "JSON allows code points that Unicode does not currently assign characters to.",
+          "fact_id": "ecma404_json_F000077",
+          "nli": 0.998
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000051",
+        "ecma404_json_F000077"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000019",
+        "ecma404_json_c000028"
+      ],
+      "gold_pages": [
+        11,
+        13
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000051": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 447.53619384765625,
+            "r": 563.9888916015625,
+            "b": 481.8016052246094,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000077": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 317.55621337890625,
+            "r": 561.166015625,
+            "b": 340.06158447265625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_a": 0.0,
+        "nli_b": 0.002,
+        "nli_joint": 0.998,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000051",
+          "ecma404_json_F000077"
+        ],
+        "loo_entailment": [
+          0.002,
+          0.0
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_in_both": true,
+        "necessity_passed": true,
+        "bridge_hidden": true,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clause_a": 0.998,
+          "clause_b": 0.998,
+          "joint": 0.998,
+          "a_to_b": 0.0,
+          "b_to_a": 0.0,
+          "clause_jaccard": 0.048
+        }
+      },
+      "source_pair_id": "BP0358",
+      "doc": "ecma404_json_full",
+      "evidence_strategy": "bridge_pair_v1"
+    },
+    {
+      "qa_id": "V2Q00007",
+      "hop_type": "bridge",
+      "bridge_entity": "example a string containing",
+      "question": "How are special characters like the reverse solidus and the G clef represented in the ECMA-404 JSON standard?",
+      "answer": "A string containing only a single reverse solidus character may be represented as \"\\u005C\"; A string containing only the G clef character (U+1D11E) may be represented as \"\\uD834\\uDD1E\".",
+      "answer_clauses": [
+        {
+          "text": "A string containing only a single reverse solidus character may be represented as \"\\u005C\".",
+          "fact_id": "ecma404_json_F000073",
+          "nli": 0.924
+        },
+        {
+          "text": "A string containing only the G clef character (U+1D11E) may be represented as \"\\uD834\\uDD1E\".",
+          "fact_id": "ecma404_json_F000075",
+          "nli": 0.942
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000073",
+        "ecma404_json_F000075"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000026",
+        "ecma404_json_c000027"
+      ],
+      "gold_pages": [
+        12,
+        13
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000073": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 728.9862060546875,
+            "r": 527.1336669921875,
+            "b": 775.0115966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000075": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 247.1162109375,
+            "r": 561.2288818359375,
+            "b": 305.1416015625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_a": 0.003,
+        "nli_b": 0.224,
+        "nli_joint": 0.902,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000073",
+          "ecma404_json_F000075"
+        ],
+        "loo_entailment": [
+          0.224,
+          0.003
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_in_both": false,
+        "necessity_passed": true,
+        "bridge_hidden": true,
+        "duplicate": null,
+        "faithful": null,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "REJECT",
+        "reason": "bridge_not_in_both"
+      },
+      "source_pair_id": "BP0476",
+      "doc": "ecma404_json_full",
+      "evidence_strategy": "bridge_pair_v1"
+    },
+    {
+      "qa_id": "V2Q00008",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "When can JSON be used for meaningful information interchange, given the flexibility in its syntax and processing?",
+      "answer": "There are many possible semantics that could be applied to the JSON syntax and many ways that a JSON text can be processed or mapped by a programming language; meaningful interchange of information using JSON requires agreement among the involved parties on the specific semantics to be applied.",
+      "answer_clauses": [
+        {
+          "text": "There are many possible semantics that could be applied to the JSON syntax and many ways that a JSON text can be processed or mapped by a programming language.",
+          "fact_id": "ecma404_json_F000016",
+          "nli": 0.992
+        },
+        {
+          "text": "Meaningful interchange of information using JSON requires agreement among the involved parties on the specific semantics to be applied.",
+          "fact_id": "ecma404_json_F000017",
+          "nli": 0.99
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000016",
+        "ecma404_json_F000017"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000007",
+        "ecma404_json_c000008"
+      ],
+      "gold_pages": [
+        9,
+        9
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000016": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000017": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.001,
+          0.113
+        ],
+        "nli_joint": 0.997,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000016",
+          "ecma404_json_F000017"
+        ],
+        "loo_entailment": [
+          0.113,
+          0.001
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.992,
+            0.99
+          ],
+          "joint": 0.997,
+          "max_pairwise_jaccard": 0.167
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00009",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "Under what condition is meaningful interchange of information using JSON possible, and where might the specific semantic interpretations be defined?",
+      "answer": "Meaningful interchange of information using JSON requires agreement among the involved parties on the specific semantics to be applied; defining specific semantic interpretations of JSON is potentially a topic for other specifications.",
+      "answer_clauses": [
+        {
+          "text": "Meaningful interchange of information using JSON requires agreement among the involved parties on the specific semantics to be applied.",
+          "fact_id": "ecma404_json_F000017",
+          "nli": 0.99
+        },
+        {
+          "text": "Defining specific semantic interpretations of JSON is potentially a topic for other specifications.",
+          "fact_id": "ecma404_json_F000018",
+          "nli": 0.977
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000017",
+        "ecma404_json_F000018"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000008",
+        "ecma404_json_c000008"
+      ],
+      "gold_pages": [
+        9,
+        9
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000017": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000018": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.0,
+          0.005
+        ],
+        "nli_joint": 0.993,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000017",
+          "ecma404_json_F000018"
+        ],
+        "loo_entailment": [
+          0.005,
+          0.0
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.99,
+            0.977
+          ],
+          "joint": 0.993,
+          "max_pairwise_jaccard": 0.107
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00010",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "Under what condition can language mappings for JSON be defined, and what is an example of such a mapping?",
+      "answer": "Language mappings of JSON can be independently specified; ECMA-262 defines mappings between valid JSON texts and ECMAScript’s runtime data structures.",
+      "answer_clauses": [
+        {
+          "text": "Language mappings of JSON can be independently specified.",
+          "fact_id": "ecma404_json_F000019",
+          "nli": 0.996
+        },
+        {
+          "text": "ECMA-262 defines mappings between valid JSON texts and ECMAScript’s runtime data structures.",
+          "fact_id": "ecma404_json_F000020",
+          "nli": 0.996
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000019",
+        "ecma404_json_F000020"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000008",
+        "ecma404_json_c000009"
+      ],
+      "gold_pages": [
+        9,
+        9
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000019": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000020": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.0,
+          0.009
+        ],
+        "nli_joint": 0.997,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000019",
+          "ecma404_json_F000020"
+        ],
+        "loo_entailment": [
+          0.009,
+          0.0
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.996,
+            0.996
+          ],
+          "joint": 0.997,
+          "max_pairwise_jaccard": 0.1
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00011",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "How does the ECMA-404 JSON standard ensure compatibility with ECMAScript while enforcing strict input validation?",
+      "answer": "ECMA-262 defines mappings between valid JSON texts and ECMAScript’s runtime data structures; A conforming processor of JSON texts should not accept any inputs that are not conforming JSON texts.",
+      "answer_clauses": [
+        {
+          "text": "ECMA-262 defines mappings between valid JSON texts and ECMAScript’s runtime data structures.",
+          "fact_id": "ecma404_json_F000020",
+          "nli": 0.996
+        },
+        {
+          "text": "A conforming processor of JSON texts should not accept any inputs that are not conforming JSON texts.",
+          "fact_id": "ecma404_json_F000022",
+          "nli": 0.996
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000020",
+        "ecma404_json_F000022"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000009",
+        "ecma404_json_c000009"
+      ],
+      "gold_pages": [
+        9,
+        9
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000020": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000022": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 435.89617919921875,
+            "r": 561.2134399414062,
+            "b": 470.469970703125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.0,
+          0.074
+        ],
+        "nli_joint": 0.998,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000020",
+          "ecma404_json_F000022"
+        ],
+        "loo_entailment": [
+          0.074,
+          0.0
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.996,
+            0.996
+          ],
+          "joint": 0.998,
+          "max_pairwise_jaccard": 0.08
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00012",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "Which conditions must a conforming processor of JSON texts meet regarding input acceptance and semantic restrictions?",
+      "answer": "A conforming processor of JSON texts should not accept any inputs that are not conforming JSON texts; A conforming processor may impose semantic restrictions that limit the set of conforming JSON texts that it will process.",
+      "answer_clauses": [
+        {
+          "text": "A conforming processor of JSON texts should not accept any inputs that are not conforming JSON texts.",
+          "fact_id": "ecma404_json_F000022",
+          "nli": 0.996
+        },
+        {
+          "text": "A conforming processor may impose semantic restrictions that limit the set of conforming JSON texts that it will process.",
+          "fact_id": "ecma404_json_F000023",
+          "nli": 0.987
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000022",
+        "ecma404_json_F000023"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000009",
+        "ecma404_json_c000010"
+      ],
+      "gold_pages": [
+        9,
+        9
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000022": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 435.89617919921875,
+            "r": 561.2134399414062,
+            "b": 470.469970703125,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000023": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 435.89617919921875,
+            "r": 561.2134399414062,
+            "b": 470.469970703125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.0,
+          0.002
+        ],
+        "nli_joint": 0.995,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000022",
+          "ecma404_json_F000023"
+        ],
+        "loo_entailment": [
+          0.002,
+          0.0
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.996,
+            0.987
+          ],
+          "joint": 0.995,
+          "max_pairwise_jaccard": 0.304
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00013",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "Under what conditions are the ECMA-404 JSON standard and related documents updated or examined for errors?",
+      "answer": "Ecma International and the IETF will work together to update both documents if a difference is found between them; if an error is found with either document, the other document should be examined to see if it has a similar error, and fixed if possible.",
+      "answer_clauses": [
+        {
+          "text": "Ecma International and the IETF will work together to update both documents if a difference is found between them.",
+          "fact_id": "ecma404_json_F000032",
+          "nli": 0.998
+        },
+        {
+          "text": "If an error is found with either document, the other document should be examined to see if it has a similar error, and fixed if possible.",
+          "fact_id": "ecma404_json_F000033",
+          "nli": 0.992
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000032",
+        "ecma404_json_F000033"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000012",
+        "ecma404_json_c000013"
+      ],
+      "gold_pages": [
+        9,
+        9
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000032": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 638.4862060546875,
+            "r": 561.208740234375,
+            "b": 718.5916137695312,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000033": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 638.4862060546875,
+            "r": 561.208740234375,
+            "b": 718.5916137695312,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.0,
+          0.0
+        ],
+        "nli_joint": 0.998,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000032",
+          "ecma404_json_F000033"
+        ],
+        "loo_entailment": [
+          0.0,
+          0.0
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.998,
+            0.992
+          ],
+          "joint": 0.998,
+          "max_pairwise_jaccard": 0.206
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00014",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "What measures are taken to maintain consistency between the two documents in the ECMA-404 JSON standard?",
+      "answer": "If an error is found in one document, the other document should be examined for a similar error and fixed if possible; if either document is changed in the future, Ecma International and the IETF will work together to ensure the two documents stay aligned through the change.",
+      "answer_clauses": [
+        {
+          "text": "If an error is found in one document, the other document should be examined for a similar error and fixed if possible.",
+          "fact_id": "ecma404_json_F000033",
+          "nli": 0.984
+        },
+        {
+          "text": "If either document is changed in the future, Ecma International and the IETF will work together to ensure the two documents stay aligned through the change.",
+          "fact_id": "ecma404_json_F000034",
+          "nli": 0.995
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000033",
+        "ecma404_json_F000034"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000013",
+        "ecma404_json_c000013"
+      ],
+      "gold_pages": [
+        9,
+        9
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000033": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 638.4862060546875,
+            "r": 561.208740234375,
+            "b": 718.5916137695312,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000034": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 638.4862060546875,
+            "r": 561.208740234375,
+            "b": 718.5916137695312,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.0,
+          0.002
+        ],
+        "nli_joint": 0.997,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000033",
+          "ecma404_json_F000034"
+        ],
+        "loo_entailment": [
+          0.002,
+          0.0
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.984,
+            0.995
+          ],
+          "joint": 0.997,
+          "max_pairwise_jaccard": 0.167
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00015",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "Which tokens in JSON allow whitespace within them, and what token separates a name from its value?",
+      "answer": "Whitespace is not allowed within any token except in strings; A single colon token follows each name, separating the name from the value.",
+      "answer_clauses": [
+        {
+          "text": "Whitespace is not allowed within any token except in strings.",
+          "fact_id": "ecma404_json_F000042",
+          "nli": 0.995
+        },
+        {
+          "text": "A single colon token follows each name, separating the name from the value.",
+          "fact_id": "ecma404_json_F000045",
+          "nli": 0.989
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000042",
+        "ecma404_json_F000045"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000016",
+        "ecma404_json_c000017"
+      ],
+      "gold_pages": [
+        10,
+        10
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000042": [
+          {
+            "page_no": 10,
+            "l": 36.84000015258789,
+            "t": 406.7361755371094,
+            "r": 526.7139892578125,
+            "b": 440.881591796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000045": [
+          {
+            "page_no": 10,
+            "l": 259.31622314453125,
+            "t": 575.2156372070312,
+            "r": 298.4947204589844,
+            "b": 590.9171752929688,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 10,
+            "l": 255.6524200439453,
+            "t": 548.3094482421875,
+            "r": 302.16656494140625,
+            "b": 564.010986328125,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 10,
+            "l": 42.17824935913086,
+            "t": 521.4032592773438,
+            "r": 82.70040130615234,
+            "b": 537.1047973632812,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 10,
+            "l": 251.64918518066406,
+            "t": 602.1217651367188,
+            "r": 306.154052734375,
+            "b": 617.8233032226562,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 10,
+            "l": 259.1544189453125,
+            "t": 686.048095703125,
+            "r": 295.099609375,
+            "b": 698.5089111328125,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 10,
+            "l": 262.74835205078125,
+            "t": 712.9546508789062,
+            "r": 291.5042419433594,
+            "b": 725.4154663085938,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 10,
+            "l": 257.319580078125,
+            "t": 629.0309448242188,
+            "r": 300.4854736328125,
+            "b": 644.7324829101562,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 10,
+            "l": 262.74835205078125,
+            "t": 659.1419677734375,
+            "r": 291.5042419433594,
+            "b": 671.602783203125,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 10,
+            "l": 240.64999389648438,
+            "t": 750.4661865234375,
+            "r": 323.4788818359375,
+            "b": 761.5715942382812,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.002,
+          0.005
+        ],
+        "nli_joint": 0.997,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000042",
+          "ecma404_json_F000045"
+        ],
+        "loo_entailment": [
+          0.005,
+          0.002
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.995,
+            0.989
+          ],
+          "joint": 0.997,
+          "max_pairwise_jaccard": 0.05
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00016",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "What is the relationship between the JSON syntax's treatment of value ordering and the typical use of JSON arrays?",
+      "answer": "The JSON syntax does not assign any specific meaning to the ordering of the values; the JSON array structure is often used in situations where there is some semantics to the ordering.",
+      "answer_clauses": [
+        {
+          "text": "The JSON syntax does not assign any specific meaning to the ordering of the values.",
+          "fact_id": "ecma404_json_F000051",
+          "nli": 0.998
+        },
+        {
+          "text": "The JSON array structure is often used in situations where there is some semantics to the ordering.",
+          "fact_id": "ecma404_json_F000052",
+          "nli": 0.992
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000051",
+        "ecma404_json_F000052"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000019",
+        "ecma404_json_c000019"
+      ],
+      "gold_pages": [
+        11,
+        11
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000051": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 447.53619384765625,
+            "r": 563.9888916015625,
+            "b": 481.8016052246094,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000052": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 447.53619384765625,
+            "r": 563.9888916015625,
+            "b": 481.8016052246094,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.0,
+          0.012
+        ],
+        "nli_joint": 0.998,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000051",
+          "ecma404_json_F000052"
+        ],
+        "loo_entailment": [
+          0.012,
+          0.0
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.998,
+            0.992
+          ],
+          "joint": 0.998,
+          "max_pairwise_jaccard": 0.167
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00017",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "What are the meanings of the escape sequences \\f and \\n in the ECMA-404 JSON standard?",
+      "answer": "\\f represents the form feed character; \\n represents the line feed character.",
+      "answer_clauses": [
+        {
+          "text": "\\f represents the form feed character.",
+          "fact_id": "ecma404_json_F000064",
+          "nli": 0.992
+        },
+        {
+          "text": "\\n represents the line feed character.",
+          "fact_id": "ecma404_json_F000065",
+          "nli": 0.99
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000064",
+        "ecma404_json_F000065"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000023",
+        "ecma404_json_c000023"
+      ],
+      "gold_pages": [
+        12,
+        12
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000064": [
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 583.0462036132812,
+            "r": 280.9788818359375,
+            "b": 594.151611328125,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 607.4061889648438,
+            "r": 277.1388854980469,
+            "b": 618.5115966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000065": [
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 607.4061889648438,
+            "r": 277.1388854980469,
+            "b": 618.5115966796875,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 631.7661743164062,
+            "r": 272.098876953125,
+            "b": 642.87158203125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.001,
+          0.003
+        ],
+        "nli_joint": 0.996,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000064",
+          "ecma404_json_F000065"
+        ],
+        "loo_entailment": [
+          0.003,
+          0.001
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.992,
+            0.99
+          ],
+          "joint": 0.996,
+          "max_pairwise_jaccard": 0.5
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00018",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "What does the ECMA-404 JSON standard specify about the representation of the line feed character and the interpretation of hexadecimal numbers?",
+      "answer": "The line feed character is represented by \\n; the meaning of a hexadecimal number is determined by ISO/IEC 10646.",
+      "answer_clauses": [
+        {
+          "text": "The line feed character is represented by \\n.",
+          "fact_id": "ecma404_json_F000065",
+          "nli": 0.998
+        },
+        {
+          "text": "The meaning of a hexadecimal number is determined by ISO/IEC 10646.",
+          "fact_id": "ecma404_json_F000070",
+          "nli": 0.995
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000065",
+        "ecma404_json_F000070"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000023",
+        "ecma404_json_c000024"
+      ],
+      "gold_pages": [
+        12,
+        12
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000065": [
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 607.4061889648438,
+            "r": 277.1388854980469,
+            "b": 618.5115966796875,
+            "coord_origin": "TOPLEFT"
+          },
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 631.7661743164062,
+            "r": 272.098876953125,
+            "b": 642.87158203125,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000070": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 728.9862060546875,
+            "r": 527.1336669921875,
+            "b": 775.0115966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.0,
+          0.005
+        ],
+        "nli_joint": 0.998,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000065",
+          "ecma404_json_F000070"
+        ],
+        "loo_entailment": [
+          0.005,
+          0.0
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.998,
+            0.995
+          ],
+          "joint": 0.998,
+          "max_pairwise_jaccard": 0.176
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00019",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "Under what condition is the representation \"\\uD834\\uDD1E\" interpreted as a single code point in JSON texts?",
+      "answer": "A string containing only the G clef character (U+1D11E) may be represented as \"\\uD834\\uDD1E\"; whether a processor of JSON texts interprets such a surrogate pair as a single code point or as an explicit surrogate pair is a semantic decision determined by the specific processor.",
+      "answer_clauses": [
+        {
+          "text": "A string containing only the G clef character (U+1D11E) may be represented as \"\\uD834\\uDD1E\".",
+          "fact_id": "ecma404_json_F000075",
+          "nli": 0.942
+        },
+        {
+          "text": "Whether a processor of JSON texts interprets such a surrogate pair as a single code point or as an explicit surrogate pair is a semantic decision determined by the specific processor.",
+          "fact_id": "ecma404_json_F000076",
+          "nli": 0.976
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000075",
+        "ecma404_json_F000076"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000027",
+        "ecma404_json_c000028"
+      ],
+      "gold_pages": [
+        13,
+        13
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000075": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 247.1162109375,
+            "r": 561.2288818359375,
+            "b": 305.1416015625,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000076": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 247.1162109375,
+            "r": 561.2288818359375,
+            "b": 305.1416015625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.001,
+          0.478
+        ],
+        "nli_joint": 0.986,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000075",
+          "ecma404_json_F000076"
+        ],
+        "loo_entailment": [
+          0.478,
+          0.001
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": true,
+        "judge_used": true,
+        "verdict": "PASS",
+        "reason": "The answer is fully supported by both sources and requires information from each to be complete.",
+        "scores": {
+          "clauses": [
+            0.942,
+            0.976
+          ],
+          "joint": 0.986,
+          "max_pairwise_jaccard": 0.081
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    },
+    {
+      "qa_id": "V2Q00020",
+      "hop_type": "single",
+      "evidence_strategy": "neighbor_pair_v2",
+      "bridge_entity": "",
+      "question": "How does the ECMA-404 JSON standard handle surrogate pairs and unassigned Unicode code points?",
+      "answer": "The interpretation of surrogate pairs in JSON as a single code point or as an explicit surrogate pair depends on the specific processor; the JSON grammar allows for code points that Unicode does not currently assign characters to.",
+      "answer_clauses": [
+        {
+          "text": "The interpretation of surrogate pairs in JSON as a single code point or as an explicit surrogate pair depends on the specific processor.",
+          "fact_id": "ecma404_json_F000076",
+          "nli": 0.998
+        },
+        {
+          "text": "The JSON grammar allows for code points that Unicode does not currently assign characters to.",
+          "fact_id": "ecma404_json_F000077",
+          "nli": 0.998
+        }
+      ],
+      "gold_fact_ids": [
+        "ecma404_json_F000076",
+        "ecma404_json_F000077"
+      ],
+      "gold_chunk_ids": [
+        "ecma404_json_c000028",
+        "ecma404_json_c000028"
+      ],
+      "gold_pages": [
+        13,
+        13
+      ],
+      "gold_bboxes": {
+        "ecma404_json_F000076": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 247.1162109375,
+            "r": 561.2288818359375,
+            "b": 305.1416015625,
+            "coord_origin": "TOPLEFT"
+          }
+        ],
+        "ecma404_json_F000077": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 317.55621337890625,
+            "r": 561.166015625,
+            "b": 340.06158447265625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      "grounding_complete": true,
+      "necessity": {
+        "nli_singles": [
+          0.002,
+          0.043
+        ],
+        "nli_joint": 0.998,
+        "necessity_score": 1.0,
+        "necessary_fact_ids": [
+          "ecma404_json_F000076",
+          "ecma404_json_F000077"
+        ],
+        "loo_entailment": [
+          0.043,
+          0.002
+        ],
+        "passed": true
+      },
+      "verify": {
+        "bridge_hidden": null,
+        "duplicate": false,
+        "faithful": true,
+        "borderline": false,
+        "judge_used": false,
+        "verdict": "PASS",
+        "reason": "deterministic_pass",
+        "scores": {
+          "clauses": [
+            0.998,
+            0.998
+          ],
+          "joint": 0.998,
+          "max_pairwise_jaccard": 0.094
+        }
+      },
+      "source_pair_id": "",
+      "doc": "ecma404_json_full"
+    }
+  ],
+  "stats": {
+    "doc": "ecma404_json_full",
+    "n_input_facts": 40,
+    "n_bridge_surface_rejected": 0,
+    "pre_rejected_unresolvable": 23,
+    "n_neighbor_pairs_sampled": 35,
+    "n_clusters_built": 31,
+    "n_fallback_bridges": 0,
+    "n_pair_pass": 15,
+    "pair_rejection_reasons": {
+      "clause_not_entailed": 12,
+      "not_jointly_necessary": 6,
+      "ungrounded_chunk_ids": 2
+    },
+    "n_cluster_pass": 2,
+    "cluster_rejection_reasons": {
+      "loo_failed": 11,
+      "not_jointly_necessary": 18
+    },
+    "n_side_retries": 0,
+    "n_sides_drafted": 24,
+    "n_questions_drafted": 31,
+    "n_fallback_pass": 7,
+    "n_clusters_demoted": 29,
+    "fallback_stats": {
+      "n_input_facts": 40,
+      "n_input_bridge_pairs": 29,
+      "n_bridge_pass": 7,
+      "n_bridge_rejected": 22,
+      "bridge_rejection_reasons": {
+        "clause_not_entailed": 10,
+        "invalid_or_bridge_leak": 10,
+        "not_jointly_necessary": 2
+      },
+      "n_single_pass": 0,
+      "n_single_rejected": 0,
+      "single_rejection_reasons": {},
+      "thresholds": {
+        "clause_entailment_min": 0.65,
+        "single_fact_answer_max": 0.5,
+        "joint_answer_min": 0.85
+      },
+      "require_chunk_ids": true,
+      "n_pairs_ungrounded": 0,
+      "grounding_note": "grounding_complete=false marks a pair whose gold_chunk_ids fell back to a fact:<id> pseudo-ID (source record had no real chunk_id). Such IDs are NOT retrievable corpus chunks; run with require_chunk_ids=True to reject them instead of emitting fake gold."
+    },
+    "thresholds": {
+      "clause_min": 0.65,
+      "single_max": 0.5,
+      "joint_min": 0.85
+    },
+    "require_chunk_ids": true,
+    "timings_sec": {
+      "sampling": 2.92,
+      "drafting": 24.92,
+      "scoring": 11.2,
+      "fallback": 20.83,
+      "fallback_overlap_sec": 0.0
+    },
+    "question_first_word_histogram": {
+      "What": 11,
+      "How": 4,
+      "Under": 4,
+      "When": 2,
+      "Which": 2,
+      "For": 1
+    },
+    "nli_truncation": {
+      "cluster": {
+        "premise_truncated": 0,
+        "hypothesis_truncated": 34,
+        "total_inputs": 34
+      },
+      "cumulative": {
+        "premise_truncated": 3,
+        "hypothesis_truncated": 292,
+        "total_inputs": 704
+      }
+    },
+    "doc_wall_sec": 59.9,
+    "final_kept": 20,
+    "n_dupes_dropped_evidence": 0,
+    "n_dupes_dropped_question": 4
+  }
+}

@@ -1,0 +1,31 @@
+.toast-stack {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+  z-index: 40;
+  pointer-events: none;
+}
+
+.toast {
+  font-family: var(--font-display);
+  font-size: 12.5px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  color: var(--tx-hi);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+}
+.toast--warn {
+  border-color: color-mix(in srgb, var(--warn) 50%, transparent);
+  color: var(--warn);
+}
+.toast--error {
+  border-color: color-mix(in srgb, var(--err) 50%, transparent);
+  color: var(--err);
+}

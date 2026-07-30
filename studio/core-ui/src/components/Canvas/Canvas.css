@@ -1,0 +1,45 @@
+.canvas-shell {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  background: var(--canvas-bg);
+}
+
+.react-flow {
+  background: var(--canvas-bg);
+}
+
+.canvas-minimap {
+  background: var(--bg-2) !important;
+  border: 1px solid var(--line-2);
+  border-radius: 8px;
+}
+
+.canvas-controls.react-flow__controls {
+  box-shadow: none;
+  border: 1px solid var(--line-2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.canvas-controls .react-flow__controls-button {
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--line-1);
+  fill: var(--tx-mid);
+  stroke: var(--tx-mid);
+}
+.canvas-controls .react-flow__controls-button:hover {
+  background: var(--bg-4);
+}
+
+/* A16 minimap viewport: eases 90ms, no spring (must feel rigid) */
+.react-flow__minimap-mask {
+  transition: none;
+}
+
+/* smoothing for auto-layout (A18) node position changes */
+.react-flow__node {
+  transition: transform 450ms var(--e-in-out);
+}
+.react-flow__node.dragging {
+  transition: none;
+}

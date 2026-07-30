@@ -1,0 +1,43 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "graft-studio-desktop",
+  "version": "0.1.0",
+  "identifier": "com.graft.studio",
+  "build": {
+    "frontendDist": "../../core-ui/dist",
+    "devUrl": "http://localhost:5190",
+    "beforeDevCommand": "npm --prefix ../core-ui run dev",
+    "beforeBuildCommand": "npm --prefix ../core-ui run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "GRAFT Block Studio",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 960,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "resources": ["python-runtime", "sample-data"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "android": {
+      "debugApplicationIdSuffix": ".debug"
+    }
+  }
+}

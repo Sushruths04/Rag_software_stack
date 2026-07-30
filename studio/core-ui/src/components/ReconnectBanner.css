@@ -1,0 +1,15 @@
+.reconnect-banner {
+  padding: 6px 16px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  text-align: center;
+  color: var(--tx-hi);
+}
+
+.reconnect-banner--starting {
+  background: color-mix(in srgb, var(--acc) 20%, var(--bg-2));
+}
+
+.reconnect-banner--failed {
+  background: color-mix(in srgb, #e0554f 30%, var(--bg-2));
+}

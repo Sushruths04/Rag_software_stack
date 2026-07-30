@@ -1,0 +1,12 @@
+{
+  "name": "graft-studio-web",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Plan A browser entry point. Delegates to studio/core-ui, the shared canvas/palette/inspector codebase also used by studio/desktop.",
+  "scripts": {
+    "dev": "npm --prefix ../core-ui run dev",
+    "build": "npm --prefix ../core-ui run build",
+    "preview": "npm --prefix ../core-ui run preview",
+    "test": "npm --prefix ../core-ui run test"
+  }
+}

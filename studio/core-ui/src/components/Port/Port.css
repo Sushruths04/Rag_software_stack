@@ -1,0 +1,123 @@
+/* Port — 04_DESIGN_SYSTEM.md §8.4 full state matrix + §4 shape channel. */
+
+.port-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 22px;
+  font-size: 11.5px;
+  color: var(--tx-mid);
+}
+.port-row--in {
+  justify-content: flex-start;
+}
+.port-row--out {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.port-label {
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+.port-optional {
+  color: var(--tx-ghost);
+  font-style: italic;
+}
+
+/* hit target >= 24px including halo (04 §7 accessibility floor) */
+.port-dot {
+  --port-color: var(--acc);
+  position: relative;
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  background: var(--port-color);
+  cursor: crosshair;
+  transition:
+    box-shadow var(--dur-fast) var(--e-out),
+    opacity var(--dur-fast) var(--e-out),
+    filter var(--dur-fast) var(--e-out);
+}
+.port-dot::after {
+  /* invisible hit-area halo, keeps the visible dot small but the target big */
+  content: "";
+  position: absolute;
+  inset: -8px;
+}
+
+/* shape channel: circle = single connection */
+.port-dot--single {
+  border-radius: 50%;
+}
+/* shape channel: stacked-square = multi-in capable port (06 Blender lesson) */
+.port-dot--multi {
+  border-radius: 2px;
+  box-shadow: -3px 3px 0 -1px color-mix(in srgb, var(--port-color) 55%, transparent);
+}
+
+/* base state (04 §8.4 col 1) — nothing extra, background is the base hue */
+
+/* hover/drag-legal (col 2): halo pulse 8px @35%, 900ms loop (A3) */
+.port-dot--legal {
+  box-shadow: 0 0 0 8px color-mix(in srgb, var(--port-color) 35%, transparent);
+  animation: port-halo-pulse 900ms ease-in-out infinite;
+}
+@keyframes port-halo-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--port-color) 35%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 9px color-mix(in srgb, var(--port-color) 18%, transparent);
+  }
+}
+
+/* drag-illegal (col 3): desaturate to 25% over 150ms */
+.port-dot--illegal {
+  opacity: 0.25;
+  filter: saturate(0.3);
+  transition-duration: 150ms;
+}
+
+/* The real react-flow Handle sits on top, invisible, and IS the actual
+   interactive/tabbable/draggable target (.port-dot's own 24px halo above
+   is purely a decorative hover glow, not a real hit area — it's a plain
+   non-interactive <span>). 04 §7's "hit targets >= 24px including port
+   halos" floor applies to THIS element; it was 16x16 (8px short in each
+   dimension) until this fix, found during the B-M7 keyboard/a11y audit —
+   centered on the same anchor point as before (24px is 8px wider than the
+   old 16px, so the offset moves by half that, -8px -> -12px). */
+.port-handle.port-handle {
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  transform: translateY(-50%);
+}
+.port-row--in .port-handle {
+  left: -12px;
+}
+.port-row--out .port-handle {
+  right: -12px;
+}
+
+/* 04 §7 accessibility floor: "Focus rings on every port/node". The handle
+   sits invisibly on top of the visible dot (same position/size family), so
+   ringing the handle itself rings the port — same --acc glow token used for
+   node selection (04 §8.3), not a new visual language. */
+.port-handle.port-handle:focus-visible {
+  outline: none;
+  border-radius: 50%;
+  box-shadow: var(--acc-glow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .port-dot--legal {
+    animation: none;
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--port-color) 30%, transparent);
+  }
+}

@@ -1,0 +1,5313 @@
+[
+  {
+    "chunk_id": "ecma404_json_c000000",
+    "doc_id": "ecma404_json",
+    "text": "4627. The JSON syntax specified by this specification and by RFC 8259 are intended to be identical. * Pronounced /\u02c8d\u0292e\u026a- s\u0259n/, as in \u201cJason and The Argonauts\u201d. iv \n \n\u00a9 Ecma International 2017\n\nThis Ecma Standard was developed by Technical Committee 39 and was adopted by the General \nAssembly of December 2017.",
+    "sentences": [
+      "4627.",
+      "The JSON syntax specified by this specification and by RFC 8259 are intended to be identical.",
+      "* Pronounced /\u02c8d\u0292e\u026a- s\u0259n/, as in \u201cJason and The Argonauts\u201d.",
+      "iv \n \n\u00a9 Ecma International 2017\n\nThis Ecma Standard was developed by Technical Committee 39 and was adopted by the General \nAssembly of December 2017."
+    ],
+    "tokens": [
+      "4627",
+      ".",
+      "The",
+      "JSON",
+      "syntax",
+      "specified",
+      "by",
+      "this",
+      "specification",
+      "and",
+      "by",
+      "RFC",
+      "8259",
+      "are",
+      "intended",
+      "to",
+      "be",
+      "identical",
+      ".",
+      "*",
+      "Pronounced",
+      "/\u02c8d\u0292e\u026a-",
+      "s\u0259n/",
+      ",",
+      "as",
+      "in",
+      "\u201c",
+      "Jason",
+      "and",
+      "The",
+      "Argonauts",
+      "\u201d",
+      ".",
+      "iv",
+      "\n \n",
+      "\u00a9",
+      "Ecma",
+      "International",
+      "2017",
+      "\n\n",
+      "This",
+      "Ecma",
+      "Standard",
+      "was",
+      "developed",
+      "by",
+      "Technical",
+      "Committee",
+      "39",
+      "and",
+      "was",
+      "adopted",
+      "by",
+      "the",
+      "General",
+      "\n",
+      "Assembly",
+      "of",
+      "December",
+      "2017",
+      "."
+    ],
+    "char_start": 5212,
+    "char_end": 5522,
+    "source_char_start": 5212,
+    "source_char_end": 5522,
+    "page_start": 5,
+    "page_end": 6,
+    "pages": [
+      5,
+      6
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 5212,
+        "char_end": 5311,
+        "page_no": 5,
+        "block_id": "p5_b12",
+        "paragraph_id": "p5_b12",
+        "bboxes": [
+          {
+            "page_no": 5,
+            "l": 70.8239974975586,
+            "t": 649.5261840820312,
+            "r": 561.1127319335938,
+            "b": 707.0715942382812,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 5313,
+        "char_end": 5372,
+        "page_no": 5,
+        "block_id": "p5_b15",
+        "paragraph_id": "p5_b15",
+        "bboxes": [
+          {
+            "page_no": 5,
+            "l": 70.8239974975586,
+            "t": 760.3638305664062,
+            "r": 312.39202880859375,
+            "b": 772.530029296875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 5374,
+        "char_end": 5405,
+        "page_no": 6,
+        "block_id": "p6_b1",
+        "paragraph_id": "p6_b1",
+        "bboxes": [
+          {
+            "page_no": 6,
+            "l": 36.84000015258789,
+            "t": 805.6661987304688,
+            "r": 524.7702026367188,
+            "b": 827.6915893554688,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 5407,
+        "char_end": 5522,
+        "page_no": 6,
+        "block_id": "p6_b29",
+        "paragraph_id": "p6_b29",
+        "bboxes": [
+          {
+            "page_no": 6,
+            "l": 36.84000015258789,
+            "t": 725.3662109375,
+            "r": 526.1051025390625,
+            "b": 748.0115966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000001",
+    "doc_id": "ecma404_json",
+    "text": "\u00a9 Ecma International 2017 \n \nv\n\n\"COPYRIGHT NOTICE\n\n\u00a9 2017 Ecma International\n\nThis document may be copied, published and distributed to others, and certain derivative works of it \nmay be prepared, copied, published, and distributed, in whole or in part, provided that the above \ncopyright notice and this Copyright License and Disclaimer are included on all such copies and \nderivative works.",
+    "sentences": [
+      "\u00a9 Ecma International 2017 \n \nv\n\n\"COPYRIGHT NOTICE\n\n\u00a9 2017 Ecma International\n\nThis document may be copied, published and distributed to others, and certain derivative works of it \nmay be prepared, copied, published, and distributed, in whole or in part, provided that the above \ncopyright notice and this Copyright License and Disclaimer are included on all such copies and \nderivative works."
+    ],
+    "tokens": [
+      "\u00a9",
+      "Ecma",
+      "International",
+      "2017",
+      "\n \n",
+      "v",
+      "\n\n",
+      "\"",
+      "COPYRIGHT",
+      "NOTICE",
+      "\n\n",
+      "\u00a9",
+      "2017",
+      "Ecma",
+      "International",
+      "\n\n",
+      "This",
+      "document",
+      "may",
+      "be",
+      "copied",
+      ",",
+      "published",
+      "and",
+      "distributed",
+      "to",
+      "others",
+      ",",
+      "and",
+      "certain",
+      "derivative",
+      "works",
+      "of",
+      "it",
+      "\n",
+      "may",
+      "be",
+      "prepared",
+      ",",
+      "copied",
+      ",",
+      "published",
+      ",",
+      "and",
+      "distributed",
+      ",",
+      "in",
+      "whole",
+      "or",
+      "in",
+      "part",
+      ",",
+      "provided",
+      "that",
+      "the",
+      "above",
+      "\n",
+      "copyright",
+      "notice",
+      "and",
+      "this",
+      "Copyright",
+      "License",
+      "and",
+      "Disclaimer",
+      "are",
+      "included",
+      "on",
+      "all",
+      "such",
+      "copies",
+      "and",
+      "\n",
+      "derivative",
+      "works",
+      "."
+    ],
+    "char_start": 5526,
+    "char_end": 5918,
+    "source_char_start": 5526,
+    "source_char_end": 5918,
+    "page_start": 7,
+    "page_end": 7,
+    "pages": [
+      7
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 5526,
+        "char_end": 5556,
+        "page_no": 7,
+        "block_id": "p7_b1",
+        "paragraph_id": "p7_b1",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 805.6661987304688,
+            "r": 558.5199584960938,
+            "b": 816.7716064453125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 5558,
+        "char_end": 5575,
+        "page_no": 7,
+        "block_id": "p7_b4",
+        "paragraph_id": "p7_b4",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 115.68621063232422,
+            "r": 182.30886840820312,
+            "b": 126.77169036865234,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 5577,
+        "char_end": 5602,
+        "page_no": 7,
+        "block_id": "p7_b5",
+        "paragraph_id": "p7_b5",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 133.2061767578125,
+            "r": 199.73887634277344,
+            "b": 144.29165649414062,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 5604,
+        "char_end": 5918,
+        "page_no": 7,
+        "block_id": "p7_b6",
+        "paragraph_id": "p7_b6",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 150.7261962890625,
+            "r": 561.0634765625,
+            "b": 207.77169799804688,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000002",
+    "doc_id": "ecma404_json",
+    "text": "The only derivative works that are permissible under this Copyright License and \nDisclaimer are:\n\n(i) \nworks which incorporate all or portion of this document for the purpose of providing commentary or \nexplanation (such as an annotated version of the document),\n\n(ii) works which incorporate all or portion of this document for the purpose of incorporating features\n\nthat provide accessibility,\n\n(iii) translations of this document into languages other than English and into different formats and\n\n(iv) works by making use of this specification in standard conformant products by implementing (e.g.\n\nby copy and paste wholly or partly) the functionality therein.",
+    "sentences": [
+      "The only derivative works that are permissible under this Copyright License and \nDisclaimer are:\n\n(i) \nworks which incorporate all or portion of this document for the purpose of providing commentary or \nexplanation (such as an annotated version of the document),\n\n(ii) works which incorporate all or portion of this document for the purpose of incorporating features\n\nthat provide accessibility,\n\n(iii) translations of this document into languages other than English and into different formats and\n\n(iv) works by making use of this specification in standard conformant products by implementing (e.g.\n\nby copy and paste wholly or partly) the functionality therein."
+    ],
+    "tokens": [
+      "The",
+      "only",
+      "derivative",
+      "works",
+      "that",
+      "are",
+      "permissible",
+      "under",
+      "this",
+      "Copyright",
+      "License",
+      "and",
+      "\n",
+      "Disclaimer",
+      "are",
+      ":",
+      "\n\n",
+      "(",
+      "i",
+      ")",
+      "\n",
+      "works",
+      "which",
+      "incorporate",
+      "all",
+      "or",
+      "portion",
+      "of",
+      "this",
+      "document",
+      "for",
+      "the",
+      "purpose",
+      "of",
+      "providing",
+      "commentary",
+      "or",
+      "\n",
+      "explanation",
+      "(",
+      "such",
+      "as",
+      "an",
+      "annotated",
+      "version",
+      "of",
+      "the",
+      "document",
+      ")",
+      ",",
+      "\n\n",
+      "(",
+      "ii",
+      ")",
+      "works",
+      "which",
+      "incorporate",
+      "all",
+      "or",
+      "portion",
+      "of",
+      "this",
+      "document",
+      "for",
+      "the",
+      "purpose",
+      "of",
+      "incorporating",
+      "features",
+      "\n\n",
+      "that",
+      "provide",
+      "accessibility",
+      ",",
+      "\n\n",
+      "(",
+      "iii",
+      ")",
+      "translations",
+      "of",
+      "this",
+      "document",
+      "into",
+      "languages",
+      "other",
+      "than",
+      "English",
+      "and",
+      "into",
+      "different",
+      "formats",
+      "and",
+      "\n\n",
+      "(",
+      "iv",
+      ")",
+      "works",
+      "by",
+      "making",
+      "use",
+      "of",
+      "this",
+      "specification",
+      "in",
+      "standard",
+      "conformant",
+      "products",
+      "by",
+      "implementing",
+      "(",
+      "e.g.",
+      "\n\n",
+      "by",
+      "copy",
+      "and",
+      "paste",
+      "wholly",
+      "or",
+      "partly",
+      ")",
+      "the",
+      "functionality",
+      "therein",
+      "."
+    ],
+    "char_start": 5919,
+    "char_end": 6582,
+    "source_char_start": 5919,
+    "source_char_end": 6582,
+    "page_start": 7,
+    "page_end": 7,
+    "pages": [
+      7
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 5919,
+        "char_end": 6015,
+        "page_no": 7,
+        "block_id": "p7_b6",
+        "paragraph_id": "p7_b6",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 150.7261962890625,
+            "r": 561.0634765625,
+            "b": 207.77169799804688,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 6017,
+        "char_end": 6181,
+        "page_no": 7,
+        "block_id": "p7_b7",
+        "paragraph_id": "p7_b7",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 214.2061767578125,
+            "r": 560.2693481445312,
+            "b": 236.81167602539062,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 6183,
+        "char_end": 6285,
+        "page_no": 7,
+        "block_id": "p7_b8",
+        "paragraph_id": "p7_b8",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 243.15618896484375,
+            "r": 559.9951782226562,
+            "b": 254.24166870117188,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 6287,
+        "char_end": 6314,
+        "page_no": 7,
+        "block_id": "p7_b9",
+        "paragraph_id": "p7_b9",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 92.18399810791016,
+            "t": 254.67620849609375,
+            "r": 214.25888061523438,
+            "b": 265.7616882324219,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 6316,
+        "char_end": 6416,
+        "page_no": 7,
+        "block_id": "p7_b10",
+        "paragraph_id": "p7_b10",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 272.1961669921875,
+            "r": 533.3888549804688,
+            "b": 283.2816467285156,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 6418,
+        "char_end": 6518,
+        "page_no": 7,
+        "block_id": "p7_b11",
+        "paragraph_id": "p7_b11",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 289.7161865234375,
+            "r": 561.0297241210938,
+            "b": 300.8016662597656,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 6520,
+        "char_end": 6582,
+        "page_no": 7,
+        "block_id": "p7_b12",
+        "paragraph_id": "p7_b12",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 92.18399810791016,
+            "t": 301.2362060546875,
+            "r": 376.03887939453125,
+            "b": 312.3216857910156,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000003",
+    "doc_id": "ecma404_json",
+    "text": "However, the content of this document itself may not be modified in any way, including by removing the \ncopyright notice or references to Ecma International, except as required to translate it into languages \nother than English or into a different format. The official version of an Ecma International document is the English language version on the Ecma \nInternational website.",
+    "sentences": [
+      "However, the content of this document itself may not be modified in any way, including by removing the \ncopyright notice or references to Ecma International, except as required to translate it into languages \nother than English or into a different format.",
+      "The official version of an Ecma International document is the English language version on the Ecma \nInternational website."
+    ],
+    "tokens": [
+      "However",
+      ",",
+      "the",
+      "content",
+      "of",
+      "this",
+      "document",
+      "itself",
+      "may",
+      "not",
+      "be",
+      "modified",
+      "in",
+      "any",
+      "way",
+      ",",
+      "including",
+      "by",
+      "removing",
+      "the",
+      "\n",
+      "copyright",
+      "notice",
+      "or",
+      "references",
+      "to",
+      "Ecma",
+      "International",
+      ",",
+      "except",
+      "as",
+      "required",
+      "to",
+      "translate",
+      "it",
+      "into",
+      "languages",
+      "\n",
+      "other",
+      "than",
+      "English",
+      "or",
+      "into",
+      "a",
+      "different",
+      "format",
+      ".",
+      "The",
+      "official",
+      "version",
+      "of",
+      "an",
+      "Ecma",
+      "International",
+      "document",
+      "is",
+      "the",
+      "English",
+      "language",
+      "version",
+      "on",
+      "the",
+      "Ecma",
+      "\n",
+      "International",
+      "website",
+      "."
+    ],
+    "char_start": 6584,
+    "char_end": 6962,
+    "source_char_start": 6584,
+    "source_char_end": 6962,
+    "page_start": 7,
+    "page_end": 7,
+    "pages": [
+      7
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 6584,
+        "char_end": 6839,
+        "page_no": 7,
+        "block_id": "p7_b13",
+        "paragraph_id": "p7_b13",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 318.63616943359375,
+            "r": 559.9398193359375,
+            "b": 352.76165771484375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 6841,
+        "char_end": 6962,
+        "page_no": 7,
+        "block_id": "p7_b14",
+        "paragraph_id": "p7_b14",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 359.1961975097656,
+            "r": 560.019287109375,
+            "b": 393.3216552734375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000004",
+    "doc_id": "ecma404_json",
+    "text": "In the event of discrepancies between a translated version and the official \nversion, the official version shall govern. The limited permissions granted above are perpetual and will not be revoked by Ecma International or \nits successors or assigns.",
+    "sentences": [
+      "In the event of discrepancies between a translated version and the official \nversion, the official version shall govern.",
+      "The limited permissions granted above are perpetual and will not be revoked by Ecma International or \nits successors or assigns."
+    ],
+    "tokens": [
+      "In",
+      "the",
+      "event",
+      "of",
+      "discrepancies",
+      "between",
+      "a",
+      "translated",
+      "version",
+      "and",
+      "the",
+      "official",
+      "\n",
+      "version",
+      ",",
+      "the",
+      "official",
+      "version",
+      "shall",
+      "govern",
+      ".",
+      "The",
+      "limited",
+      "permissions",
+      "granted",
+      "above",
+      "are",
+      "perpetual",
+      "and",
+      "will",
+      "not",
+      "be",
+      "revoked",
+      "by",
+      "Ecma",
+      "International",
+      "or",
+      "\n",
+      "its",
+      "successors",
+      "or",
+      "assigns",
+      "."
+    ],
+    "char_start": 6964,
+    "char_end": 7213,
+    "source_char_start": 6964,
+    "source_char_end": 7213,
+    "page_start": 7,
+    "page_end": 7,
+    "pages": [
+      7
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 6964,
+        "char_end": 7084,
+        "page_no": 7,
+        "block_id": "p7_b14",
+        "paragraph_id": "p7_b14",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 359.1961975097656,
+            "r": 560.019287109375,
+            "b": 393.3216552734375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 7086,
+        "char_end": 7213,
+        "page_no": 7,
+        "block_id": "p7_b15",
+        "paragraph_id": "p7_b15",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 399.65618896484375,
+            "r": 559.8659057617188,
+            "b": 422.26165771484375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000005",
+    "doc_id": "ecma404_json",
+    "text": "This document and the information contained herein is provided on an \"AS IS\" basis and ECMA \nINTERNATIONAL DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT \nLIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT \nINFRINGE ANY OWNERSHIP RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR \nFITNESS FOR A PARTICULAR PURPOSE\n\nvi \n \n\u00a9 Ecma International 2017\n\n\u00a9 Ecma International 2017 \n \n1\n\nThe JSON Data Interchange Syntax\n\n1 \nScope\n\nJSON is a lightweight, text-based, language-independent syntax for defining data interchange formats.",
+    "sentences": [
+      "This document and the information contained herein is provided on an \"AS IS\" basis and ECMA \nINTERNATIONAL DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT \nLIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT \nINFRINGE ANY OWNERSHIP RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR \nFITNESS FOR A PARTICULAR PURPOSE\n\nvi \n \n\u00a9 Ecma International 2017\n\n\u00a9 Ecma International 2017 \n \n1\n\nThe JSON Data Interchange Syntax\n\n1 \nScope\n\nJSON is a lightweight, text-based, language-independent syntax for defining data interchange formats."
+    ],
+    "tokens": [
+      "This",
+      "document",
+      "and",
+      "the",
+      "information",
+      "contained",
+      "herein",
+      "is",
+      "provided",
+      "on",
+      "an",
+      "\"",
+      "AS",
+      "IS",
+      "\"",
+      "basis",
+      "and",
+      "ECMA",
+      "\n",
+      "INTERNATIONAL",
+      "DISCLAIMS",
+      "ALL",
+      "WARRANTIES",
+      ",",
+      "EXPRESS",
+      "OR",
+      "IMPLIED",
+      ",",
+      "INCLUDING",
+      "BUT",
+      "NOT",
+      "\n",
+      "LIMITED",
+      "TO",
+      "ANY",
+      "WARRANTY",
+      "THAT",
+      "THE",
+      "USE",
+      "OF",
+      "THE",
+      "INFORMATION",
+      "HEREIN",
+      "WILL",
+      "NOT",
+      "\n",
+      "INFRINGE",
+      "ANY",
+      "OWNERSHIP",
+      "RIGHTS",
+      "OR",
+      "ANY",
+      "IMPLIED",
+      "WARRANTIES",
+      "OF",
+      "MERCHANTABILITY",
+      "OR",
+      "\n",
+      "FITNESS",
+      "FOR",
+      "A",
+      "PARTICULAR",
+      "PURPOSE",
+      "\n\n",
+      "vi",
+      "\n \n",
+      "\u00a9",
+      "Ecma",
+      "International",
+      "2017",
+      "\n\n",
+      "\u00a9",
+      "Ecma",
+      "International",
+      "2017",
+      "\n \n",
+      "1",
+      "\n\n",
+      "The",
+      "JSON",
+      "Data",
+      "Interchange",
+      "Syntax",
+      "\n\n",
+      "1",
+      "\n",
+      "Scope",
+      "\n\n",
+      "JSON",
+      "is",
+      "a",
+      "lightweight",
+      ",",
+      "text",
+      "-",
+      "based",
+      ",",
+      "language",
+      "-",
+      "independent",
+      "syntax",
+      "for",
+      "defining",
+      "data",
+      "interchange",
+      "formats",
+      "."
+    ],
+    "char_start": 7216,
+    "char_end": 7784,
+    "source_char_start": 7216,
+    "source_char_end": 7784,
+    "page_start": 7,
+    "page_end": 9,
+    "pages": [
+      7,
+      8,
+      9
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 7216,
+        "char_end": 7572,
+        "page_no": 7,
+        "block_id": "p7_b16",
+        "paragraph_id": "p7_b16",
+        "bboxes": [
+          {
+            "page_no": 7,
+            "l": 70.8239974975586,
+            "t": 428.6961975097656,
+            "r": 560.7737426757812,
+            "b": 485.881591796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 7574,
+        "char_end": 7605,
+        "page_no": 8,
+        "block_id": "p8_b1",
+        "paragraph_id": "p8_b1",
+        "bboxes": [
+          {
+            "page_no": 8,
+            "l": 36.84000015258789,
+            "t": 805.6661987304688,
+            "r": 524.7702026367188,
+            "b": 827.6915893554688,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 7607,
+        "char_end": 7637,
+        "page_no": 9,
+        "block_id": "p9_b1",
+        "paragraph_id": "p9_b1",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 804.6887817382812,
+            "r": 558.5982666015625,
+            "b": 816.9984130859375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 7639,
+        "char_end": 7671,
+        "page_no": 9,
+        "block_id": "p9_b3",
+        "paragraph_id": "p9_b3",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 104.61619567871094,
+            "r": 342.9068908691406,
+            "b": 122.4115982055664,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 7673,
+        "char_end": 7681,
+        "page_no": 9,
+        "block_id": "p9_b4",
+        "paragraph_id": "p9_b4",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 174.0800018310547,
+            "r": 130.1959991455078,
+            "b": 187.4600067138672,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 7683,
+        "char_end": 7784,
+        "page_no": 9,
+        "block_id": "p9_b5",
+        "paragraph_id": "p9_b5",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 199.80621337890625,
+            "r": 560.83349609375,
+            "b": 233.9515838623047,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000006",
+    "doc_id": "ecma404_json",
+    "text": "It was \nderived from the ECMAScript programming language, but is programming language independent. JSON \ndefines a small set of structuring rules for the portable representation of structured data. The goal of this specification is only to define the syntax of valid JSON texts. Its intent is not to provide any \nsemantics or interpretation of text conforming to that syntax.",
+    "sentences": [
+      "It was \nderived from the ECMAScript programming language, but is programming language independent.",
+      "JSON \ndefines a small set of structuring rules for the portable representation of structured data.",
+      "The goal of this specification is only to define the syntax of valid JSON texts.",
+      "Its intent is not to provide any \nsemantics or interpretation of text conforming to that syntax."
+    ],
+    "tokens": [
+      "It",
+      "was",
+      "\n",
+      "derived",
+      "from",
+      "the",
+      "ECMAScript",
+      "programming",
+      "language",
+      ",",
+      "but",
+      "is",
+      "programming",
+      "language",
+      "independent",
+      ".",
+      "JSON",
+      "\n",
+      "defines",
+      "a",
+      "small",
+      "set",
+      "of",
+      "structuring",
+      "rules",
+      "for",
+      "the",
+      "portable",
+      "representation",
+      "of",
+      "structured",
+      "data",
+      ".",
+      "The",
+      "goal",
+      "of",
+      "this",
+      "specification",
+      "is",
+      "only",
+      "to",
+      "define",
+      "the",
+      "syntax",
+      "of",
+      "valid",
+      "JSON",
+      "texts",
+      ".",
+      "Its",
+      "intent",
+      "is",
+      "not",
+      "to",
+      "provide",
+      "any",
+      "\n",
+      "semantics",
+      "or",
+      "interpretation",
+      "of",
+      "text",
+      "conforming",
+      "to",
+      "that",
+      "syntax",
+      "."
+    ],
+    "char_start": 7785,
+    "char_end": 8160,
+    "source_char_start": 7785,
+    "source_char_end": 8160,
+    "page_start": 9,
+    "page_end": 9,
+    "pages": [
+      9
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 7785,
+        "char_end": 7982,
+        "page_no": 9,
+        "block_id": "p9_b5",
+        "paragraph_id": "p9_b5",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 199.80621337890625,
+            "r": 560.83349609375,
+            "b": 233.9515838623047,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 7984,
+        "char_end": 8160,
+        "page_no": 9,
+        "block_id": "p9_b6",
+        "paragraph_id": "p9_b6",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000007",
+    "doc_id": "ecma404_json",
+    "text": "It also intentionally does not define how a valid \nJSON text might be internalized into the data structures of a programming language. There are many possible \nsemantics that could be applied to the JSON syntax and many ways that a JSON text can be processed or \nmapped by a programming language.",
+    "sentences": [
+      "It also intentionally does not define how a valid \nJSON text might be internalized into the data structures of a programming language.",
+      "There are many possible \nsemantics that could be applied to the JSON syntax and many ways that a JSON text can be processed or \nmapped by a programming language."
+    ],
+    "tokens": [
+      "It",
+      "also",
+      "intentionally",
+      "does",
+      "not",
+      "define",
+      "how",
+      "a",
+      "valid",
+      "\n",
+      "JSON",
+      "text",
+      "might",
+      "be",
+      "internalized",
+      "into",
+      "the",
+      "data",
+      "structures",
+      "of",
+      "a",
+      "programming",
+      "language",
+      ".",
+      "There",
+      "are",
+      "many",
+      "possible",
+      "\n",
+      "semantics",
+      "that",
+      "could",
+      "be",
+      "applied",
+      "to",
+      "the",
+      "JSON",
+      "syntax",
+      "and",
+      "many",
+      "ways",
+      "that",
+      "a",
+      "JSON",
+      "text",
+      "can",
+      "be",
+      "processed",
+      "or",
+      "\n",
+      "mapped",
+      "by",
+      "a",
+      "programming",
+      "language",
+      "."
+    ],
+    "char_start": 8162,
+    "char_end": 8458,
+    "source_char_start": 8162,
+    "source_char_end": 8458,
+    "page_start": 9,
+    "page_end": 9,
+    "pages": [
+      9
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 8162,
+        "char_end": 8458,
+        "page_no": 9,
+        "block_id": "p9_b6",
+        "paragraph_id": "p9_b6",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000008",
+    "doc_id": "ecma404_json",
+    "text": "Meaningful interchange of information using JSON requires agreement \namong the involved parties on the specific semantics to be applied. Defining specific semantic interpretations \nof JSON is potentially a topic for other specifications. Similarly, language mappings of JSON can also be \nindependently specified.",
+    "sentences": [
+      "Meaningful interchange of information using JSON requires agreement \namong the involved parties on the specific semantics to be applied.",
+      "Defining specific semantic interpretations \nof JSON is potentially a topic for other specifications.",
+      "Similarly, language mappings of JSON can also be \nindependently specified."
+    ],
+    "tokens": [
+      "Meaningful",
+      "interchange",
+      "of",
+      "information",
+      "using",
+      "JSON",
+      "requires",
+      "agreement",
+      "\n",
+      "among",
+      "the",
+      "involved",
+      "parties",
+      "on",
+      "the",
+      "specific",
+      "semantics",
+      "to",
+      "be",
+      "applied",
+      ".",
+      "Defining",
+      "specific",
+      "semantic",
+      "interpretations",
+      "\n",
+      "of",
+      "JSON",
+      "is",
+      "potentially",
+      "a",
+      "topic",
+      "for",
+      "other",
+      "specifications",
+      ".",
+      "Similarly",
+      ",",
+      "language",
+      "mappings",
+      "of",
+      "JSON",
+      "can",
+      "also",
+      "be",
+      "\n",
+      "independently",
+      "specified",
+      "."
+    ],
+    "char_start": 8459,
+    "char_end": 8771,
+    "source_char_start": 8459,
+    "source_char_end": 8771,
+    "page_start": 9,
+    "page_end": 9,
+    "pages": [
+      9
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 8459,
+        "char_end": 8771,
+        "page_no": 9,
+        "block_id": "p9_b6",
+        "paragraph_id": "p9_b6",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000009",
+    "doc_id": "ecma404_json",
+    "text": "For example, ECMA-262 defines mappings between valid JSON texts and \nECMAScript\u2019s runtime data structures. 2 \nConformance\n\nA conforming JSON text is a sequence of Unicode code points that strictly conforms to the JSON grammar \ndefined by this specification. A conforming processor of JSON texts should not accept any inputs that are not conforming JSON texts.",
+    "sentences": [
+      "For example, ECMA-262 defines mappings between valid JSON texts and \nECMAScript\u2019s runtime data structures.",
+      "2 \nConformance\n\nA conforming JSON text is a sequence of Unicode code points that strictly conforms to the JSON grammar \ndefined by this specification.",
+      "A conforming processor of JSON texts should not accept any inputs that are not conforming JSON texts."
+    ],
+    "tokens": [
+      "For",
+      "example",
+      ",",
+      "ECMA-262",
+      "defines",
+      "mappings",
+      "between",
+      "valid",
+      "JSON",
+      "texts",
+      "and",
+      "\n",
+      "ECMAScript",
+      "\u2019s",
+      "runtime",
+      "data",
+      "structures",
+      ".",
+      "2",
+      "\n",
+      "Conformance",
+      "\n\n",
+      "A",
+      "conforming",
+      "JSON",
+      "text",
+      "is",
+      "a",
+      "sequence",
+      "of",
+      "Unicode",
+      "code",
+      "points",
+      "that",
+      "strictly",
+      "conforms",
+      "to",
+      "the",
+      "JSON",
+      "grammar",
+      "\n",
+      "defined",
+      "by",
+      "this",
+      "specification",
+      ".",
+      "A",
+      "conforming",
+      "processor",
+      "of",
+      "JSON",
+      "texts",
+      "should",
+      "not",
+      "accept",
+      "any",
+      "inputs",
+      "that",
+      "are",
+      "not",
+      "conforming",
+      "JSON",
+      "texts",
+      "."
+    ],
+    "char_start": 8772,
+    "char_end": 9131,
+    "source_char_start": 8772,
+    "source_char_end": 9131,
+    "page_start": 9,
+    "page_end": 9,
+    "pages": [
+      9
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 8772,
+        "char_end": 8878,
+        "page_no": 9,
+        "block_id": "p9_b6",
+        "paragraph_id": "p9_b6",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 246.39617919921875,
+            "r": 561.20947265625,
+            "b": 349.5415954589844,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 8880,
+        "char_end": 8894,
+        "page_no": 9,
+        "block_id": "p9_b7",
+        "paragraph_id": "p9_b7",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 375.1099853515625,
+            "r": 171.5959930419922,
+            "b": 388.4899597167969,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 8896,
+        "char_end": 9030,
+        "page_no": 9,
+        "block_id": "p9_b8",
+        "paragraph_id": "p9_b8",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 400.856201171875,
+            "r": 561.2288818359375,
+            "b": 423.4815979003906,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 9032,
+        "char_end": 9131,
+        "page_no": 9,
+        "block_id": "p9_b9",
+        "paragraph_id": "p9_b9",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 435.89617919921875,
+            "r": 561.2134399414062,
+            "b": 470.469970703125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000010",
+    "doc_id": "ecma404_json",
+    "text": "A \nconforming processor may impose semantic restrictions that limit the set of conforming JSON texts that it will \nprocess. 3 \nNormative References\n\nThe following referenced documents are indispensable for the application of this document. For dated \nreferences, only the edition cited applies.",
+    "sentences": [
+      "A \nconforming processor may impose semantic restrictions that limit the set of conforming JSON texts that it will \nprocess.",
+      "3 \nNormative References\n\nThe following referenced documents are indispensable for the application of this document.",
+      "For dated \nreferences, only the edition cited applies."
+    ],
+    "tokens": [
+      "A",
+      "\n",
+      "conforming",
+      "processor",
+      "may",
+      "impose",
+      "semantic",
+      "restrictions",
+      "that",
+      "limit",
+      "the",
+      "set",
+      "of",
+      "conforming",
+      "JSON",
+      "texts",
+      "that",
+      "it",
+      "will",
+      "\n",
+      "process",
+      ".",
+      "3",
+      "\n",
+      "Normative",
+      "References",
+      "\n\n",
+      "The",
+      "following",
+      "referenced",
+      "documents",
+      "are",
+      "indispensable",
+      "for",
+      "the",
+      "application",
+      "of",
+      "this",
+      "document",
+      ".",
+      "For",
+      "dated",
+      "\n",
+      "references",
+      ",",
+      "only",
+      "the",
+      "edition",
+      "cited",
+      "applies",
+      "."
+    ],
+    "char_start": 9134,
+    "char_end": 9428,
+    "source_char_start": 9134,
+    "source_char_end": 9428,
+    "page_start": 9,
+    "page_end": 9,
+    "pages": [
+      9
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 9134,
+        "char_end": 9257,
+        "page_no": 9,
+        "block_id": "p9_b9",
+        "paragraph_id": "p9_b9",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 435.89617919921875,
+            "r": 561.2134399414062,
+            "b": 470.469970703125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 9259,
+        "char_end": 9282,
+        "page_no": 9,
+        "block_id": "p9_b10",
+        "paragraph_id": "p9_b10",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 495.7300109863281,
+            "r": 220.9459991455078,
+            "b": 509.1099853515625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 9284,
+        "char_end": 9428,
+        "page_no": 9,
+        "block_id": "p9_b11",
+        "paragraph_id": "p9_b11",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 521.4561767578125,
+            "r": 560.6469116210938,
+            "b": 555.4816284179688,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000011",
+    "doc_id": "ecma404_json",
+    "text": "For undated references, the latest edition of the referenced \ndocument (including any amendments) applies. ISO/IEC 10646, Information Technology \u2013 Universal Coded Character Set (UCS) The Unicode Consortium. The Unicode Standard http://www.unicode.org/versions/latest. Bray, T., Ed. \"The JavaScript Object Notation (JSON) Data Interchange Format\", RFC 8259.",
+    "sentences": [
+      "For undated references, the latest edition of the referenced \ndocument (including any amendments) applies.",
+      "ISO/IEC 10646, Information Technology \u2013 Universal Coded Character Set (UCS)",
+      "The Unicode Consortium.",
+      "The Unicode Standard http://www.unicode.org/versions/latest.",
+      "Bray, T., Ed.",
+      "\"The JavaScript Object Notation (JSON) Data Interchange Format\", RFC 8259."
+    ],
+    "tokens": [
+      "For",
+      "undated",
+      "references",
+      ",",
+      "the",
+      "latest",
+      "edition",
+      "of",
+      "the",
+      "referenced",
+      "\n",
+      "document",
+      "(",
+      "including",
+      "any",
+      "amendments",
+      ")",
+      "applies",
+      ".",
+      "ISO",
+      "/",
+      "IEC",
+      "10646",
+      ",",
+      "Information",
+      "Technology",
+      "\u2013",
+      "Universal",
+      "Coded",
+      "Character",
+      "Set",
+      "(",
+      "UCS",
+      ")",
+      "The",
+      "Unicode",
+      "Consortium",
+      ".",
+      "The",
+      "Unicode",
+      "Standard",
+      "http://www.unicode.org/versions/latest",
+      ".",
+      "Bray",
+      ",",
+      "T.",
+      ",",
+      "Ed",
+      ".",
+      "\"",
+      "The",
+      "JavaScript",
+      "Object",
+      "Notation",
+      "(",
+      "JSON",
+      ")",
+      "Data",
+      "Interchange",
+      "Format",
+      "\"",
+      ",",
+      "RFC",
+      "8259",
+      "."
+    ],
+    "char_start": 9430,
+    "char_end": 9786,
+    "source_char_start": 9430,
+    "source_char_end": 9786,
+    "page_start": 9,
+    "page_end": 9,
+    "pages": [
+      9
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 9430,
+        "char_end": 9536,
+        "page_no": 9,
+        "block_id": "p9_b11",
+        "paragraph_id": "p9_b11",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 521.4561767578125,
+            "r": 560.6469116210938,
+            "b": 555.4816284179688,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 9538,
+        "char_end": 9613,
+        "page_no": 9,
+        "block_id": "p9_b12",
+        "paragraph_id": "p9_b12",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 567.80615234375,
+            "r": 430.9989013671875,
+            "b": 578.9115600585938,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 9615,
+        "char_end": 9699,
+        "page_no": 9,
+        "block_id": "p9_b13",
+        "paragraph_id": "p9_b13",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 591.326171875,
+            "r": 463.9089050292969,
+            "b": 602.4315795898438,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 9701,
+        "char_end": 9786,
+        "page_no": 9,
+        "block_id": "p9_b14",
+        "paragraph_id": "p9_b14",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 614.84619140625,
+            "r": 481.42889404296875,
+            "b": 625.9515991210938,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000012",
+    "doc_id": "ecma404_json",
+    "text": "This specification and [RFC 8259] both provide specifications of the JSON grammar but do so using different \nformalisms. The intent is that both specifications define the same syntactic language. If a difference is found \nbetween them, Ecma International and the IETF will work together to update both documents.",
+    "sentences": [
+      "This specification and [RFC 8259] both provide specifications of the JSON grammar but do so using different \nformalisms.",
+      "The intent is that both specifications define the same syntactic language.",
+      "If a difference is found \nbetween them, Ecma International and the IETF will work together to update both documents."
+    ],
+    "tokens": [
+      "This",
+      "specification",
+      "and",
+      "[",
+      "RFC",
+      "8259",
+      "]",
+      "both",
+      "provide",
+      "specifications",
+      "of",
+      "the",
+      "JSON",
+      "grammar",
+      "but",
+      "do",
+      "so",
+      "using",
+      "different",
+      "\n",
+      "formalisms",
+      ".",
+      "The",
+      "intent",
+      "is",
+      "that",
+      "both",
+      "specifications",
+      "define",
+      "the",
+      "same",
+      "syntactic",
+      "language",
+      ".",
+      "If",
+      "a",
+      "difference",
+      "is",
+      "found",
+      "\n",
+      "between",
+      "them",
+      ",",
+      "Ecma",
+      "International",
+      "and",
+      "the",
+      "IETF",
+      "will",
+      "work",
+      "together",
+      "to",
+      "update",
+      "both",
+      "documents",
+      "."
+    ],
+    "char_start": 9791,
+    "char_end": 10103,
+    "source_char_start": 9791,
+    "source_char_end": 10103,
+    "page_start": 9,
+    "page_end": 9,
+    "pages": [
+      9
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 9791,
+        "char_end": 10103,
+        "page_no": 9,
+        "block_id": "p9_b15",
+        "paragraph_id": "p9_b15",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 638.4862060546875,
+            "r": 561.208740234375,
+            "b": 718.5916137695312,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000013",
+    "doc_id": "ecma404_json",
+    "text": "If an error is \nfound with either document, the other should be examined to see if it has a similar error, and fixed if possible. If either document is changed in the future, Ecma International and the IETF will work together to ensure that \nthe two documents stay aligned through the change. RFC 8259, also defines various semantic restrictions on \nthe use of the JSON syntax.",
+    "sentences": [
+      "If an error is \nfound with either document, the other should be examined to see if it has a similar error, and fixed if possible.",
+      "If either document is changed in the future, Ecma International and the IETF will work together to ensure that \nthe two documents stay aligned through the change.",
+      "RFC 8259, also defines various semantic restrictions on \nthe use of the JSON syntax."
+    ],
+    "tokens": [
+      "If",
+      "an",
+      "error",
+      "is",
+      "\n",
+      "found",
+      "with",
+      "either",
+      "document",
+      ",",
+      "the",
+      "other",
+      "should",
+      "be",
+      "examined",
+      "to",
+      "see",
+      "if",
+      "it",
+      "has",
+      "a",
+      "similar",
+      "error",
+      ",",
+      "and",
+      "fixed",
+      "if",
+      "possible",
+      ".",
+      "If",
+      "either",
+      "document",
+      "is",
+      "changed",
+      "in",
+      "the",
+      "future",
+      ",",
+      "Ecma",
+      "International",
+      "and",
+      "the",
+      "IETF",
+      "will",
+      "work",
+      "together",
+      "to",
+      "ensure",
+      "that",
+      "\n",
+      "the",
+      "two",
+      "documents",
+      "stay",
+      "aligned",
+      "through",
+      "the",
+      "change",
+      ".",
+      "RFC",
+      "8259",
+      ",",
+      "also",
+      "defines",
+      "various",
+      "semantic",
+      "restrictions",
+      "on",
+      "\n",
+      "the",
+      "use",
+      "of",
+      "the",
+      "JSON",
+      "syntax",
+      "."
+    ],
+    "char_start": 10104,
+    "char_end": 10481,
+    "source_char_start": 10104,
+    "source_char_end": 10481,
+    "page_start": 9,
+    "page_end": 9,
+    "pages": [
+      9
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 10104,
+        "char_end": 10481,
+        "page_no": 9,
+        "block_id": "p9_b15",
+        "paragraph_id": "p9_b15",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 638.4862060546875,
+            "r": 561.208740234375,
+            "b": 718.5916137695312,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000014",
+    "doc_id": "ecma404_json",
+    "text": "Those restrictions are not normative for this specification. 2 \n \n\u00a9 Ecma International 2017\n\n4 \nJSON Text\n\nA JSON text is a sequence of tokens formed from Unicode code points that conforms to the JSON value \ngrammar. The set of tokens includes six structural tokens, strings, numbers, and three literal name tokens.",
+    "sentences": [
+      "Those restrictions are not normative for this specification.",
+      "2 \n \n\u00a9 Ecma International 2017\n\n4 \nJSON Text\n\nA JSON text is a sequence of tokens formed from Unicode code points that conforms to the JSON value \ngrammar.",
+      "The set of tokens includes six structural tokens, strings, numbers, and three literal name tokens."
+    ],
+    "tokens": [
+      "Those",
+      "restrictions",
+      "are",
+      "not",
+      "normative",
+      "for",
+      "this",
+      "specification",
+      ".",
+      "2",
+      "\n \n",
+      "\u00a9",
+      "Ecma",
+      "International",
+      "2017",
+      "\n\n",
+      "4",
+      "\n",
+      "JSON",
+      "Text",
+      "\n\n",
+      "A",
+      "JSON",
+      "text",
+      "is",
+      "a",
+      "sequence",
+      "of",
+      "tokens",
+      "formed",
+      "from",
+      "Unicode",
+      "code",
+      "points",
+      "that",
+      "conforms",
+      "to",
+      "the",
+      "JSON",
+      "value",
+      "\n",
+      "grammar",
+      ".",
+      "The",
+      "set",
+      "of",
+      "tokens",
+      "includes",
+      "six",
+      "structural",
+      "tokens",
+      ",",
+      "strings",
+      ",",
+      "numbers",
+      ",",
+      "and",
+      "three",
+      "literal",
+      "name",
+      "tokens",
+      "."
+    ],
+    "char_start": 10483,
+    "char_end": 10798,
+    "source_char_start": 10483,
+    "source_char_end": 10798,
+    "page_start": 9,
+    "page_end": 10,
+    "pages": [
+      9,
+      10
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 10483,
+        "char_end": 10543,
+        "page_no": 9,
+        "block_id": "p9_b15",
+        "paragraph_id": "p9_b15",
+        "bboxes": [
+          {
+            "page_no": 9,
+            "l": 70.8239974975586,
+            "t": 638.4862060546875,
+            "r": 561.208740234375,
+            "b": 718.5916137695312,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 10545,
+        "char_end": 10575,
+        "page_no": 10,
+        "block_id": "p10_b1",
+        "paragraph_id": "p10_b1",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 36.84000015258789,
+            "t": 804.6887817382812,
+            "r": 524.7702026367188,
+            "b": 827.6915893554688,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 10577,
+        "char_end": 10589,
+        "page_no": 10,
+        "block_id": "p10_b2",
+        "paragraph_id": "p10_b2",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 36.84000015258789,
+            "t": 85.15995788574219,
+            "r": 120.95600128173828,
+            "b": 98.53995513916016,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 10591,
+        "char_end": 10798,
+        "page_no": 10,
+        "block_id": "p10_b3",
+        "paragraph_id": "p10_b3",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 36.84000015258789,
+            "t": 110.88616180419922,
+            "r": 526.6929321289062,
+            "b": 133.51158142089844,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000015",
+    "doc_id": "ecma404_json",
+    "text": "The six structural tokens:\n\n[ U+005B left square bracket\n\n{ U+007B left curly bracket\n\n] U+005D right square bracket\n\n} U+007D right curly bracket\n\n: U+003A colon\n\n, U+002C comma\n\nThese are the three literal name tokens:\n\ntrue \nU+0074 U+0072 U+0075 U+0065\n\nfalse \nU+0066 U+0061 U+006C U+0073 U+0065\n\nnull \nU+006E U+0075 U+006C U+006C\n\nInsignificant whitespace is allowed before or after any token.",
+    "sentences": [
+      "The six structural tokens:\n\n[ U+005B left square bracket\n\n{ U+007B left curly bracket\n\n]",
+      "U+005D right square bracket\n\n} U+007D right curly bracket\n\n: U+003A colon\n\n, U+002C comma\n\nThese are the three literal name tokens:\n\ntrue \nU+0074 U+0072 U+0075 U+0065\n\nfalse \nU+0066 U+0061 U+006C U+0073 U+0065\n\nnull \nU+006E U+0075 U+006C U+006C\n\nInsignificant whitespace is allowed before or after any token."
+    ],
+    "tokens": [
+      "The",
+      "six",
+      "structural",
+      "tokens",
+      ":",
+      "\n\n",
+      "[",
+      "U+005B",
+      "left",
+      "square",
+      "bracket",
+      "\n\n",
+      "{",
+      "U+007B",
+      "left",
+      "curly",
+      "bracket",
+      "\n\n",
+      "]",
+      "U+005D",
+      "right",
+      "square",
+      "bracket",
+      "\n\n",
+      "}",
+      "U+007D",
+      "right",
+      "curly",
+      "bracket",
+      "\n\n",
+      ":",
+      "U+003A",
+      "colon",
+      "\n\n",
+      ",",
+      "U+002C",
+      "comma",
+      "\n\n",
+      "These",
+      "are",
+      "the",
+      "three",
+      "literal",
+      "name",
+      "tokens",
+      ":",
+      "\n\n",
+      "true",
+      "\n",
+      "U+0074",
+      "U+0072",
+      "U+0075",
+      "U+0065",
+      "\n\n",
+      "false",
+      "\n",
+      "U+0066",
+      "U+0061",
+      "U+006C",
+      "U+0073",
+      "U+0065",
+      "\n\n",
+      "null",
+      "\n",
+      "U+006E",
+      "U+0075",
+      "U+006C",
+      "U+006C",
+      "\n\n",
+      "Insignificant",
+      "whitespace",
+      "is",
+      "allowed",
+      "before",
+      "or",
+      "after",
+      "any",
+      "token",
+      "."
+    ],
+    "char_start": 10801,
+    "char_end": 11198,
+    "source_char_start": 10801,
+    "source_char_end": 11198,
+    "page_start": 10,
+    "page_end": 10,
+    "pages": [
+      10
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 10801,
+        "char_end": 10827,
+        "page_no": 10,
+        "block_id": "p10_b4",
+        "paragraph_id": "p10_b4",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 36.84000015258789,
+            "t": 145.92620849609375,
+            "r": 150.74887084960938,
+            "b": 157.03160095214844,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 10829,
+        "char_end": 10857,
+        "page_no": 10,
+        "block_id": "p10_b5",
+        "paragraph_id": "p10_b5",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 56.880001068115234,
+            "t": 169.086181640625,
+            "r": 200.57887268066406,
+            "b": 180.1915740966797,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 10859,
+        "char_end": 10886,
+        "page_no": 10,
+        "block_id": "p10_b6",
+        "paragraph_id": "p10_b6",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 56.880001068115234,
+            "t": 192.606201171875,
+            "r": 191.6688690185547,
+            "b": 203.7115936279297,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 10888,
+        "char_end": 10917,
+        "page_no": 10,
+        "block_id": "p10_b7",
+        "paragraph_id": "p10_b7",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 56.880001068115234,
+            "t": 216.12615966796875,
+            "r": 207.2988739013672,
+            "b": 227.23155212402344,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 10919,
+        "char_end": 10947,
+        "page_no": 10,
+        "block_id": "p10_b8",
+        "paragraph_id": "p10_b8",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 56.880001068115234,
+            "t": 239.55621337890625,
+            "r": 198.4188690185547,
+            "b": 250.66160583496094,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 10949,
+        "char_end": 10963,
+        "page_no": 10,
+        "block_id": "p10_b9",
+        "paragraph_id": "p10_b9",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 56.880001068115234,
+            "t": 263.076171875,
+            "r": 142.2288818359375,
+            "b": 274.18157958984375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 10965,
+        "char_end": 10979,
+        "page_no": 10,
+        "block_id": "p10_b10",
+        "paragraph_id": "p10_b10",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 56.880001068115234,
+            "t": 286.59619140625,
+            "r": 154.4688720703125,
+            "b": 297.70159912109375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 10981,
+        "char_end": 11021,
+        "page_no": 10,
+        "block_id": "p10_b11",
+        "paragraph_id": "p10_b11",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 36.84000015258789,
+            "t": 310.1162109375,
+            "r": 216.4188690185547,
+            "b": 321.22161865234375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11023,
+        "char_end": 11056,
+        "page_no": 10,
+        "block_id": "p10_b12",
+        "paragraph_id": "p10_b12",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 56.880001068115234,
+            "t": 333.9961853027344,
+            "r": 260.4259948730469,
+            "b": 345.1015930175781,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11058,
+        "char_end": 11099,
+        "page_no": 10,
+        "block_id": "p10_b13",
+        "paragraph_id": "p10_b13",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 56.880001068115234,
+            "t": 358.356201171875,
+            "r": 300.2660217285156,
+            "b": 369.46160888671875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11101,
+        "char_end": 11134,
+        "page_no": 10,
+        "block_id": "p10_b14",
+        "paragraph_id": "p10_b14",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 56.880001068115234,
+            "t": 382.7161865234375,
+            "r": 264.86602783203125,
+            "b": 393.82159423828125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11136,
+        "char_end": 11198,
+        "page_no": 10,
+        "block_id": "p10_b15",
+        "paragraph_id": "p10_b15",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 36.84000015258789,
+            "t": 406.7361755371094,
+            "r": 526.7139892578125,
+            "b": 440.881591796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000016",
+    "doc_id": "ecma404_json",
+    "text": "Whitespace is any sequence of one or more of \nthe following code points: character tabulation (U+0009), line feed (U+000A), carriage return (U+000D), and \nspace (U+0020). Whitespace is not allowed within any token, except that space is allowed in strings. 5 \nJSON Values\n\nA JSON value can be an object, array, number, string, true, false, or null.",
+    "sentences": [
+      "Whitespace is any sequence of one or more of \nthe following code points: character tabulation (U+0009), line feed (U+000A), carriage return (U+000D), and \nspace (U+0020).",
+      "Whitespace is not allowed within any token, except that space is allowed in strings.",
+      "5 \nJSON Values\n\nA JSON value can be an object, array, number, string, true, false, or null."
+    ],
+    "tokens": [
+      "Whitespace",
+      "is",
+      "any",
+      "sequence",
+      "of",
+      "one",
+      "or",
+      "more",
+      "of",
+      "\n",
+      "the",
+      "following",
+      "code",
+      "points",
+      ":",
+      "character",
+      "tabulation",
+      "(",
+      "U+0009",
+      ")",
+      ",",
+      "line",
+      "feed",
+      "(",
+      "U+000A",
+      ")",
+      ",",
+      "carriage",
+      "return",
+      "(",
+      "U+000D",
+      ")",
+      ",",
+      "and",
+      "\n",
+      "space",
+      "(",
+      "U+0020",
+      ")",
+      ".",
+      "Whitespace",
+      "is",
+      "not",
+      "allowed",
+      "within",
+      "any",
+      "token",
+      ",",
+      "except",
+      "that",
+      "space",
+      "is",
+      "allowed",
+      "in",
+      "strings",
+      ".",
+      "5",
+      "\n",
+      "JSON",
+      "Values",
+      "\n\n",
+      "A",
+      "JSON",
+      "value",
+      "can",
+      "be",
+      "an",
+      "object",
+      ",",
+      "array",
+      ",",
+      "number",
+      ",",
+      "string",
+      ",",
+      "true",
+      ",",
+      "false",
+      ",",
+      "or",
+      "null",
+      "."
+    ],
+    "char_start": 11199,
+    "char_end": 11546,
+    "source_char_start": 11199,
+    "source_char_end": 11546,
+    "page_start": 10,
+    "page_end": 10,
+    "pages": [
+      10
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 11199,
+        "char_end": 11454,
+        "page_no": 10,
+        "block_id": "p10_b15",
+        "paragraph_id": "p10_b15",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 36.84000015258789,
+            "t": 406.7361755371094,
+            "r": 526.7139892578125,
+            "b": 440.881591796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11456,
+        "char_end": 11470,
+        "page_no": 10,
+        "block_id": "p10_b16",
+        "paragraph_id": "p10_b16",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 36.84000015258789,
+            "t": 466.57000732421875,
+            "r": 134.99600219726562,
+            "b": 479.9499816894531,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11472,
+        "char_end": 11546,
+        "page_no": 10,
+        "block_id": "p10_b17",
+        "paragraph_id": "p10_b17",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 36.84000015258789,
+            "t": 492.65618896484375,
+            "r": 385.5188903808594,
+            "b": 503.7615966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000017",
+    "doc_id": "ecma404_json",
+    "text": "array\n\nobject\n\nvalue\n\nnumber\n\nfalse\n\nnull\n\nstring\n\ntrue\n\nFigure 1 \u2014 value\n\n\u00a9 Ecma International 2017 \n \n3\n\n6 \nObjects\n\nAn object structure is represented as a pair of curly bracket tokens surrounding zero or more name/value pairs. A name is a string. A single colon token follows each name, separating the name from the value. A single \ncomma token separates a value from a following name.",
+    "sentences": [
+      "array\n\nobject\n\nvalue\n\nnumber\n\nfalse\n\nnull\n\nstring\n\ntrue\n\nFigure 1 \u2014 value\n\n\u00a9 Ecma International 2017 \n \n3\n\n6 \nObjects\n\nAn object structure is represented as a pair of curly bracket tokens surrounding zero or more name/value pairs.",
+      "A name is a string.",
+      "A single colon token follows each name, separating the name from the value.",
+      "A single \ncomma token separates a value from a following name."
+    ],
+    "tokens": [
+      "array",
+      "\n\n",
+      "object",
+      "\n\n",
+      "value",
+      "\n\n",
+      "number",
+      "\n\n",
+      "false",
+      "\n\n",
+      "null",
+      "\n\n",
+      "string",
+      "\n\n",
+      "true",
+      "\n\n",
+      "Figure",
+      "1",
+      "\u2014",
+      "value",
+      "\n\n",
+      "\u00a9",
+      "Ecma",
+      "International",
+      "2017",
+      "\n \n",
+      "3",
+      "\n\n",
+      "6",
+      "\n",
+      "Objects",
+      "\n\n",
+      "An",
+      "object",
+      "structure",
+      "is",
+      "represented",
+      "as",
+      "a",
+      "pair",
+      "of",
+      "curly",
+      "bracket",
+      "tokens",
+      "surrounding",
+      "zero",
+      "or",
+      "more",
+      "name",
+      "/",
+      "value",
+      "pairs",
+      ".",
+      "A",
+      "name",
+      "is",
+      "a",
+      "string",
+      ".",
+      "A",
+      "single",
+      "colon",
+      "token",
+      "follows",
+      "each",
+      "name",
+      ",",
+      "separating",
+      "the",
+      "name",
+      "from",
+      "the",
+      "value",
+      ".",
+      "A",
+      "single",
+      "\n",
+      "comma",
+      "token",
+      "separates",
+      "a",
+      "value",
+      "from",
+      "a",
+      "following",
+      "name",
+      "."
+    ],
+    "char_start": 11549,
+    "char_end": 11938,
+    "source_char_start": 11549,
+    "source_char_end": 11938,
+    "page_start": 10,
+    "page_end": 11,
+    "pages": [
+      10,
+      11
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 11549,
+        "char_end": 11554,
+        "page_no": 10,
+        "block_id": "p10_b18",
+        "paragraph_id": "p10_b18",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 259.31622314453125,
+            "t": 575.2156372070312,
+            "r": 298.4947204589844,
+            "b": 590.9171752929688,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11556,
+        "char_end": 11562,
+        "page_no": 10,
+        "block_id": "p10_b19",
+        "paragraph_id": "p10_b19",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 255.6524200439453,
+            "t": 548.3094482421875,
+            "r": 302.16656494140625,
+            "b": 564.010986328125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11564,
+        "char_end": 11569,
+        "page_no": 10,
+        "block_id": "p10_b20",
+        "paragraph_id": "p10_b20",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 42.17824935913086,
+            "t": 521.4032592773438,
+            "r": 82.70040130615234,
+            "b": 537.1047973632812,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11571,
+        "char_end": 11577,
+        "page_no": 10,
+        "block_id": "p10_b21",
+        "paragraph_id": "p10_b21",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 251.64918518066406,
+            "t": 602.1217651367188,
+            "r": 306.154052734375,
+            "b": 617.8233032226562,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11579,
+        "char_end": 11584,
+        "page_no": 10,
+        "block_id": "p10_b22",
+        "paragraph_id": "p10_b22",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 259.1544189453125,
+            "t": 686.048095703125,
+            "r": 295.099609375,
+            "b": 698.5089111328125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11586,
+        "char_end": 11590,
+        "page_no": 10,
+        "block_id": "p10_b23",
+        "paragraph_id": "p10_b23",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 262.74835205078125,
+            "t": 712.9546508789062,
+            "r": 291.5042419433594,
+            "b": 725.4154663085938,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11592,
+        "char_end": 11598,
+        "page_no": 10,
+        "block_id": "p10_b24",
+        "paragraph_id": "p10_b24",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 257.319580078125,
+            "t": 629.0309448242188,
+            "r": 300.4854736328125,
+            "b": 644.7324829101562,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11600,
+        "char_end": 11604,
+        "page_no": 10,
+        "block_id": "p10_b25",
+        "paragraph_id": "p10_b25",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 262.74835205078125,
+            "t": 659.1419677734375,
+            "r": 291.5042419433594,
+            "b": 671.602783203125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11606,
+        "char_end": 11622,
+        "page_no": 10,
+        "block_id": "p10_b27",
+        "paragraph_id": "p10_b27",
+        "bboxes": [
+          {
+            "page_no": 10,
+            "l": 240.64999389648438,
+            "t": 750.4661865234375,
+            "r": 323.4788818359375,
+            "b": 761.5715942382812,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11624,
+        "char_end": 11654,
+        "page_no": 11,
+        "block_id": "p11_b1",
+        "paragraph_id": "p11_b1",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 804.6887817382812,
+            "r": 558.5982666015625,
+            "b": 816.9984130859375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11656,
+        "char_end": 11666,
+        "page_no": 11,
+        "block_id": "p11_b3",
+        "paragraph_id": "p11_b3",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 85.15995788574219,
+            "r": 138.23599243164062,
+            "b": 98.53995513916016,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 11668,
+        "char_end": 11938,
+        "page_no": 11,
+        "block_id": "p11_b4",
+        "paragraph_id": "p11_b4",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 110.88616180419922,
+            "r": 563.4357299804688,
+            "b": 179.4716033935547,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000018",
+    "doc_id": "ecma404_json",
+    "text": "The JSON syntax does not impose any restrictions on \nthe strings used as names, does not require that name strings be unique, and does not assign any \nsignificance to the ordering of name/value pairs. These are all semantic considerations that may be defined by \nJSON processors or in specifications defining specific uses of JSON for data interchange.",
+    "sentences": [
+      "The JSON syntax does not impose any restrictions on \nthe strings used as names, does not require that name strings be unique, and does not assign any \nsignificance to the ordering of name/value pairs.",
+      "These are all semantic considerations that may be defined by \nJSON processors or in specifications defining specific uses of JSON for data interchange."
+    ],
+    "tokens": [
+      "The",
+      "JSON",
+      "syntax",
+      "does",
+      "not",
+      "impose",
+      "any",
+      "restrictions",
+      "on",
+      "\n",
+      "the",
+      "strings",
+      "used",
+      "as",
+      "names",
+      ",",
+      "does",
+      "not",
+      "require",
+      "that",
+      "name",
+      "strings",
+      "be",
+      "unique",
+      ",",
+      "and",
+      "does",
+      "not",
+      "assign",
+      "any",
+      "\n",
+      "significance",
+      "to",
+      "the",
+      "ordering",
+      "of",
+      "name",
+      "/",
+      "value",
+      "pairs",
+      ".",
+      "These",
+      "are",
+      "all",
+      "semantic",
+      "considerations",
+      "that",
+      "may",
+      "be",
+      "defined",
+      "by",
+      "\n",
+      "JSON",
+      "processors",
+      "or",
+      "in",
+      "specifications",
+      "defining",
+      "specific",
+      "uses",
+      "of",
+      "JSON",
+      "for",
+      "data",
+      "interchange",
+      "."
+    ],
+    "char_start": 11940,
+    "char_end": 12292,
+    "source_char_start": 11940,
+    "source_char_end": 12292,
+    "page_start": 11,
+    "page_end": 11,
+    "pages": [
+      11
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 11940,
+        "char_end": 12292,
+        "page_no": 11,
+        "block_id": "p11_b4",
+        "paragraph_id": "p11_b4",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 110.88616180419922,
+            "r": 563.4357299804688,
+            "b": 179.4716033935547,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000019",
+    "doc_id": "ecma404_json",
+    "text": "{\n:\n}\nvalue\nstring\n\nobject\n\n,\n\nFigure 2 \u2014 object\n\n7 \nArrays\n\nAn array structure is a pair of square bracket tokens surrounding zero or more values. The values are \nseparated by commas. The JSON syntax does not define any specific meaning to the ordering of the values. However, the JSON array structure is often used in situations where there is some semantics to the ordering.",
+    "sentences": [
+      "{\n:\n}\nvalue\nstring\n\nobject\n\n,\n\nFigure 2 \u2014 object\n\n7 \nArrays\n\nAn array structure is a pair of square bracket tokens surrounding zero or more values.",
+      "The values are \nseparated by commas.",
+      "The JSON syntax does not define any specific meaning to the ordering of the values.",
+      "However, the JSON array structure is often used in situations where there is some semantics to the ordering."
+    ],
+    "tokens": [
+      "{",
+      "\n",
+      ":",
+      "\n",
+      "}",
+      "\n",
+      "value",
+      "\n",
+      "string",
+      "\n\n",
+      "object",
+      "\n\n",
+      ",",
+      "\n\n",
+      "Figure",
+      "2",
+      "\u2014",
+      "object",
+      "\n\n",
+      "7",
+      "\n",
+      "Arrays",
+      "\n\n",
+      "An",
+      "array",
+      "structure",
+      "is",
+      "a",
+      "pair",
+      "of",
+      "square",
+      "bracket",
+      "tokens",
+      "surrounding",
+      "zero",
+      "or",
+      "more",
+      "values",
+      ".",
+      "The",
+      "values",
+      "are",
+      "\n",
+      "separated",
+      "by",
+      "commas",
+      ".",
+      "The",
+      "JSON",
+      "syntax",
+      "does",
+      "not",
+      "define",
+      "any",
+      "specific",
+      "meaning",
+      "to",
+      "the",
+      "ordering",
+      "of",
+      "the",
+      "values",
+      ".",
+      "However",
+      ",",
+      "the",
+      "JSON",
+      "array",
+      "structure",
+      "is",
+      "often",
+      "used",
+      "in",
+      "situations",
+      "where",
+      "there",
+      "is",
+      "some",
+      "semantics",
+      "to",
+      "the",
+      "ordering",
+      "."
+    ],
+    "char_start": 12294,
+    "char_end": 12671,
+    "source_char_start": 12294,
+    "source_char_end": 12671,
+    "page_start": 11,
+    "page_end": 11,
+    "pages": [
+      11
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 12294,
+        "char_end": 12312,
+        "page_no": 11,
+        "block_id": "p11_b6",
+        "paragraph_id": "p11_b6",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 123.29639434814453,
+            "t": 248.99119567871094,
+            "r": 489.8720703125,
+            "b": 265.6663818359375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 12314,
+        "char_end": 12320,
+        "page_no": 11,
+        "block_id": "p11_b7",
+        "paragraph_id": "p11_b7",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 76.12825012207031,
+            "t": 220.41661071777344,
+            "r": 122.64237976074219,
+            "b": 237.091796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 12322,
+        "char_end": 12323,
+        "page_no": 11,
+        "block_id": "p11_b8",
+        "paragraph_id": "p11_b8",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 302.98773193359375,
+            "t": 290.4942626953125,
+            "r": 310.17572021484375,
+            "b": 303.7277526855469,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 12325,
+        "char_end": 12342,
+        "page_no": 11,
+        "block_id": "p11_b10",
+        "paragraph_id": "p11_b10",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 272.69000244140625,
+            "t": 355.4761962890625,
+            "r": 359.35888671875,
+            "b": 366.58160400390625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 12344,
+        "char_end": 12353,
+        "page_no": 11,
+        "block_id": "p11_b12",
+        "paragraph_id": "p11_b12",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 421.92999267578125,
+            "r": 132.23599243164062,
+            "b": 435.3099670410156,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 12355,
+        "char_end": 12671,
+        "page_no": 11,
+        "block_id": "p11_b13",
+        "paragraph_id": "p11_b13",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 447.53619384765625,
+            "r": 563.9888916015625,
+            "b": 481.8016052246094,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000020",
+    "doc_id": "ecma404_json",
+    "text": "[\n]\nvalue\n\narray\n\n,\n\nFigure 3 \u2014 array\n\n8 \nNumbers\n\nA number is a sequence of decimal digits with no superfluous leading zero. It may have a preceding minus \nsign (U+002D). It may have a fractional part prefixed by a decimal point (U+002E). It may have an exponent, \nprefixed by e (U+0065) or E (U+0045) and optionally + (U+002B) or \u2013 (U+002D). The digits are the code \npoints U+0030 through U+0039.",
+    "sentences": [
+      "[\n]\nvalue\n\narray\n\n,\n\nFigure 3 \u2014 array\n\n8 \nNumbers\n\nA number is a sequence of decimal digits with no superfluous leading zero.",
+      "It may have a preceding minus \nsign (U+002D).",
+      "It may have a fractional part prefixed by a decimal point (U+002E).",
+      "It may have an exponent, \nprefixed by e (U+0065) or E (U+0045) and optionally + (U+002B) or \u2013 (U+002D).",
+      "The digits are the code \npoints U+0030 through U+0039."
+    ],
+    "tokens": [
+      "[",
+      "\n",
+      "]",
+      "\n",
+      "value",
+      "\n\n",
+      "array",
+      "\n\n",
+      ",",
+      "\n\n",
+      "Figure",
+      "3",
+      "\u2014",
+      "array",
+      "\n\n",
+      "8",
+      "\n",
+      "Numbers",
+      "\n\n",
+      "A",
+      "number",
+      "is",
+      "a",
+      "sequence",
+      "of",
+      "decimal",
+      "digits",
+      "with",
+      "no",
+      "superfluous",
+      "leading",
+      "zero",
+      ".",
+      "It",
+      "may",
+      "have",
+      "a",
+      "preceding",
+      "minus",
+      "\n",
+      "sign",
+      "(",
+      "U+002D",
+      ")",
+      ".",
+      "It",
+      "may",
+      "have",
+      "a",
+      "fractional",
+      "part",
+      "prefixed",
+      "by",
+      "a",
+      "decimal",
+      "point",
+      "(",
+      "U+002E",
+      ")",
+      ".",
+      "It",
+      "may",
+      "have",
+      "an",
+      "exponent",
+      ",",
+      "\n",
+      "prefixed",
+      "by",
+      "e",
+      "(",
+      "U+0065",
+      ")",
+      "or",
+      "E",
+      "(",
+      "U+0045",
+      ")",
+      "and",
+      "optionally",
+      "+",
+      "(",
+      "U+002B",
+      ")",
+      "or",
+      "\u2013",
+      "(",
+      "U+002D",
+      ")",
+      ".",
+      "The",
+      "digits",
+      "are",
+      "the",
+      "code",
+      "\n",
+      "points",
+      "U+0030",
+      "through",
+      "U+0039",
+      "."
+    ],
+    "char_start": 12674,
+    "char_end": 13072,
+    "source_char_start": 12674,
+    "source_char_end": 13072,
+    "page_start": 11,
+    "page_end": 11,
+    "pages": [
+      11
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 12674,
+        "char_end": 12683,
+        "page_no": 11,
+        "block_id": "p11_b15",
+        "paragraph_id": "p11_b15",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 123.29639434814453,
+            "t": 549.091552734375,
+            "r": 489.8720703125,
+            "b": 564.7571411132812,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 12685,
+        "char_end": 12690,
+        "page_no": 11,
+        "block_id": "p11_b16",
+        "paragraph_id": "p11_b16",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 76.12825012207031,
+            "t": 522.2470092773438,
+            "r": 115.3067398071289,
+            "b": 537.91259765625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 12692,
+        "char_end": 12693,
+        "page_no": 11,
+        "block_id": "p11_b17",
+        "paragraph_id": "p11_b17",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 302.98773193359375,
+            "t": 588.0817260742188,
+            "r": 310.17572021484375,
+            "b": 600.5139770507812,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 12695,
+        "char_end": 12711,
+        "page_no": 11,
+        "block_id": "p11_b19",
+        "paragraph_id": "p11_b19",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 275.0899963378906,
+            "t": 650.3662109375,
+            "r": 356.8388977050781,
+            "b": 661.4716186523438,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 12713,
+        "char_end": 12723,
+        "page_no": 11,
+        "block_id": "p11_b20",
+        "paragraph_id": "p11_b20",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 693.280029296875,
+            "r": 146.156005859375,
+            "b": 706.6600341796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 12725,
+        "char_end": 13072,
+        "page_no": 11,
+        "block_id": "p11_b21",
+        "paragraph_id": "p11_b21",
+        "bboxes": [
+          {
+            "page_no": 11,
+            "l": 70.8239974975586,
+            "t": 719.0061645507812,
+            "r": 561.0907592773438,
+            "b": 765.5316162109375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000021",
+    "doc_id": "ecma404_json",
+    "text": "4 \n \n\u00a9 Ecma International 2017\n\nFigure 4 \u2014 number\n\nNumeric values that cannot be represented as sequences of digits (such as Infinity and NaN) are not \npermitted. 9 \nString\n\nA string is a sequence of Unicode code points wrapped with quotation marks (U+0022).",
+    "sentences": [
+      "4 \n \n\u00a9 Ecma International 2017\n\nFigure 4 \u2014 number\n\nNumeric values that cannot be represented as sequences of digits (such as Infinity and NaN) are not \npermitted.",
+      "9 \nString\n\nA string is a sequence of Unicode code points wrapped with quotation marks (U+0022)."
+    ],
+    "tokens": [
+      "4",
+      "\n \n",
+      "\u00a9",
+      "Ecma",
+      "International",
+      "2017",
+      "\n\n",
+      "Figure",
+      "4",
+      "\u2014",
+      "number",
+      "\n\n",
+      "Numeric",
+      "values",
+      "that",
+      "can",
+      "not",
+      "be",
+      "represented",
+      "as",
+      "sequences",
+      "of",
+      "digits",
+      "(",
+      "such",
+      "as",
+      "Infinity",
+      "and",
+      "NaN",
+      ")",
+      "are",
+      "not",
+      "\n",
+      "permitted",
+      ".",
+      "9",
+      "\n",
+      "String",
+      "\n\n",
+      "A",
+      "string",
+      "is",
+      "a",
+      "sequence",
+      "of",
+      "Unicode",
+      "code",
+      "points",
+      "wrapped",
+      "with",
+      "quotation",
+      "marks",
+      "(",
+      "U+0022",
+      ")",
+      "."
+    ],
+    "char_start": 13074,
+    "char_end": 13332,
+    "source_char_start": 13074,
+    "source_char_end": 13332,
+    "page_start": 12,
+    "page_end": 12,
+    "pages": [
+      12
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 13074,
+        "char_end": 13104,
+        "page_no": 12,
+        "block_id": "p12_b1",
+        "paragraph_id": "p12_b1",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 804.6887817382812,
+            "r": 524.7702026367188,
+            "b": 827.6915893554688,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 13106,
+        "char_end": 13123,
+        "page_no": 12,
+        "block_id": "p12_b3",
+        "paragraph_id": "p12_b3",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 235.1300048828125,
+            "t": 346.9561767578125,
+            "r": 328.9989013671875,
+            "b": 358.06158447265625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 13125,
+        "char_end": 13236,
+        "page_no": 12,
+        "block_id": "p12_b4",
+        "paragraph_id": "p12_b4",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 376.9561767578125,
+            "r": 527.24609375,
+            "b": 400.06158447265625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 13238,
+        "char_end": 13247,
+        "page_no": 12,
+        "block_id": "p12_b5",
+        "paragraph_id": "p12_b5",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 425.7699890136719,
+            "r": 94.91999816894531,
+            "b": 439.14996337890625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 13249,
+        "char_end": 13332,
+        "page_no": 12,
+        "block_id": "p12_b6",
+        "paragraph_id": "p12_b6",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 451.4961853027344,
+            "r": 527.2528076171875,
+            "b": 497.1615905761719,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000022",
+    "doc_id": "ecma404_json",
+    "text": "All code points may \nbe placed within the quotation marks except for the code points that must be escaped: quotation mark \n(U+0022), reverse solidus (U+005C), and the control characters U+0000 to U+001F. There are two-character \nescape sequence representations of some characters.\n\n\\\" represents the quotation mark character (U+0022). \\\\ represents the reverse solidus character (U+005C).",
+    "sentences": [
+      "All code points may \nbe placed within the quotation marks except for the code points that must be escaped: quotation mark \n(U+0022), reverse solidus (U+005C), and the control characters U+0000 to U+001F. There are two-character \nescape sequence representations of some characters.\n\n\\\" represents the quotation mark character (U+0022).",
+      "\\\\ represents the reverse solidus character (U+005C)."
+    ],
+    "tokens": [
+      "All",
+      "code",
+      "points",
+      "may",
+      "\n",
+      "be",
+      "placed",
+      "within",
+      "the",
+      "quotation",
+      "marks",
+      "except",
+      "for",
+      "the",
+      "code",
+      "points",
+      "that",
+      "must",
+      "be",
+      "escaped",
+      ":",
+      "quotation",
+      "mark",
+      "\n",
+      "(",
+      "U+0022",
+      ")",
+      ",",
+      "reverse",
+      "solidus",
+      "(",
+      "U+005C",
+      ")",
+      ",",
+      "and",
+      "the",
+      "control",
+      "characters",
+      "U+0000",
+      "to",
+      "U+001F.",
+      "There",
+      "are",
+      "two",
+      "-",
+      "character",
+      "\n",
+      "escape",
+      "sequence",
+      "representations",
+      "of",
+      "some",
+      "characters",
+      ".",
+      "\n\n",
+      "\\",
+      "\"",
+      "represents",
+      "the",
+      "quotation",
+      "mark",
+      "character",
+      "(",
+      "U+0022",
+      ")",
+      ".",
+      "\\\\",
+      "represents",
+      "the",
+      "reverse",
+      "solidus",
+      "character",
+      "(",
+      "U+005C",
+      ")",
+      "."
+    ],
+    "char_start": 13334,
+    "char_end": 13722,
+    "source_char_start": 13334,
+    "source_char_end": 13722,
+    "page_start": 12,
+    "page_end": 12,
+    "pages": [
+      12
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 13334,
+        "char_end": 13614,
+        "page_no": 12,
+        "block_id": "p12_b6",
+        "paragraph_id": "p12_b6",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 451.4961853027344,
+            "r": 527.2528076171875,
+            "b": 497.1615905761719,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 13616,
+        "char_end": 13668,
+        "page_no": 12,
+        "block_id": "p12_b7",
+        "paragraph_id": "p12_b7",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 509.9361572265625,
+            "r": 299.3388977050781,
+            "b": 521.0415649414062,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 13670,
+        "char_end": 13722,
+        "page_no": 12,
+        "block_id": "p12_b8",
+        "paragraph_id": "p12_b8",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 534.2962036132812,
+            "r": 302.098876953125,
+            "b": 545.401611328125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000023",
+    "doc_id": "ecma404_json",
+    "text": "\\/ represents the solidus character (U+002F). \\b represents the backspace character (U+0008). \\f represents the form feed character (U+000C). \\n represents the line feed character (U+000A). \\r represents the carriage return character (U+000D). \\t represents the character tabulation character (U+0009).",
+    "sentences": [
+      "\\/ represents the solidus character (U+002F).",
+      "\\b represents the backspace character (U+0008).",
+      "\\f represents the form feed character (U+000C).",
+      "\\n represents the line feed character (U+000A).",
+      "\\r represents the carriage return character (U+000D).",
+      "\\t represents the character tabulation character (U+0009)."
+    ],
+    "tokens": [
+      "\\/",
+      "represents",
+      "the",
+      "solidus",
+      "character",
+      "(",
+      "U+002F",
+      ")",
+      ".",
+      "\\b",
+      "represents",
+      "the",
+      "backspace",
+      "character",
+      "(",
+      "U+0008",
+      ")",
+      ".",
+      "\\f",
+      "represents",
+      "the",
+      "form",
+      "feed",
+      "character",
+      "(",
+      "U+000C",
+      ")",
+      ".",
+      "\\n",
+      "represents",
+      "the",
+      "line",
+      "feed",
+      "character",
+      "(",
+      "U+000A",
+      ")",
+      ".",
+      "\\r",
+      "represents",
+      "the",
+      "carriage",
+      "return",
+      "character",
+      "(",
+      "U+000D",
+      ")",
+      ".",
+      "\\t",
+      "represents",
+      "the",
+      "character",
+      "tabulation",
+      "character",
+      "(",
+      "U+0009",
+      ")",
+      "."
+    ],
+    "char_start": 13725,
+    "char_end": 14027,
+    "source_char_start": 13725,
+    "source_char_end": 14027,
+    "page_start": 12,
+    "page_end": 12,
+    "pages": [
+      12
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 13725,
+        "char_end": 13770,
+        "page_no": 12,
+        "block_id": "p12_b9",
+        "paragraph_id": "p12_b9",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 558.6561889648438,
+            "r": 267.53887939453125,
+            "b": 569.7615966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 13772,
+        "char_end": 13819,
+        "page_no": 12,
+        "block_id": "p12_b10",
+        "paragraph_id": "p12_b10",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 583.0462036132812,
+            "r": 280.9788818359375,
+            "b": 594.151611328125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 13821,
+        "char_end": 13868,
+        "page_no": 12,
+        "block_id": "p12_b11",
+        "paragraph_id": "p12_b11",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 607.4061889648438,
+            "r": 277.1388854980469,
+            "b": 618.5115966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 13870,
+        "char_end": 13917,
+        "page_no": 12,
+        "block_id": "p12_b12",
+        "paragraph_id": "p12_b12",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 631.7661743164062,
+            "r": 272.098876953125,
+            "b": 642.87158203125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 13919,
+        "char_end": 13972,
+        "page_no": 12,
+        "block_id": "p12_b13",
+        "paragraph_id": "p12_b13",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 656.2462158203125,
+            "r": 299.8188781738281,
+            "b": 667.3516235351562,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 13974,
+        "char_end": 14027,
+        "page_no": 12,
+        "block_id": "p12_b14",
+        "paragraph_id": "p12_b14",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 56.880001068115234,
+            "t": 680.606201171875,
+            "r": 321.0788879394531,
+            "b": 691.7116088867188,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000024",
+    "doc_id": "ecma404_json",
+    "text": "So, for example, a string containing only a single reverse solidus character may be represented as \"\\\\\". Any code point may be represented as a hexadecimal escape sequence. The meaning of such a hexadecimal \nnumber is determined by ISO/IEC 10646.",
+    "sentences": [
+      "So, for example, a string containing only a single reverse solidus character may be represented as \"\\\\\".",
+      "Any code point may be represented as a hexadecimal escape sequence.",
+      "The meaning of such a hexadecimal \nnumber is determined by ISO/IEC 10646."
+    ],
+    "tokens": [
+      "So",
+      ",",
+      "for",
+      "example",
+      ",",
+      "a",
+      "string",
+      "containing",
+      "only",
+      "a",
+      "single",
+      "reverse",
+      "solidus",
+      "character",
+      "may",
+      "be",
+      "represented",
+      "as",
+      "\"",
+      "\\\\",
+      "\"",
+      ".",
+      "Any",
+      "code",
+      "point",
+      "may",
+      "be",
+      "represented",
+      "as",
+      "a",
+      "hexadecimal",
+      "escape",
+      "sequence",
+      ".",
+      "The",
+      "meaning",
+      "of",
+      "such",
+      "a",
+      "hexadecimal",
+      "\n",
+      "number",
+      "is",
+      "determined",
+      "by",
+      "ISO",
+      "/",
+      "IEC",
+      "10646",
+      "."
+    ],
+    "char_start": 14034,
+    "char_end": 14280,
+    "source_char_start": 14034,
+    "source_char_end": 14280,
+    "page_start": 12,
+    "page_end": 12,
+    "pages": [
+      12
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 14034,
+        "char_end": 14138,
+        "page_no": 12,
+        "block_id": "p12_b15",
+        "paragraph_id": "p12_b15",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 704.9661865234375,
+            "r": 503.868896484375,
+            "b": 716.0715942382812,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 14140,
+        "char_end": 14280,
+        "page_no": 12,
+        "block_id": "p12_b16",
+        "paragraph_id": "p12_b16",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 728.9862060546875,
+            "r": 527.1336669921875,
+            "b": 775.0115966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000025",
+    "doc_id": "ecma404_json",
+    "text": "If the code point is in the Basic Multilingual Plane (U+0000 through \nU+FFFF), then it may be represented as a six-character sequence: a reverse solidus, followed by the \nlowercase letter u, followed by four hexadecimal digits that encode the code point.",
+    "sentences": [
+      "If the code point is in the Basic Multilingual Plane (U+0000 through \nU+FFFF), then it may be represented as a six-character sequence: a reverse solidus, followed by the \nlowercase letter u, followed by four hexadecimal digits that encode the code point."
+    ],
+    "tokens": [
+      "If",
+      "the",
+      "code",
+      "point",
+      "is",
+      "in",
+      "the",
+      "Basic",
+      "Multilingual",
+      "Plane",
+      "(",
+      "U+0000",
+      "through",
+      "\n",
+      "U+FFFF",
+      ")",
+      ",",
+      "then",
+      "it",
+      "may",
+      "be",
+      "represented",
+      "as",
+      "a",
+      "six",
+      "-",
+      "character",
+      "sequence",
+      ":",
+      "a",
+      "reverse",
+      "solidus",
+      ",",
+      "followed",
+      "by",
+      "the",
+      "\n",
+      "lowercase",
+      "letter",
+      "u",
+      ",",
+      "followed",
+      "by",
+      "four",
+      "hexadecimal",
+      "digits",
+      "that",
+      "encode",
+      "the",
+      "code",
+      "point",
+      "."
+    ],
+    "char_start": 14282,
+    "char_end": 14536,
+    "source_char_start": 14282,
+    "source_char_end": 14536,
+    "page_start": 12,
+    "page_end": 12,
+    "pages": [
+      12
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 14282,
+        "char_end": 14536,
+        "page_no": 12,
+        "block_id": "p12_b16",
+        "paragraph_id": "p12_b16",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 728.9862060546875,
+            "r": 527.1336669921875,
+            "b": 775.0115966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000026",
+    "doc_id": "ecma404_json",
+    "text": "Hexadecimal digits can be\n\n\u00a9 Ecma International 2017 \n \n5\n\ndigits (U+0030 through U+0039) or the hexadecimal letters A through F in uppercase (U+0041 through \nU+0046) or lowercase (U+0061 through U+0066). So, for example, a string containing only a single reverse \nsolidus character may be represented as \"\\u005C\".",
+    "sentences": [
+      "Hexadecimal digits can be\n\n\u00a9 Ecma International 2017 \n \n5\n\ndigits (U+0030 through U+0039) or the hexadecimal letters A through F in uppercase (U+0041 through \nU+0046) or lowercase (U+0061 through U+0066).",
+      "So, for example, a string containing only a single reverse \nsolidus character may be represented as \"\\u005C\"."
+    ],
+    "tokens": [
+      "Hexadecimal",
+      "digits",
+      "can",
+      "be",
+      "\n\n",
+      "\u00a9",
+      "Ecma",
+      "International",
+      "2017",
+      "\n \n",
+      "5",
+      "\n\n",
+      "digits",
+      "(",
+      "U+0030",
+      "through",
+      "U+0039",
+      ")",
+      "or",
+      "the",
+      "hexadecimal",
+      "letters",
+      "A",
+      "through",
+      "F",
+      "in",
+      "uppercase",
+      "(",
+      "U+0041",
+      "through",
+      "\n",
+      "U+0046",
+      ")",
+      "or",
+      "lowercase",
+      "(",
+      "U+0061",
+      "through",
+      "U+0066",
+      ")",
+      ".",
+      "So",
+      ",",
+      "for",
+      "example",
+      ",",
+      "a",
+      "string",
+      "containing",
+      "only",
+      "a",
+      "single",
+      "reverse",
+      "\n",
+      "solidus",
+      "character",
+      "may",
+      "be",
+      "represented",
+      "as",
+      "\"",
+      "\\u005C",
+      "\"",
+      "."
+    ],
+    "char_start": 14537,
+    "char_end": 14851,
+    "source_char_start": 14537,
+    "source_char_end": 14851,
+    "page_start": 12,
+    "page_end": 13,
+    "pages": [
+      12,
+      13
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 14537,
+        "char_end": 14562,
+        "page_no": 12,
+        "block_id": "p12_b16",
+        "paragraph_id": "p12_b16",
+        "bboxes": [
+          {
+            "page_no": 12,
+            "l": 36.84000015258789,
+            "t": 728.9862060546875,
+            "r": 527.1336669921875,
+            "b": 775.0115966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 14564,
+        "char_end": 14594,
+        "page_no": 13,
+        "block_id": "p13_b1",
+        "paragraph_id": "p13_b1",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 804.6887817382812,
+            "r": 558.5982666015625,
+            "b": 816.9984130859375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 14596,
+        "char_end": 14851,
+        "page_no": 13,
+        "block_id": "p13_b3",
+        "paragraph_id": "p13_b3",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 85.68621063232422,
+            "r": 561.0355834960938,
+            "b": 120.67155456542969,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000027",
+    "doc_id": "ecma404_json",
+    "text": "The following four cases all produce the same result:\n\n\"\\u002F\"\n\n\"\\u002f\"\n\n\"\\/\"\n\n\"/\"\n\nTo escape a code point that is not in the Basic Multilingual Plane, the character may be represented as a \ntwelve-character sequence, encoding the UTF-16 surrogate pair corresponding to the code point. So for \nexample, a string containing only the G clef character (U+1D11E) may be represented as \"\\uD834\\uDD1E\".",
+    "sentences": [
+      "The following four cases all produce the same result:\n\n\"\\u002F\"\n\n\"\\u002f\"\n\n\"\\/\"\n\n\"/\"\n\nTo escape a code point that is not in the Basic Multilingual Plane, the character may be represented as a \ntwelve-character sequence, encoding the UTF-16 surrogate pair corresponding to the code point.",
+      "So for \nexample, a string containing only the G clef character (U+1D11E) may be represented as \"\\uD834\\uDD1E\"."
+    ],
+    "tokens": [
+      "The",
+      "following",
+      "four",
+      "cases",
+      "all",
+      "produce",
+      "the",
+      "same",
+      "result",
+      ":",
+      "\n\n",
+      "\"",
+      "\\u002F",
+      "\"",
+      "\n\n",
+      "\"",
+      "\\u002f",
+      "\"",
+      "\n\n",
+      "\"",
+      "\\/",
+      "\"",
+      "\n\n",
+      "\"",
+      "/",
+      "\"",
+      "\n\n",
+      "To",
+      "escape",
+      "a",
+      "code",
+      "point",
+      "that",
+      "is",
+      "not",
+      "in",
+      "the",
+      "Basic",
+      "Multilingual",
+      "Plane",
+      ",",
+      "the",
+      "character",
+      "may",
+      "be",
+      "represented",
+      "as",
+      "a",
+      "\n",
+      "twelve",
+      "-",
+      "character",
+      "sequence",
+      ",",
+      "encoding",
+      "the",
+      "UTF-16",
+      "surrogate",
+      "pair",
+      "corresponding",
+      "to",
+      "the",
+      "code",
+      "point",
+      ".",
+      "So",
+      "for",
+      "\n",
+      "example",
+      ",",
+      "a",
+      "string",
+      "containing",
+      "only",
+      "the",
+      "G",
+      "clef",
+      "character",
+      "(",
+      "U+1D11E",
+      ")",
+      "may",
+      "be",
+      "represented",
+      "as",
+      "\"",
+      "\\uD834\\uDD1E",
+      "\"",
+      "."
+    ],
+    "char_start": 14853,
+    "char_end": 15251,
+    "source_char_start": 14853,
+    "source_char_end": 15251,
+    "page_start": 13,
+    "page_end": 13,
+    "pages": [
+      13
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 14853,
+        "char_end": 14906,
+        "page_no": 13,
+        "block_id": "p13_b4",
+        "paragraph_id": "p13_b4",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 133.566162109375,
+            "r": 307.0188903808594,
+            "b": 144.6715545654297,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 14908,
+        "char_end": 14916,
+        "page_no": 13,
+        "block_id": "p13_b5",
+        "paragraph_id": "p13_b5",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 90.86399841308594,
+            "t": 157.28297424316406,
+            "r": 139.45999145507812,
+            "b": 166.4719696044922,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 14918,
+        "char_end": 14926,
+        "page_no": 13,
+        "block_id": "p13_b6",
+        "paragraph_id": "p13_b6",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 90.86399841308594,
+            "t": 179.8429718017578,
+            "r": 139.45999145507812,
+            "b": 189.03196716308594,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 14928,
+        "char_end": 14932,
+        "page_no": 13,
+        "block_id": "p13_b7",
+        "paragraph_id": "p13_b7",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 90.86399841308594,
+            "t": 202.28297424316406,
+            "r": 117.86000061035156,
+            "b": 211.4719696044922,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 14934,
+        "char_end": 14937,
+        "page_no": 13,
+        "block_id": "p13_b8",
+        "paragraph_id": "p13_b8",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 90.86399841308594,
+            "t": 224.8429718017578,
+            "r": 112.45999908447266,
+            "b": 234.03196716308594,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 14939,
+        "char_end": 15251,
+        "page_no": 13,
+        "block_id": "p13_b9",
+        "paragraph_id": "p13_b9",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 247.1162109375,
+            "r": 561.2288818359375,
+            "b": 305.1416015625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000028",
+    "doc_id": "ecma404_json",
+    "text": "However, whether a processor of JSON texts interprets such a surrogate pair as a single code point or as an \nexplicit surrogate pair is a semantic decision that is determined by the specific processor. Note that the JSON grammar permits code points for which Unicode does not currently provide character \nassignments.",
+    "sentences": [
+      "However, whether a processor of JSON texts interprets such a surrogate pair as a single code point or as an \nexplicit surrogate pair is a semantic decision that is determined by the specific processor.",
+      "Note that the JSON grammar permits code points for which Unicode does not currently provide character \nassignments."
+    ],
+    "tokens": [
+      "However",
+      ",",
+      "whether",
+      "a",
+      "processor",
+      "of",
+      "JSON",
+      "texts",
+      "interprets",
+      "such",
+      "a",
+      "surrogate",
+      "pair",
+      "as",
+      "a",
+      "single",
+      "code",
+      "point",
+      "or",
+      "as",
+      "an",
+      "\n",
+      "explicit",
+      "surrogate",
+      "pair",
+      "is",
+      "a",
+      "semantic",
+      "decision",
+      "that",
+      "is",
+      "determined",
+      "by",
+      "the",
+      "specific",
+      "processor",
+      ".",
+      "Note",
+      "that",
+      "the",
+      "JSON",
+      "grammar",
+      "permits",
+      "code",
+      "points",
+      "for",
+      "which",
+      "Unicode",
+      "does",
+      "not",
+      "currently",
+      "provide",
+      "character",
+      "\n",
+      "assignments",
+      "."
+    ],
+    "char_start": 15253,
+    "char_end": 15570,
+    "source_char_start": 15253,
+    "source_char_end": 15570,
+    "page_start": 13,
+    "page_end": 13,
+    "pages": [
+      13
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 15253,
+        "char_end": 15454,
+        "page_no": 13,
+        "block_id": "p13_b9",
+        "paragraph_id": "p13_b9",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 247.1162109375,
+            "r": 561.2288818359375,
+            "b": 305.1416015625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15456,
+        "char_end": 15570,
+        "page_no": 13,
+        "block_id": "p13_b10",
+        "paragraph_id": "p13_b10",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 70.8239974975586,
+            "t": 317.55621337890625,
+            "r": 561.166015625,
+            "b": 340.06158447265625,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000029",
+    "doc_id": "ecma404_json",
+    "text": "string\n\n\"\nAny code point except \" or \\\n\nor control character\n\n\\\n\"\n\n\\\n\nquotation mark\n\nreverse solidus\n\n/\nsolidus\n\nb\nbackspace\n\nform feed\n\nline feed\n\ncarriage return\n\ncharacter tabulation\n\n4 hexadecimal digits\n\nf\n\nn\n\nr\n\nt\n\nu\n\n\"\n\nFigure 5 \u2014 string\n\n6 \n \n\u00a9 Ecma International 2017\n\n\u00a9 Ecma International 2017 \n \n7\n\nBibliography [1] \nECMA-262, ECMAScript\u00ae Language Specification",
+    "sentences": [
+      "string\n\n\"\nAny code point except \" or \\\n\nor control character\n\n\\\n\"\n\n\\\n\nquotation mark\n\nreverse solidus\n\n/\nsolidus\n\nb\nbackspace\n\nform feed\n\nline feed\n\ncarriage return\n\ncharacter tabulation\n\n4 hexadecimal digits\n\nf\n\nn\n\nr\n\nt\n\nu\n\n\"\n\nFigure 5 \u2014 string\n\n6 \n \n\u00a9 Ecma International 2017\n\n\u00a9 Ecma International 2017 \n \n7\n\nBibliography",
+      "[1] \nECMA-262, ECMAScript\u00ae Language Specification"
+    ],
+    "tokens": [
+      "string",
+      "\n\n",
+      "\"",
+      "\n",
+      "Any",
+      "code",
+      "point",
+      "except",
+      "\"",
+      "or",
+      "\\",
+      "\n\n",
+      "or",
+      "control",
+      "character",
+      "\n\n",
+      "\\",
+      "\n",
+      "\"",
+      "\n\n",
+      "\\",
+      "\n\n",
+      "quotation",
+      "mark",
+      "\n\n",
+      "reverse",
+      "solidus",
+      "\n\n",
+      "/",
+      "\n",
+      "solidus",
+      "\n\n",
+      "b",
+      "\n",
+      "backspace",
+      "\n\n",
+      "form",
+      "feed",
+      "\n\n",
+      "line",
+      "feed",
+      "\n\n",
+      "carriage",
+      "return",
+      "\n\n",
+      "character",
+      "tabulation",
+      "\n\n",
+      "4",
+      "hexadecimal",
+      "digits",
+      "\n\n",
+      "f",
+      "\n\n",
+      "n",
+      "\n\n",
+      "r",
+      "\n\n",
+      "t",
+      "\n\n",
+      "u",
+      "\n\n",
+      "\"",
+      "\n\n",
+      "Figure",
+      "5",
+      "\u2014",
+      "string",
+      "\n\n",
+      "6",
+      "\n \n",
+      "\u00a9",
+      "Ecma",
+      "International",
+      "2017",
+      "\n\n",
+      "\u00a9",
+      "Ecma",
+      "International",
+      "2017",
+      "\n \n",
+      "7",
+      "\n\n",
+      "Bibliography",
+      "[",
+      "1",
+      "]",
+      "\n",
+      "ECMA-262",
+      ",",
+      "ECMAScript",
+      "\u00ae",
+      "Language",
+      "Specification"
+    ],
+    "char_start": 15573,
+    "char_end": 15946,
+    "source_char_start": 15573,
+    "source_char_end": 15946,
+    "page_start": 13,
+    "page_end": 15,
+    "pages": [
+      13,
+      14,
+      15
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 15573,
+        "char_end": 15579,
+        "page_no": 13,
+        "block_id": "p13_b12",
+        "paragraph_id": "p13_b12",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 76.12825012207031,
+            "t": 394.2364196777344,
+            "r": 119.29409790039062,
+            "b": 409.9609375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15581,
+        "char_end": 15611,
+        "page_no": 13,
+        "block_id": "p13_b13",
+        "paragraph_id": "p13_b13",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 114.31157684326172,
+            "t": 414.0663146972656,
+            "r": 425.5924377441406,
+            "b": 436.87054443359375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15613,
+        "char_end": 15633,
+        "page_no": 13,
+        "block_id": "p13_b14",
+        "paragraph_id": "p13_b14",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 245.48696899414062,
+            "t": 428.50714111328125,
+            "r": 386.5003967285156,
+            "b": 444.2316589355469,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15635,
+        "char_end": 15638,
+        "page_no": 13,
+        "block_id": "p13_b15",
+        "paragraph_id": "p13_b15",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 186.18511962890625,
+            "t": 469.3006896972656,
+            "r": 247.2820281982422,
+            "b": 481.77972412109375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15640,
+        "char_end": 15641,
+        "page_no": 13,
+        "block_id": "p13_b16",
+        "paragraph_id": "p13_b16",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 240.09402465820312,
+            "t": 496.2462463378906,
+            "r": 247.2820281982422,
+            "b": 508.72528076171875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15643,
+        "char_end": 15657,
+        "page_no": 13,
+        "block_id": "p13_b17",
+        "paragraph_id": "p13_b17",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 264.8143005371094,
+            "t": 457.10931396484375,
+            "r": 369.899169921875,
+            "b": 472.8338317871094,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15659,
+        "char_end": 15674,
+        "page_no": 13,
+        "block_id": "p13_b18",
+        "paragraph_id": "p13_b18",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 264.8143005371094,
+            "t": 484.0548095703125,
+            "r": 369.8834228515625,
+            "b": 499.7793273925781,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15676,
+        "char_end": 15685,
+        "page_no": 13,
+        "block_id": "p13_b19",
+        "paragraph_id": "p13_b19",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 240.09402465820312,
+            "t": 511.0003662109375,
+            "r": 316.64556884765625,
+            "b": 535.6708374023438,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15687,
+        "char_end": 15698,
+        "page_no": 13,
+        "block_id": "p13_b20",
+        "paragraph_id": "p13_b20",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 240.09402465820312,
+            "t": 537.9458618164062,
+            "r": 341.3009033203125,
+            "b": 562.6163330078125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15700,
+        "char_end": 15709,
+        "page_no": 13,
+        "block_id": "p13_b21",
+        "paragraph_id": "p13_b21",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 264.8143005371094,
+            "t": 564.8914184570312,
+            "r": 332.6367492675781,
+            "b": 580.615966796875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15711,
+        "char_end": 15720,
+        "page_no": 13,
+        "block_id": "p13_b22",
+        "paragraph_id": "p13_b22",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 264.8143005371094,
+            "t": 591.8369750976562,
+            "r": 326.64666748046875,
+            "b": 607.5615234375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15722,
+        "char_end": 15737,
+        "page_no": 13,
+        "block_id": "p13_b23",
+        "paragraph_id": "p13_b23",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 264.8143005371094,
+            "t": 618.7774658203125,
+            "r": 368.5535888671875,
+            "b": 634.5020141601562,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15739,
+        "char_end": 15759,
+        "page_no": 13,
+        "block_id": "p13_b24",
+        "paragraph_id": "p13_b24",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 264.8143005371094,
+            "t": 645.7230224609375,
+            "r": 404.50579833984375,
+            "b": 661.4475708007812,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15761,
+        "char_end": 15781,
+        "page_no": 13,
+        "block_id": "p13_b25",
+        "paragraph_id": "p13_b25",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 273.4496765136719,
+            "t": 681.650390625,
+            "r": 415.158935546875,
+            "b": 697.3749389648438,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15783,
+        "char_end": 15784,
+        "page_no": 13,
+        "block_id": "p13_b26",
+        "paragraph_id": "p13_b26",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 240.09402465820312,
+            "t": 577.0828247070312,
+            "r": 247.2820281982422,
+            "b": 589.5618286132812,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15786,
+        "char_end": 15787,
+        "page_no": 13,
+        "block_id": "p13_b27",
+        "paragraph_id": "p13_b27",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 240.09402465820312,
+            "t": 604.0283813476562,
+            "r": 247.2820281982422,
+            "b": 616.5073852539062,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15789,
+        "char_end": 15790,
+        "page_no": 13,
+        "block_id": "p13_b28",
+        "paragraph_id": "p13_b28",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 240.09402465820312,
+            "t": 630.9689331054688,
+            "r": 247.2820281982422,
+            "b": 643.4479370117188,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15792,
+        "char_end": 15793,
+        "page_no": 13,
+        "block_id": "p13_b29",
+        "paragraph_id": "p13_b29",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 240.09402465820312,
+            "t": 657.9144287109375,
+            "r": 247.2820281982422,
+            "b": 670.3934326171875,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15795,
+        "char_end": 15796,
+        "page_no": 13,
+        "block_id": "p13_b30",
+        "paragraph_id": "p13_b30",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 240.09402465820312,
+            "t": 684.8599853515625,
+            "r": 247.2820281982422,
+            "b": 697.3389892578125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15798,
+        "char_end": 15799,
+        "page_no": 13,
+        "block_id": "p13_b31",
+        "paragraph_id": "p13_b31",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 491.66888427734375,
+            "t": 424.3915100097656,
+            "r": 498.85687255859375,
+            "b": 436.87054443359375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15801,
+        "char_end": 15818,
+        "page_no": 13,
+        "block_id": "p13_b33",
+        "paragraph_id": "p13_b33",
+        "bboxes": [
+          {
+            "page_no": 13,
+            "l": 273.5299987792969,
+            "t": 738.2261962890625,
+            "r": 358.5188903808594,
+            "b": 749.3316040039062,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15820,
+        "char_end": 15850,
+        "page_no": 14,
+        "block_id": "p14_b1",
+        "paragraph_id": "p14_b1",
+        "bboxes": [
+          {
+            "page_no": 14,
+            "l": 36.84000015258789,
+            "t": 804.6887817382812,
+            "r": 524.7702026367188,
+            "b": 827.6915893554688,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15852,
+        "char_end": 15882,
+        "page_no": 15,
+        "block_id": "p15_b1",
+        "paragraph_id": "p15_b1",
+        "bboxes": [
+          {
+            "page_no": 15,
+            "l": 70.8239974975586,
+            "t": 804.6887817382812,
+            "r": 558.5982666015625,
+            "b": 816.9984130859375,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15884,
+        "char_end": 15896,
+        "page_no": 15,
+        "block_id": "p15_b3",
+        "paragraph_id": "p15_b3",
+        "bboxes": [
+          {
+            "page_no": 15,
+            "l": 271.8500061035156,
+            "t": 84.7537612915039,
+            "r": 361.3330993652344,
+            "b": 100.40836334228516,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 15898,
+        "char_end": 15946,
+        "page_no": 15,
+        "block_id": "p15_b4",
+        "paragraph_id": "p15_b4",
+        "bboxes": [
+          {
+            "page_no": 15,
+            "l": 70.8239974975586,
+            "t": 138.7261962890625,
+            "r": 329.598876953125,
+            "b": 149.8315887451172,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chunk_id": "ecma404_json_c000030",
+    "doc_id": "ecma404_json",
+    "text": "[2] \nIETF RFC 8259 The JavaScript Object Notation (JSON) Data Interchange Format\n\n\u00a9 Ecma International 2017",
+    "sentences": [
+      "[2] \nIETF RFC 8259 The JavaScript Object Notation (JSON) Data Interchange Format\n\n\u00a9 Ecma International 2017"
+    ],
+    "tokens": [
+      "[",
+      "2",
+      "]",
+      "\n",
+      "IETF",
+      "RFC",
+      "8259",
+      "The",
+      "JavaScript",
+      "Object",
+      "Notation",
+      "(",
+      "JSON",
+      ")",
+      "Data",
+      "Interchange",
+      "Format",
+      "\n\n",
+      "\u00a9",
+      "Ecma",
+      "International",
+      "2017"
+    ],
+    "char_start": 15949,
+    "char_end": 16056,
+    "source_char_start": 15949,
+    "source_char_end": 16056,
+    "page_start": 15,
+    "page_end": 16,
+    "pages": [
+      15,
+      16
+    ],
+    "source_path": "data/test_corpus_allpdf/ecma404_json.pdf",
+    "source_sha1": "760a6f77c38172f4de333412292eaed092f33852592ca0cce9b7535a6e415fcf",
+    "source_units": [
+      {
+        "char_start": 15949,
+        "char_end": 16029,
+        "page_no": 15,
+        "block_id": "p15_b5",
+        "paragraph_id": "p15_b5",
+        "bboxes": [
+          {
+            "page_no": 15,
+            "l": 70.8239974975586,
+            "t": 162.2462158203125,
+            "r": 467.868896484375,
+            "b": 173.3516082763672,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      },
+      {
+        "char_start": 16031,
+        "char_end": 16056,
+        "page_no": 16,
+        "block_id": "p16_b1",
+        "paragraph_id": "p16_b1",
+        "bboxes": [
+          {
+            "page_no": 16,
+            "l": 36.119998931884766,
+            "t": 807.40380859375,
+            "r": 133.1751251220703,
+            "b": 816.368408203125,
+            "coord_origin": "TOPLEFT"
+          }
+        ]
+      }
+    ]
+  }
+]

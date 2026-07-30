@@ -1,0 +1,416 @@
+{
+ "pairs": [
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000027",
+   "fact_b": "ecma404_json_F000070",
+   "bridge_entity": "IEC 10646",
+   "bridge_norm": "iec 10646",
+   "bridge_type": "STANDARD_REF",
+   "pages": [
+    9,
+    12
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0001"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000073",
+   "fact_b": "ecma404_json_F000074",
+   "bridge_entity": "character may be represented",
+   "bridge_norm": "character may be represented",
+   "bridge_type": "TERM",
+   "pages": [
+    12,
+    13
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0002"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000022",
+   "fact_b": "ecma404_json_F000076",
+   "bridge_entity": "processor of JSON texts",
+   "bridge_norm": "processor of json text",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    13
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0003"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000030",
+   "fact_b": "ecma404_json_F000077",
+   "bridge_entity": "JSON grammar",
+   "bridge_norm": "json grammar",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    13
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0004"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000016",
+   "fact_b": "ecma404_json_F000047",
+   "bridge_entity": "JSON syntax",
+   "bridge_norm": "json syntax",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    11
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0005"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000016",
+   "fact_b": "ecma404_json_F000051",
+   "bridge_entity": "JSON syntax",
+   "bridge_norm": "json syntax",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    11
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0006"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000060",
+   "fact_b": "ecma404_json_F000075",
+   "bridge_entity": "character U",
+   "bridge_norm": "character u",
+   "bridge_type": "TERM",
+   "pages": [
+    12,
+    13
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0007"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000013",
+   "fact_b": "ecma404_json_F000076",
+   "bridge_entity": "JSON texts",
+   "bridge_norm": "json text",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    13
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0008"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000015",
+   "fact_b": "ecma404_json_F000076",
+   "bridge_entity": "JSON texts",
+   "bridge_norm": "json text",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    13
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0009"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000020",
+   "fact_b": "ecma404_json_F000076",
+   "bridge_entity": "JSON texts",
+   "bridge_norm": "json text",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    13
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0010"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000060",
+   "fact_b": "ecma404_json_F000076",
+   "bridge_entity": "code point",
+   "bridge_norm": "code point",
+   "bridge_type": "TERM",
+   "pages": [
+    12,
+    13
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0011"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000071",
+   "fact_b": "ecma404_json_F000076",
+   "bridge_entity": "code point",
+   "bridge_norm": "code point",
+   "bridge_type": "TERM",
+   "pages": [
+    12,
+    13
+   ],
+   "content_jaccard": 0.0,
+   "pair_id": "BP0012"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000016",
+   "fact_b": "ecma404_json_F000076",
+   "bridge_entity": "JSON texts",
+   "bridge_norm": "json text",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    13
+   ],
+   "content_jaccard": 0.042,
+   "pair_id": "BP0013"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000060",
+   "fact_b": "ecma404_json_F000077",
+   "bridge_entity": "code point",
+   "bridge_norm": "code point",
+   "bridge_type": "TERM",
+   "pages": [
+    12,
+    13
+   ],
+   "content_jaccard": 0.042,
+   "pair_id": "BP0014"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000071",
+   "fact_b": "ecma404_json_F000077",
+   "bridge_entity": "code point",
+   "bridge_norm": "code point",
+   "bridge_type": "TERM",
+   "pages": [
+    12,
+    13
+   ],
+   "content_jaccard": 0.042,
+   "pair_id": "BP0015"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000015",
+   "fact_b": "ecma404_json_F000047",
+   "bridge_entity": "does not",
+   "bridge_norm": "does not",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    11
+   ],
+   "content_jaccard": 0.042,
+   "pair_id": "BP0016"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000071",
+   "fact_b": "ecma404_json_F000075",
+   "bridge_entity": "may be represented",
+   "bridge_norm": "may be represented",
+   "bridge_type": "TERM",
+   "pages": [
+    12,
+    13
+   ],
+   "content_jaccard": 0.045,
+   "pair_id": "BP0017"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000047",
+   "fact_b": "ecma404_json_F000077",
+   "bridge_entity": "does not",
+   "bridge_norm": "does not",
+   "bridge_type": "TERM",
+   "pages": [
+    11,
+    13
+   ],
+   "content_jaccard": 0.048,
+   "pair_id": "BP0018"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000015",
+   "fact_b": "ecma404_json_F000077",
+   "bridge_entity": "does not",
+   "bridge_norm": "does not",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    13
+   ],
+   "content_jaccard": 0.05,
+   "pair_id": "BP0019"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000015",
+   "fact_b": "ecma404_json_F000051",
+   "bridge_entity": "does not define",
+   "bridge_norm": "does not define",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    11
+   ],
+   "content_jaccard": 0.062,
+   "pair_id": "BP0020"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000035",
+   "fact_b": "ecma404_json_F000047",
+   "bridge_entity": "JSON syntax",
+   "bridge_norm": "json syntax",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    11
+   ],
+   "content_jaccard": 0.067,
+   "pair_id": "BP0021"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000051",
+   "fact_b": "ecma404_json_F000077",
+   "bridge_entity": "does not",
+   "bridge_norm": "does not",
+   "bridge_type": "TERM",
+   "pages": [
+    11,
+    13
+   ],
+   "content_jaccard": 0.067,
+   "pair_id": "BP0022"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000060",
+   "fact_b": "ecma404_json_F000074",
+   "bridge_entity": "code point",
+   "bridge_norm": "code point",
+   "bridge_type": "TERM",
+   "pages": [
+    12,
+    13
+   ],
+   "content_jaccard": 0.094,
+   "pair_id": "BP0023"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000023",
+   "fact_b": "ecma404_json_F000076",
+   "bridge_entity": "JSON texts",
+   "bridge_norm": "json text",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    13
+   ],
+   "content_jaccard": 0.105,
+   "pair_id": "BP0024"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000035",
+   "fact_b": "ecma404_json_F000051",
+   "bridge_entity": "JSON syntax",
+   "bridge_norm": "json syntax",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    11
+   ],
+   "content_jaccard": 0.111,
+   "pair_id": "BP0025"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000029",
+   "fact_b": "ecma404_json_F000048",
+   "bridge_entity": "Data Interchange",
+   "bridge_norm": "data interchange",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    11
+   ],
+   "content_jaccard": 0.154,
+   "pair_id": "BP0026"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000071",
+   "fact_b": "ecma404_json_F000074",
+   "bridge_entity": "Basic Multilingual Plane",
+   "bridge_norm": "basic multilingual plane",
+   "bridge_type": "TERM",
+   "pages": [
+    12,
+    13
+   ],
+   "content_jaccard": 0.222,
+   "pair_id": "BP0027"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000018",
+   "fact_b": "ecma404_json_F000048",
+   "bridge_entity": "Defining specific",
+   "bridge_norm": "defining specific",
+   "bridge_type": "TERM",
+   "pages": [
+    9,
+    11
+   ],
+   "content_jaccard": 0.25,
+   "pair_id": "BP0028"
+  },
+  {
+   "doc": "ecma404_json_full",
+   "fact_a": "ecma404_json_F000073",
+   "fact_b": "ecma404_json_F000075",
+   "bridge_entity": "string containing only",
+   "bridge_norm": "string containing only",
+   "bridge_type": "TERM",
+   "pages": [
+    12,
+    13
+   ],
+   "content_jaccard": 0.333,
+   "pair_id": "BP0029"
+  }
+ ],
+ "stats": {
+  "candidate_pairs": 35,
+  "dropped_bridge_missing": 0,
+  "dropped_duplicate": 0,
+  "verified_pairs": 29
+ }
+}

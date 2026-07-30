@@ -1,0 +1,864 @@
+[
+ {
+  "fact_id": "ecma404_json_F000027",
+  "doc": "ecma404_json_full",
+  "text": "ISO/IEC 10646, Information Technology – Universal Coded Character Set (UCS)",
+  "canonical_form": "ISO/IEC 10646, Information Technology – Universal Coded Character Set (UCS) is a standard.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000011",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 567.80615234375,
+    "r": 430.9989013671875,
+    "b": 578.9115600585938,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 591.326171875,
+    "r": 463.9089050292969,
+    "b": 602.4315795898438,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000022",
+  "doc": "ecma404_json_full",
+  "text": "A conforming processor of JSON texts should not accept any inputs that are not conforming JSON texts.",
+  "canonical_form": "A conforming processor of JSON texts should not accept any inputs that are not conforming JSON texts.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000009",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 435.89617919921875,
+    "r": 561.2134399414062,
+    "b": 470.469970703125,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000020",
+  "doc": "ecma404_json_full",
+  "text": "For example, ECMA-262 defines mappings between valid JSON texts and ECMAScript’s runtime data structures.",
+  "canonical_form": "For example, ECMA-262 defines mappings between valid JSON texts and ECMAScript’s runtime data structures.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000009",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 246.39617919921875,
+    "r": 561.20947265625,
+    "b": 349.5415954589844,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000071",
+  "doc": "ecma404_json_full",
+  "text": "If the code point is in the Basic Multilingual Plane (U+0000 through U+FFFF), then it may be represented as a six-character sequence: a reverse solidus, followed by the lowercase letter u, followed by four hexadecimal digits that encode the code point.",
+  "canonical_form": "If the code point is in the Basic Multilingual Plane (U+0000 through U+FFFF), it may be represented as a six-character sequence: a reverse solidus, followed by the lowercase letter u, followed by four hexadecimal digits that encode the code point.",
+  "page_start": 12,
+  "chunk_id": "ecma404_json_c000025",
+  "bboxes": [
+   {
+    "page_no": 12,
+    "l": 36.84000015258789,
+    "t": 728.9862060546875,
+    "r": 527.1336669921875,
+    "b": 775.0115966796875,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000073",
+  "doc": "ecma404_json_full",
+  "text": "So, for example, a string containing only a single reverse solidus character may be represented as \"\\u005C\".",
+  "canonical_form": "A string containing only a single reverse solidus character may be represented as \"\\u005C\".",
+  "page_start": 12,
+  "chunk_id": "ecma404_json_c000026",
+  "bboxes": [
+   {
+    "page_no": 12,
+    "l": 36.84000015258789,
+    "t": 728.9862060546875,
+    "r": 527.1336669921875,
+    "b": 775.0115966796875,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000023",
+  "doc": "ecma404_json_full",
+  "text": "A conforming processor may impose semantic restrictions that limit the set of conforming JSON texts that it will process.",
+  "canonical_form": "A conforming processor may impose semantic restrictions that limit the set of conforming JSON texts that it will process.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000010",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 435.89617919921875,
+    "r": 561.2134399414062,
+    "b": 470.469970703125,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000077",
+  "doc": "ecma404_json_full",
+  "text": "Note that the JSON grammar permits code points for which Unicode does not currently provide character assignments.",
+  "canonical_form": "The JSON grammar permits code points for which Unicode does not currently provide character assignments.",
+  "page_start": 13,
+  "chunk_id": "ecma404_json_c000028",
+  "bboxes": [
+   {
+    "page_no": 13,
+    "l": 70.8239974975586,
+    "t": 317.55621337890625,
+    "r": 561.166015625,
+    "b": 340.06158447265625,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000076",
+  "doc": "ecma404_json_full",
+  "text": "However, whether a processor of JSON texts interprets such a surrogate pair as a single code point or as an explicit surrogate pair is a semantic decision that is determined by the specific processor.",
+  "canonical_form": "Whether a processor of JSON texts interprets such a surrogate pair as a single code point or as an explicit surrogate pair is a semantic decision determined by the specific processor.",
+  "page_start": 13,
+  "chunk_id": "ecma404_json_c000028",
+  "bboxes": [
+   {
+    "page_no": 13,
+    "l": 70.8239974975586,
+    "t": 247.1162109375,
+    "r": 561.2288818359375,
+    "b": 305.1416015625,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000019",
+  "doc": "ecma404_json_full",
+  "text": "Similarly, language mappings of JSON can also be independently specified.",
+  "canonical_form": "Language mappings of JSON can be independently specified.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000008",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 246.39617919921875,
+    "r": 561.20947265625,
+    "b": 349.5415954589844,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000017",
+  "doc": "ecma404_json_full",
+  "text": "Meaningful interchange of information using JSON requires agreement among the involved parties on the specific semantics to be applied.",
+  "canonical_form": "Meaningful interchange of information using JSON requires agreement among the involved parties on the specific semantics to be applied.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000008",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 246.39617919921875,
+    "r": 561.20947265625,
+    "b": 349.5415954589844,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000012",
+  "doc": "ecma404_json_full",
+  "text": "JSON defines a small set of structuring rules for the portable representation of structured data.",
+  "canonical_form": "JSON defines a small set of structuring rules for the portable representation of structured data.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000006",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 199.80621337890625,
+    "r": 560.83349609375,
+    "b": 233.9515838623047,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000052",
+  "doc": "ecma404_json_full",
+  "text": "However, the JSON array structure is often used in situations where there is some semantics to the ordering.",
+  "canonical_form": "The JSON array structure is often used in situations where there is some semantics to the ordering.",
+  "page_start": 11,
+  "chunk_id": "ecma404_json_c000019",
+  "bboxes": [
+   {
+    "page_no": 11,
+    "l": 70.8239974975586,
+    "t": 447.53619384765625,
+    "r": 563.9888916015625,
+    "b": 481.8016052246094,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000015",
+  "doc": "ecma404_json_full",
+  "text": "It also intentionally does not define how a valid JSON text might be internalized into the data structures of a programming language.",
+  "canonical_form": "This document intentionally does not define how a valid JSON text might be internalized into the data structures of a programming language.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000007",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 246.39617919921875,
+    "r": 561.20947265625,
+    "b": 349.5415954589844,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000045",
+  "doc": "ecma404_json_full",
+  "text": "A single colon token follows each name, separating the name from the value.",
+  "canonical_form": "A single colon token follows each name, separating the name from the value.",
+  "page_start": 10,
+  "chunk_id": "ecma404_json_c000017",
+  "bboxes": [
+   {
+    "page_no": 10,
+    "l": 259.31622314453125,
+    "t": 575.2156372070312,
+    "r": 298.4947204589844,
+    "b": 590.9171752929688,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 10,
+    "l": 255.6524200439453,
+    "t": 548.3094482421875,
+    "r": 302.16656494140625,
+    "b": 564.010986328125,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 10,
+    "l": 42.17824935913086,
+    "t": 521.4032592773438,
+    "r": 82.70040130615234,
+    "b": 537.1047973632812,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 10,
+    "l": 251.64918518066406,
+    "t": 602.1217651367188,
+    "r": 306.154052734375,
+    "b": 617.8233032226562,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 10,
+    "l": 259.1544189453125,
+    "t": 686.048095703125,
+    "r": 295.099609375,
+    "b": 698.5089111328125,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 10,
+    "l": 262.74835205078125,
+    "t": 712.9546508789062,
+    "r": 291.5042419433594,
+    "b": 725.4154663085938,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 10,
+    "l": 257.319580078125,
+    "t": 629.0309448242188,
+    "r": 300.4854736328125,
+    "b": 644.7324829101562,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 10,
+    "l": 262.74835205078125,
+    "t": 659.1419677734375,
+    "r": 291.5042419433594,
+    "b": 671.602783203125,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 10,
+    "l": 240.64999389648438,
+    "t": 750.4661865234375,
+    "r": 323.4788818359375,
+    "b": 761.5715942382812,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000030",
+  "doc": "ecma404_json_full",
+  "text": "This specification and [RFC 8259] both provide specifications of the JSON grammar but do so using different formalisms.",
+  "canonical_form": "This specification and RFC 8259 provide specifications of the JSON grammar using different formalisms.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000012",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 638.4862060546875,
+    "r": 561.208740234375,
+    "b": 718.5916137695312,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000029",
+  "doc": "ecma404_json_full",
+  "text": "\"The JavaScript Object Notation (JSON) Data Interchange Format\", RFC 8259.",
+  "canonical_form": "The JavaScript Object Notation (JSON) Data Interchange Format is defined in RFC 8259.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000011",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 614.84619140625,
+    "r": 481.42889404296875,
+    "b": 625.9515991210938,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000013",
+  "doc": "ecma404_json_full",
+  "text": "The goal of this specification is only to define the syntax of valid JSON texts.",
+  "canonical_form": "The goal of this specification is only to define the syntax of valid JSON texts.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000006",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 246.39617919921875,
+    "r": 561.20947265625,
+    "b": 349.5415954589844,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000039",
+  "doc": "ecma404_json_full",
+  "text": "The six structural tokens: [ U+005B left square bracket { U+007B left curly bracket ]",
+  "canonical_form": "The six structural tokens are U+005B left square bracket and U+007B left curly bracket.",
+  "page_start": 10,
+  "chunk_id": "ecma404_json_c000015",
+  "bboxes": [
+   {
+    "page_no": 10,
+    "l": 36.84000015258789,
+    "t": 145.92620849609375,
+    "r": 150.74887084960938,
+    "b": 157.03160095214844,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 10,
+    "l": 56.880001068115234,
+    "t": 169.086181640625,
+    "r": 200.57887268066406,
+    "b": 180.1915740966797,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 10,
+    "l": 56.880001068115234,
+    "t": 192.606201171875,
+    "r": 191.6688690185547,
+    "b": 203.7115936279297,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000047",
+  "doc": "ecma404_json_full",
+  "text": "The JSON syntax does not impose any restrictions on the strings used as names, does not require that name strings be unique, and does not assign any significance to the ordering of name/value pairs.",
+  "canonical_form": "The JSON syntax does not impose any restrictions on the strings used as names, does not require that name strings be unique, and does not assign any significance to the ordering of name/value pairs.",
+  "page_start": 11,
+  "chunk_id": "ecma404_json_c000018",
+  "bboxes": [
+   {
+    "page_no": 11,
+    "l": 70.8239974975586,
+    "t": 110.88616180419922,
+    "r": 563.4357299804688,
+    "b": 179.4716033935547,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000051",
+  "doc": "ecma404_json_full",
+  "text": "The JSON syntax does not define any specific meaning to the ordering of the values.",
+  "canonical_form": "The JSON syntax does not define any specific meaning to the ordering of the values.",
+  "page_start": 11,
+  "chunk_id": "ecma404_json_c000019",
+  "bboxes": [
+   {
+    "page_no": 11,
+    "l": 70.8239974975586,
+    "t": 447.53619384765625,
+    "r": 563.9888916015625,
+    "b": 481.8016052246094,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000053",
+  "doc": "ecma404_json_full",
+  "text": "[ ] value array , Figure 3 — array 8 Numbers A number is a sequence of decimal digits with no superfluous leading zero.",
+  "canonical_form": "A number is a sequence of decimal digits with no superfluous leading zero.",
+  "page_start": 11,
+  "chunk_id": "ecma404_json_c000020",
+  "bboxes": [
+   {
+    "page_no": 11,
+    "l": 70.8239974975586,
+    "t": 719.0061645507812,
+    "r": 561.0907592773438,
+    "b": 765.5316162109375,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000018",
+  "doc": "ecma404_json_full",
+  "text": "Defining specific semantic interpretations of JSON is potentially a topic for other specifications.",
+  "canonical_form": "Defining specific semantic interpretations of JSON is potentially a topic for other specifications.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000008",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 246.39617919921875,
+    "r": 561.20947265625,
+    "b": 349.5415954589844,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000070",
+  "doc": "ecma404_json_full",
+  "text": "The meaning of such a hexadecimal number is determined by ISO/IEC 10646.",
+  "canonical_form": "The meaning of a hexadecimal number is determined by ISO/IEC 10646.",
+  "page_start": 12,
+  "chunk_id": "ecma404_json_c000024",
+  "bboxes": [
+   {
+    "page_no": 12,
+    "l": 36.84000015258789,
+    "t": 728.9862060546875,
+    "r": 527.1336669921875,
+    "b": 775.0115966796875,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000035",
+  "doc": "ecma404_json_full",
+  "text": "RFC 8259, also defines various semantic restrictions on the use of the JSON syntax.",
+  "canonical_form": "RFC 8259 also defines various semantic restrictions on the use of the JSON syntax.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000013",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 638.4862060546875,
+    "r": 561.208740234375,
+    "b": 718.5916137695312,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000016",
+  "doc": "ecma404_json_full",
+  "text": "There are many possible semantics that could be applied to the JSON syntax and many ways that a JSON text can be processed or mapped by a programming language.",
+  "canonical_form": "There are many possible semantics that could be applied to the JSON syntax and many ways that a JSON text can be processed or mapped by a programming language.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000007",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 246.39617919921875,
+    "r": 561.20947265625,
+    "b": 349.5415954589844,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000042",
+  "doc": "ecma404_json_full",
+  "text": "Whitespace is not allowed within any token, except that space is allowed in strings.",
+  "canonical_form": "Whitespace is not allowed within any token except in strings.",
+  "page_start": 10,
+  "chunk_id": "ecma404_json_c000016",
+  "bboxes": [
+   {
+    "page_no": 10,
+    "l": 36.84000015258789,
+    "t": 406.7361755371094,
+    "r": 526.7139892578125,
+    "b": 440.881591796875,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000048",
+  "doc": "ecma404_json_full",
+  "text": "These are all semantic considerations that may be defined by JSON processors or in specifications defining specific uses of JSON for data interchange.",
+  "canonical_form": "These are all semantic considerations that may be defined by JSON processors or in specifications defining specific uses of JSON for data interchange.",
+  "page_start": 11,
+  "chunk_id": "ecma404_json_c000018",
+  "bboxes": [
+   {
+    "page_no": 11,
+    "l": 70.8239974975586,
+    "t": 110.88616180419922,
+    "r": 563.4357299804688,
+    "b": 179.4716033935547,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000075",
+  "doc": "ecma404_json_full",
+  "text": "So for example, a string containing only the G clef character (U+1D11E) may be represented as \"\\uD834\\uDD1E\".",
+  "canonical_form": "A string containing only the G clef character (U+1D11E) may be represented as \"\\uD834\\uDD1E\".",
+  "page_start": 13,
+  "chunk_id": "ecma404_json_c000027",
+  "bboxes": [
+   {
+    "page_no": 13,
+    "l": 70.8239974975586,
+    "t": 247.1162109375,
+    "r": 561.2288818359375,
+    "b": 305.1416015625,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000031",
+  "doc": "ecma404_json_full",
+  "text": "The intent is that both specifications define the same syntactic language.",
+  "canonical_form": "The intent is that both specifications define the same syntactic language.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000012",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 638.4862060546875,
+    "r": 561.208740234375,
+    "b": 718.5916137695312,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000033",
+  "doc": "ecma404_json_full",
+  "text": "If an error is found with either document, the other should be examined to see if it has a similar error, and fixed if possible.",
+  "canonical_form": "If an error is found with either document, the other document should be examined to see if it has a similar error, and fixed if possible.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000013",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 638.4862060546875,
+    "r": 561.208740234375,
+    "b": 718.5916137695312,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000025",
+  "doc": "ecma404_json_full",
+  "text": "For dated references, only the edition cited applies.",
+  "canonical_form": "For dated references, only the cited edition applies.",
+  "page_start": 9,
+  "chunk_id": null,
+  "bboxes": []
+ },
+ {
+  "fact_id": "ecma404_json_F000032",
+  "doc": "ecma404_json_full",
+  "text": "If a difference is found between them, Ecma International and the IETF will work together to update both documents.",
+  "canonical_form": "If a difference is found between them, Ecma International and the IETF will work together to update both documents.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000012",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 638.4862060546875,
+    "r": 561.208740234375,
+    "b": 718.5916137695312,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000014",
+  "doc": "ecma404_json_full",
+  "text": "Its intent is not to provide any semantics or interpretation of text conforming to that syntax.",
+  "canonical_form": "The intent is not to provide any semantics or interpretation of text conforming to that syntax.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000006",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 246.39617919921875,
+    "r": 561.20947265625,
+    "b": 349.5415954589844,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000050",
+  "doc": "ecma404_json_full",
+  "text": "The values are separated by commas.",
+  "canonical_form": "The values are separated by commas.",
+  "page_start": 11,
+  "chunk_id": "ecma404_json_c000019",
+  "bboxes": [
+   {
+    "page_no": 11,
+    "l": 70.8239974975586,
+    "t": 447.53619384765625,
+    "r": 563.9888916015625,
+    "b": 481.8016052246094,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000034",
+  "doc": "ecma404_json_full",
+  "text": "If either document is changed in the future, Ecma International and the IETF will work together to ensure that the two documents stay aligned through the change.",
+  "canonical_form": "If either document is changed in the future, Ecma International and the IETF will work together to ensure that the two documents stay aligned through the change.",
+  "page_start": 9,
+  "chunk_id": "ecma404_json_c000013",
+  "bboxes": [
+   {
+    "page_no": 9,
+    "l": 70.8239974975586,
+    "t": 638.4862060546875,
+    "r": 561.208740234375,
+    "b": 718.5916137695312,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000074",
+  "doc": "ecma404_json_full",
+  "text": "The following four cases all produce the same result: \"\\u002F\" \"\\u002f\" \"\\/\" \"/\" To escape a code point that is not in the Basic Multilingual Plane, the character may be represented as a twelve-character sequence, encoding the UTF-16 surrogate pair corresponding to the code point.",
+  "canonical_form": "The following four cases all produce the same result: \"\\u002F\", \"\\u002f\", \"\\/\", and \"/\". To escape a code point that is not in the Basic Multilingual Plane, the character may be represented as a twelve-character sequence encoding the UTF-16 surrogate pair corresponding to the code point.",
+  "page_start": 13,
+  "chunk_id": "ecma404_json_c000027",
+  "bboxes": [
+   {
+    "page_no": 13,
+    "l": 70.8239974975586,
+    "t": 133.566162109375,
+    "r": 307.0188903808594,
+    "b": 144.6715545654297,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 13,
+    "l": 90.86399841308594,
+    "t": 157.28297424316406,
+    "r": 139.45999145507812,
+    "b": 166.4719696044922,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 13,
+    "l": 90.86399841308594,
+    "t": 179.8429718017578,
+    "r": 139.45999145507812,
+    "b": 189.03196716308594,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 13,
+    "l": 90.86399841308594,
+    "t": 202.28297424316406,
+    "r": 117.86000061035156,
+    "b": 211.4719696044922,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 13,
+    "l": 90.86399841308594,
+    "t": 224.8429718017578,
+    "r": 112.45999908447266,
+    "b": 234.03196716308594,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 13,
+    "l": 70.8239974975586,
+    "t": 247.1162109375,
+    "r": 561.2288818359375,
+    "b": 305.1416015625,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000064",
+  "doc": "ecma404_json_full",
+  "text": "\\f represents the form feed character (U+000C).",
+  "canonical_form": "\\f represents the form feed character.",
+  "page_start": 12,
+  "chunk_id": "ecma404_json_c000023",
+  "bboxes": [
+   {
+    "page_no": 12,
+    "l": 56.880001068115234,
+    "t": 583.0462036132812,
+    "r": 280.9788818359375,
+    "b": 594.151611328125,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 12,
+    "l": 56.880001068115234,
+    "t": 607.4061889648438,
+    "r": 277.1388854980469,
+    "b": 618.5115966796875,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000065",
+  "doc": "ecma404_json_full",
+  "text": "\\n represents the line feed character (U+000A).",
+  "canonical_form": "\\n represents the line feed character.",
+  "page_start": 12,
+  "chunk_id": "ecma404_json_c000023",
+  "bboxes": [
+   {
+    "page_no": 12,
+    "l": 56.880001068115234,
+    "t": 607.4061889648438,
+    "r": 277.1388854980469,
+    "b": 618.5115966796875,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 12,
+    "l": 56.880001068115234,
+    "t": 631.7661743164062,
+    "r": 272.098876953125,
+    "b": 642.87158203125,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ },
+ {
+  "fact_id": "ecma404_json_F000026",
+  "doc": "ecma404_json_full",
+  "text": "For undated references, the latest edition of the referenced document (including any amendments) applies.",
+  "canonical_form": "For undated references, the latest edition of the referenced document, including any amendments, applies.",
+  "page_start": 9,
+  "chunk_id": null,
+  "bboxes": []
+ },
+ {
+  "fact_id": "ecma404_json_F000060",
+  "doc": "ecma404_json_full",
+  "text": "All code points may be placed within the quotation marks except for the code points that must be escaped: quotation mark (U+0022), reverse solidus (U+005C), and the control characters U+0000 to U+001F. There are two-character escape sequence representations of some characters. \\\" represents the quotation mark character (U+0022).",
+  "canonical_form": "All code points may be placed within the quotation marks except for the code points that must be escaped: the quotation mark (U+0022), the reverse solidus (U+005C), and the control characters U+0000 to U+001F. There are two-character escape sequence representations of some characters. The escape sequence \\\" represents the quotation mark character (U+0022).",
+  "page_start": 12,
+  "chunk_id": "ecma404_json_c000022",
+  "bboxes": [
+   {
+    "page_no": 12,
+    "l": 36.84000015258789,
+    "t": 451.4961853027344,
+    "r": 527.2528076171875,
+    "b": 497.1615905761719,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 12,
+    "l": 56.880001068115234,
+    "t": 509.9361572265625,
+    "r": 299.3388977050781,
+    "b": 521.0415649414062,
+    "coord_origin": "TOPLEFT"
+   },
+   {
+    "page_no": 12,
+    "l": 56.880001068115234,
+    "t": 534.2962036132812,
+    "r": 302.098876953125,
+    "b": 545.401611328125,
+    "coord_origin": "TOPLEFT"
+   }
+  ]
+ }
+]

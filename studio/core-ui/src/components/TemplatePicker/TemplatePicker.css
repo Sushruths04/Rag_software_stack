@@ -1,0 +1,198 @@
+/* TemplatePicker — 04_DESIGN_SYSTEM.md §5 empty-canvas state / F1 flow:
+   "empty canvas with 3 template cards", copy lifted verbatim from
+   BLOCK_GUIDE.md §10 rather than invented. */
+
+.template-picker__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 8, 7, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 210;
+  animation: template-picker-fade-in 200ms var(--e-out, ease-out);
+}
+
+@keyframes template-picker-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.template-picker {
+  width: min(1100px, 94vw);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-panel);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  padding: 22px 26px 26px;
+}
+
+.template-picker__header {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.template-picker__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--tx-hi);
+}
+
+.template-picker__subtitle {
+  margin: 6px 0 0;
+  color: var(--tx-mid);
+  font-size: 13px;
+  max-width: 640px;
+  line-height: 1.5;
+}
+
+.template-picker__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: 1px solid var(--line-2);
+  color: var(--tx-mid);
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.template-picker__close:hover {
+  color: var(--tx-hi);
+  border-color: var(--acc);
+}
+
+.template-picker__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.template-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--bg-3);
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-node);
+  padding: 16px;
+  transition:
+    border-color var(--dur-fast) var(--e-out),
+    box-shadow var(--dur-fast) var(--e-out);
+}
+.template-card:hover {
+  border-color: var(--acc);
+}
+
+/* Spotlight hover (21st.dev Spotlight Card, rebuilt on our own tokens): a
+   radial --acc highlight follows the pointer via the --spot-x/--spot-y
+   custom properties stamped by utils/spotlight.ts. Input-following only —
+   no autonomous animation, so reduced-motion needs no override; hidden
+   entirely when the device can't hover (touch), and pointer-events: none
+   keeps the card's button fully interactive. */
+.template-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  opacity: 0;
+  background: radial-gradient(
+    240px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+    color-mix(in srgb, var(--acc) 14%, transparent),
+    transparent 70%
+  );
+  transition: opacity var(--dur-fast) var(--e-out);
+}
+@media (hover: hover) {
+  .template-card:hover::before {
+    opacity: 1;
+  }
+}
+
+.template-card__tag {
+  align-self: flex-start;
+  color: var(--acc);
+  font-size: 10.5px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: 1px solid color-mix(in srgb, var(--acc) 40%, transparent);
+  border-radius: var(--radius-chip);
+  padding: 2px 9px;
+}
+
+.template-card__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--tx-hi);
+  line-height: 1.35;
+}
+
+.template-card__description {
+  margin: 0;
+  flex: 1;
+  color: var(--tx-mid);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.template-card__action {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .template-picker__overlay {
+    animation: none;
+  }
+}
+
+/* Template library grouping + search (template-library spec 2026-07-11).
+   Search input mirrors the palette's search field pattern. */
+.template-library__search {
+  margin-bottom: 14px;
+}
+.template-library__search input {
+  width: 100%;
+  background: var(--bg-3);
+  border: 1px solid var(--line-2);
+  border-radius: 8px;
+  color: var(--tx-hi);
+  font-size: 13px;
+  padding: 8px 12px;
+}
+.template-library__search input:focus {
+  outline: none;
+  border-color: var(--acc);
+}
+
+.template-library__section {
+  margin-bottom: 20px;
+}
+
+.template-library__category {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tx-mid);
+}
+
+.template-library__empty {
+  color: var(--tx-mid);
+  font-size: 13px;
+}

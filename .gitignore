@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Secrets / local config
+.env
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Rust / Tauri
+studio/desktop/src-tauri/target/
+studio/desktop/src-tauri/python-runtime/
+
+# Runtime data
+studio/backend/data/graphs/
+data/cache/
+
+# OS
+.DS_Store
+Thumbs.db

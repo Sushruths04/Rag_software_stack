@@ -1,0 +1,33 @@
+.wire-path {
+  --port-color: var(--acc);
+  stroke: var(--port-color);
+  stroke-width: 2;
+  opacity: var(--wire-idle-op);
+  transition:
+    opacity var(--dur-fast) var(--e-out),
+    stroke-width var(--dur-fast) var(--e-out);
+}
+.wire-path.is-heavy {
+  stroke-width: 3;
+}
+.react-flow__edge:hover .wire-path,
+.wire-path.is-selected {
+  opacity: 1;
+}
+.wire-path.is-selected {
+  stroke-width: 3;
+}
+
+.wire-connect-pulse,
+.wire-flow-dot {
+  fill: var(--port-color);
+  filter: drop-shadow(0 0 4px var(--port-color));
+}
+
+.wire-badge-anchor {
+  z-index: 5;
+}
+
+.react-flow__edge-path {
+  stroke: var(--line-2);
+}

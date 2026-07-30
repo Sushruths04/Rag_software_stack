@@ -1,0 +1,120 @@
+/* CostConfirmSheet — 04_DESIGN_SYSTEM.md flow F4 "Paid run flow" cost sheet
+   (A14). Overlay/panel styling mirrors TemplatePicker.css (same tokens,
+   same shape) so the two full-screen confirmation surfaces read as one
+   system. */
+
+.cost-confirm-sheet__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 8, 7, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 220;
+  animation: cost-confirm-sheet-fade-in 200ms var(--e-out, ease-out);
+}
+
+@keyframes cost-confirm-sheet-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cost-confirm-sheet {
+  width: min(560px, 94vw);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-panel);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  padding: 22px 26px 24px;
+}
+
+.cost-confirm-sheet__header {
+  margin-bottom: 16px;
+}
+
+.cost-confirm-sheet__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--tx-hi);
+}
+
+.cost-confirm-sheet__subtitle {
+  margin: 6px 0 0;
+  color: var(--tx-mid);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.cost-confirm-sheet__list {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-node);
+  overflow: hidden;
+}
+
+.cost-confirm-sheet__row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+  background: var(--bg-3);
+  padding: 10px 14px;
+}
+
+.cost-confirm-sheet__row-label {
+  color: var(--tx-hi);
+  font-size: 13px;
+}
+
+.cost-confirm-sheet__row-calls {
+  color: var(--acc);
+  font-size: 12.5px;
+}
+
+.cost-confirm-sheet__row-usd {
+  color: var(--tx-mid);
+  font-size: 12.5px;
+  min-width: 3.5em;
+  text-align: right;
+}
+
+.cost-confirm-sheet__total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 2px 4px;
+  font-size: 13px;
+  color: var(--tx-hi);
+}
+
+.cost-confirm-sheet__no-pricing {
+  color: var(--tx-ghost);
+  font-size: 11.5px;
+  text-align: right;
+}
+
+.cost-confirm-sheet__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cost-confirm-sheet__overlay {
+    animation: none;
+  }
+}

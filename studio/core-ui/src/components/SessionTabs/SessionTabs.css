@@ -1,0 +1,84 @@
+.session-tabs {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 12px 0;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--line-2);
+  overflow-x: auto;
+}
+
+.session-tab {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 4px 0 10px;
+  border: 1px solid var(--line-2);
+  border-bottom: none;
+  border-radius: var(--radius-chip) var(--radius-chip) 0 0;
+  background: var(--bg-3);
+  max-width: 220px;
+}
+.session-tab--active {
+  background: var(--bg-1);
+  border-color: var(--acc);
+}
+
+.session-tab__label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: var(--tx-mid);
+  font-size: 12px;
+  padding: 6px 2px;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.session-tab--active .session-tab__label {
+  color: var(--tx-hi);
+  font-weight: 600;
+}
+
+.session-tab__dirty-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--acc);
+  flex: none;
+}
+
+.session-tab__close {
+  background: transparent;
+  border: none;
+  color: var(--tx-mid);
+  cursor: pointer;
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  flex: none;
+}
+.session-tab__close:hover {
+  color: var(--tx-hi);
+  background: var(--line-2);
+}
+
+.session-tab__new {
+  background: transparent;
+  border: 1px dashed var(--line-2);
+  border-radius: var(--radius-chip);
+  color: var(--tx-mid);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin: 0 0 4px 4px;
+  flex: none;
+}
+.session-tab__new:hover {
+  color: var(--tx-hi);
+  border-color: var(--acc);
+}

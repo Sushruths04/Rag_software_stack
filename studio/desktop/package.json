@@ -1,0 +1,13 @@
+{
+  "name": "graft-studio-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tauri desktop shell for GRAFT Block Studio. Wraps studio/core-ui as its frontend (devUrl + frontendDist point there) so the browser (studio/web) and the desktop shell run the exact same UI code.",
+  "scripts": {
+    "dev:desktop": "tauri dev",
+    "build:desktop": "tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.4"
+  }
+}

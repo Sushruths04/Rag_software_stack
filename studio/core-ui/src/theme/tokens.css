@@ -1,0 +1,204 @@
+/*
+ * GRAFT Block Studio — design tokens.
+ * §8 (complete color system) + §1 (canvas-layer additions).
+ *
+ * Dark is the primary identity (04 §8.1); light (04 §8.6) mirrors it for
+ * reports/exports and OS light mode. `prefers-color-scheme` picks the
+ * default; `:root[data-theme="dark|light"]` (stamped by the manual toggle,
+ * see src/hooks/useTheme.ts) always wins over the media query.
+ */
+
+:root {
+  color-scheme: dark;
+
+  /* ---- 04 §8.1 surface stack (dark, primary identity) -------------- */
+  --bg-0: #0b0f0e; /* app shell, tab bar, dialog backdrop */
+  --bg-1: #0d1211; /* canvas background */
+  --bg-2: #0f1614; /* node headers, console, palette */
+  --bg-3: #121a18; /* node bodies, inspector cards */
+  --bg-4: #16211e; /* hover surfaces, input fields */
+  --line-0: #17201e; /* canvas grid minor (24px) */
+  --line-1: #1d2b28; /* canvas grid major (120px), hairline dividers */
+  --line-2: #223330; /* node borders, panel borders */
+
+  /* ---- 04 §8.2 text ramp -------------------------------------------- */
+  --tx-hi: #e8f4f0; /* titles, values */
+  --tx-mid: #9db8b0; /* labels, descriptions */
+  --tx-dim: #6f8a83; /* subtitles, meta lines, placeholders */
+  --tx-ghost: #465a55; /* disabled, grid coordinates */
+
+  /* ---- 04 §8.3 accent & status (semantic, never reused for category) */
+  --acc: #17e2b6;
+  --acc-on-filled: #04231c;
+  --ok: #35d07f;
+  --ok-on-filled: #052716;
+  --warn: #f5b83d;
+  --warn-on-filled: #2b1f04;
+  --err: #ff6b6b;
+  --err-on-filled: #2d0808;
+  --info: #4da3ff;
+  --info-on-filled: #061a30;
+
+  --acc-glow: 0 0 0 1.5px var(--acc), 0 0 12px rgba(23, 226, 182, 0.25);
+
+  /* ---- 04 §1 canvas-layer tokens ------------------------------------ */
+  --canvas-bg: var(--bg-1);
+  --canvas-grid: var(--line-0);
+  --canvas-grid-major: var(--line-1);
+  --node-bg: var(--bg-3);
+  --node-border: var(--line-2);
+  --node-border-sel: var(--acc);
+  --node-header: var(--bg-2);
+  --node-title: var(--tx-hi);
+  --node-subtitle: var(--tx-dim);
+  --param-label: var(--tx-mid);
+  --param-value: var(--tx-hi);
+  --wire-idle-op: 0.75;
+  --wire-badge-bg: #0b0f0ecc;
+  --minimap-mask: rgba(11, 15, 14, 0.65);
+  --cost-badge: var(--warn);
+  --run-ok: var(--ok);
+  --run-fail: var(--err);
+  --run-active: var(--acc);
+
+  /* ---- 04 §8.4 port / wire type map (base state) --------------------
+     Full 4-state matrix (base / hover-legal halo / drag-illegal desat /
+     after-run badge bg) is implemented per-type below plus in Port.css
+     and WireBadge.css, which reference these base hues. */
+  --port-pdf: #8a7bff;
+  --port-chunks: #4da3ff;
+  --port-facts: #17e2b6;
+  --port-bridges: #ff9d5c;
+  --port-candidates: #ffd166;
+  --port-qa: #35d07f;
+  --port-index: #5cc8ff;
+  --port-eval: #e07be0;
+  --port-report: #c9d8d3;
+
+  --port-pdf-badge: #8a7bff22;
+  --port-chunks-badge: #4da3ff22;
+  --port-facts-badge: #17e2b622;
+  --port-bridges-badge: #ff9d5c22;
+  --port-candidates-badge: #ffd16622;
+  --port-qa-badge: #35d07f22;
+  --port-index-badge: #5cc8ff22;
+  --port-eval-badge: #e07be022;
+  --port-report-badge: #c9d8d322;
+
+  /* ---- 04 §8.5 category tints (node header bar, palette groups) ----- */
+  --cat-sources: #8a7bff;
+  --cat-extraction: #4da3ff;
+  --cat-mining: #ff9d5c;
+  --cat-generation: #f5b83d;
+  --cat-gates: #17e2b6;
+  --cat-assembly: #35d07f;
+  --cat-retrieval: #e07be0;
+  --cat-utility: #6f8a83;
+  --cat-composite: #c9a15a;
+
+  /* ---- typography ----------------------------------------------------
+     Space Grotesk = display (titles, panel headers); IBM Plex Mono = data
+     (counts, params, wire badges, console). No third face in the IDE. */
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --radius-node: 10px;
+  --radius-panel: 12px;
+  --radius-chip: 999px;
+
+  /* ---- 04 §9 animation catalog: durations + easings ------------------ */
+  --e-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --e-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-med: 220ms;
+  --dur-slow: 400ms;
+}
+
+/* ---- 04 §8.6 light theme (secondary — reports/exports + OS light) ---- */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+
+    --bg-0: #f4f8f7;
+    --bg-1: #eef3f2;
+    --bg-2: #f7faf9;
+    --bg-3: #ffffff;
+    --bg-4: #e7efed;
+    --line-0: #dde6e4;
+    --line-1: #cddad7;
+    --line-2: #b9c9c5;
+
+    --tx-hi: #10201c;
+    --tx-mid: #3d5650;
+    --tx-dim: #68807a;
+    --tx-ghost: #9db2ac;
+
+    --acc: #0fb894;
+    --acc-on-filled: #04231c;
+
+    /* port colors darkened ~15% L for 3:1 on light bg (04 §8.6) */
+    --port-pdf: #6f5fe6;
+    --port-chunks: #2f7fd6;
+    --port-facts: #0fb894;
+    --port-bridges: #e07a35;
+    --port-candidates: #cf9f1f;
+    --port-qa: #219a5f;
+    --port-index: #2a9fd6;
+    --port-eval: #b85fb8;
+    --port-report: #56645f;
+
+    --minimap-mask: rgba(238, 243, 242, 0.68);
+  }
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg-0: #f4f8f7;
+  --bg-1: #eef3f2;
+  --bg-2: #f7faf9;
+  --bg-3: #ffffff;
+  --bg-4: #e7efed;
+  --line-0: #dde6e4;
+  --line-1: #cddad7;
+  --line-2: #b9c9c5;
+
+  --tx-hi: #10201c;
+  --tx-mid: #3d5650;
+  --tx-dim: #68807a;
+  --tx-ghost: #9db2ac;
+
+  --acc: #0fb894;
+  --acc-on-filled: #04231c;
+
+  --port-pdf: #6f5fe6;
+  --port-chunks: #2f7fd6;
+  --port-facts: #0fb894;
+  --port-bridges: #e07a35;
+  --port-candidates: #cf9f1f;
+  --port-qa: #219a5f;
+  --port-index: #2a9fd6;
+  --port-eval: #b85fb8;
+  --port-report: #56645f;
+
+  --minimap-mask: rgba(238, 243, 242, 0.68);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* prefers-reduced-motion: collapse every animation to an instant state
+   change (04 §9 global rule + §7 accessibility floor). Individual
+   components also check the useReducedMotion() hook for JS-driven motion
+   (Framer Motion), this covers pure-CSS keyframe/transition animations. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

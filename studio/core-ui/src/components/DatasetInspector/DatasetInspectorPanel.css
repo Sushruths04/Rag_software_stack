@@ -1,0 +1,246 @@
+/* Task 12 — dataset inspector. Mirrors RunHistoryPanel.css's overlay +
+   two-pane surface (same tokens, same radii/shadows) so the two panels read
+   as one family. No new colors: every value below is an existing token from
+   theme/tokens.css. Per-fact highlight hues live inline on PdfPageView
+   (the --port-* token palette, see DatasetInspectorPanel.tsx). */
+
+.dataset-inspector__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 8, 7, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 220;
+}
+
+.dataset-inspector {
+  width: min(1040px, 96vw);
+  height: min(720px, 90vh);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-panel);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.dataset-inspector__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--line-2);
+}
+
+.dataset-inspector__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--tx-hi);
+}
+
+.dataset-inspector__entry-picker {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--tx-mid);
+  font-size: 11.5px;
+}
+
+.dataset-inspector__entry-picker select {
+  background: var(--bg-4);
+  border: 1px solid var(--line-2);
+  color: var(--tx-hi);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-family: var(--font-body, "Space Grotesk", sans-serif);
+  font-size: 11.5px;
+}
+
+.dataset-inspector__import {
+  background: var(--bg-3);
+  border: 1px solid var(--line-2);
+  color: var(--tx-mid);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 11.5px;
+  font-family: var(--font-body, "Space Grotesk", sans-serif);
+  cursor: pointer;
+}
+.dataset-inspector__import:hover {
+  color: var(--tx-hi);
+  border-color: var(--acc);
+}
+
+.dataset-inspector__close {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid var(--line-2);
+  color: var(--tx-mid);
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.dataset-inspector__notice {
+  padding: 8px 20px;
+  font-size: 11.5px;
+  color: var(--tx-mid);
+  border-bottom: 1px solid color-mix(in srgb, var(--line-2) 50%, transparent);
+}
+
+.dataset-inspector__body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  overflow: hidden;
+}
+
+.dataset-inspector__list-pane {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--line-2);
+  overflow: hidden;
+}
+
+.dataset-inspector__tabs {
+  display: flex;
+  gap: 4px;
+  padding: 10px 12px 6px;
+  border-bottom: 1px solid color-mix(in srgb, var(--line-2) 50%, transparent);
+}
+
+.dataset-inspector__tab {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--tx-mid);
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: var(--radius-chip);
+  cursor: pointer;
+}
+.dataset-inspector__tab:hover {
+  color: var(--tx-hi);
+}
+.dataset-inspector__tab--active {
+  background: var(--bg-3);
+  border-color: var(--line-2);
+  color: var(--tx-hi);
+  font-weight: 600;
+}
+
+.dataset-inspector__list {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  overflow-y: auto;
+}
+
+.dataset-inspector__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: var(--tx-mid);
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: var(--radius-chip);
+  cursor: pointer;
+}
+.dataset-inspector__item:hover {
+  background: var(--bg-3);
+}
+.dataset-inspector__item--active {
+  background: var(--bg-3);
+  color: var(--tx-hi);
+}
+
+.dataset-inspector__item-id {
+  font-size: 11px;
+  color: var(--tx-hi);
+}
+
+.dataset-inspector__item-text {
+  flex-basis: 100%;
+  color: var(--tx-dim);
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+.dataset-inspector__page-badge,
+.dataset-inspector__hop-badge {
+  font-size: 10.5px;
+  padding: 1px 7px;
+  border-radius: var(--radius-chip);
+  background: var(--bg-4);
+  border: 1px solid var(--line-2);
+  color: var(--tx-mid);
+}
+
+.dataset-inspector__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px 10px 10px;
+}
+
+.dataset-inspector__chip {
+  background: var(--bg-4);
+  border: 1px solid var(--line-2);
+  color: var(--tx-mid);
+  border-radius: var(--radius-chip);
+  padding: 3px 9px;
+  font-size: 10.5px;
+  cursor: pointer;
+}
+.dataset-inspector__chip:hover {
+  color: var(--tx-hi);
+  border-color: var(--acc);
+}
+.dataset-inspector__chip--missing {
+  color: var(--tx-ghost);
+  cursor: default;
+  border-style: dashed;
+}
+.dataset-inspector__chip--missing:hover {
+  color: var(--tx-ghost);
+  border-color: var(--line-2);
+}
+
+.dataset-inspector__detail-pane {
+  padding: 16px 20px;
+  overflow-y: auto;
+}
+
+.dataset-inspector__page-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.dataset-inspector__page-chip {
+  background: var(--bg-3);
+  border: 1px solid var(--line-2);
+  color: var(--tx-mid);
+  border-radius: var(--radius-chip);
+  padding: 3px 10px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.dataset-inspector__page-chip--active {
+  color: var(--tx-hi);
+  border-color: var(--acc);
+}
+
+.dataset-inspector__empty {
+  color: var(--tx-mid);
+  font-size: 12px;
+  padding: 12px 14px;
+}

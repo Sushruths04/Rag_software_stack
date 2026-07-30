@@ -1,0 +1,37 @@
+[package]
+name = "app"
+version = "0.1.0"
+description = "A Tauri App"
+authors = ["you"]
+license = ""
+repository = ""
+edition = "2021"
+rust-version = "1.77.2"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.6.3", features = [] }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+log = "0.4"
+tauri = { version = "2.11.3", features = [] }
+tauri-plugin-log = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+
+[target.'cfg(windows)'.dependencies]
+# B-M7: ties the spawned Python sidecar's lifetime to this process via a
+# Windows Job Object (JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE) -- without it, a
+# forceful kill of app.exe (crash, Task Manager "End Task") leaves uvicorn
+# running (found live during B-M6 installer verification, logged in
+# 09_BM3_BM7_TODO.md). A graceful window close already worked via the
+# existing WindowEvent::CloseRequested handler; this covers the case that
+# handler can never see.
+win32job = "2"
