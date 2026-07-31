@@ -48,7 +48,7 @@ def run_and_evaluate(
     min_page_gap: int = 1,
     score_necessity: bool = False,
     llm_chunk_cap: int = 30,
-    docling_page_cap: int = 8,
+    docling_page_cap: int = 60,
     seed: int = 42,
 ) -> dict:
     """Run pipeline + Stage 10 evaluation for one document."""
@@ -115,7 +115,7 @@ def run_corpus(
     min_page_gap: int = 1,
     score_necessity: bool = False,
     llm_chunk_cap: int = 30,
-    docling_page_cap: int = 8,
+    docling_page_cap: int = 60,
 ) -> dict:
     """Run the pipeline on every doc in the corpus and collect results."""
     out = Path(out_dir)
@@ -223,7 +223,7 @@ def main() -> int:
     ap.add_argument("--score-necessity", action="store_true",
                     help="Leave-one-out necessity scoring on multi-hop pairs")
     ap.add_argument("--llm-chunk-cap", type=int, default=30)
-    ap.add_argument("--docling-page-cap", type=int, default=8)
+    ap.add_argument("--docling-page-cap", type=int, default=60)
     ap.add_argument("--doc-ids", nargs="+", help="Subset of docs to run (default: all)")
     args = ap.parse_args()
 
