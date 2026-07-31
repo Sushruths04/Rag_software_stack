@@ -391,10 +391,10 @@ export const BLOCK_CATALOG: BlockSpec[] = [
     label: "Stage-D Verifier",
     subtitle: subtitle("borderline judge", "paid"),
     purpose: "PASS/FIX/REJECT judge for borderline QA.",
-    inputs: [{ name: "qa", type: "qa" }],
+    inputs: [{ name: "qa", type: "qa" }, { name: "facts", type: "facts" }],
     outputs: [{ name: "qa", type: "qa" }],
     defaultParams: [param("model_role", "model role", "verifier")],
-    backing: "rag_gt.validation.bridge_verifier",
+    backing: "rag_gt.validation.verify_v2",
   },
   {
     type: "index_builder",

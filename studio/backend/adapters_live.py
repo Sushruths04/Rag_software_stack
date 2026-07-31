@@ -1,13 +1,14 @@
 """Live block adapters: thin ``run(inputs, params) -> dict`` wrappers around
-``rag_gt.blocks.*`` (05_BLOCK_CATALOG.md M0 milestone) for the 18 FREE-spine
+``rag_gt.blocks.*`` (05_BLOCK_CATALOG.md M0 milestone) for the 19 FREE-spine
 blocks that have real engine adapters: chunks_import, facts_import,
 bridges_import, qa_import, chunker, bridge_miner, bridge_quality,
 neighbor_sampler, cluster_builder, index_builder, evaluator, report,
-gate_clause, gate_joint, gate_loo, gate_grounding, gate_leak, gate_dedup --
-plus 4 PAID blocks: (M4b) the 3 generation blocks qa_gen_pairs,
-qa_gen_clusters, qa_gen_bridges (05_BLOCK_CATALOG.md §3 items 15-17), and
+gate_clause, gate_joint, gate_loo, gate_grounding, gate_leak, gate_dedup,
+assembler -- plus 5 PAID blocks: (M4b) the 3 generation blocks qa_gen_pairs,
+qa_gen_clusters, qa_gen_bridges (05_BLOCK_CATALOG.md §3 items 15-17),
 fact_extract_llm (Stage 3 SFU extraction, 05_BLOCK_CATALOG.md §3 item 7 /
-TODO.md §3). bridge_miner/bridge_quality (TODO.md §3/§8) are deterministic,
+TODO.md §3), and verifier (Stage D cascade, TODO.md §3/§8's last row).
+bridge_miner/bridge_quality (TODO.md §3/§8) are deterministic,
 $0, no-LLM blocks -- see rag_gt/blocks/bridge_miner.py's module docstring
 for why they wrap rag_gt.graph.bridge_index/bridge_linker, NOT
 rag_gt.allpdf.pipeline._build_graph's LLM-based TypedSFG classifier. The
@@ -17,14 +18,23 @@ pass-throughs by design -- see rag_gt/blocks/gate_clause.py's module
 docstring for the full "already filtered upstream inside gate_qa_group"
 architecture note -- and 2 do real work (gate_leak wraps a new standalone
 answer_first_v2.qa_bridge_hidden check; gate_dedup wraps
-dataset_budget.dedup_pairs). The PAID blocks are
+dataset_budget.dedup_pairs). assembler (TODO.md §3/§8, this task) is also
+deterministic/$0: it merges the N qa artifact lists wired into its multi-in
+``qa`` port and applies dataset_budget.allocate_singles + a min-viable
+ranking (see rag_gt/blocks/assembler.py's own module docstring) to cap to
+``target_total``. verifier (TODO.md §3/§8, this task) is PAID because its
+Stage D cascade (rag_gt.validation.verify_v2.verify_v2_pairs) escalates
+borderline cases to a real LLM judge -- deterministic-only batches never
+touch the LLM, but the block is still classified PAID since a given run's
+mix of borderline cases is not known ahead of time. All PAID blocks are
 wrapped with the exact same ``_wrap()`` closure as the FREE ones -- they need
 no special LLM handling here, since each block's own ``run()`` already
-resolves ``params.get("llm") or get_llm(params.get("llm_role", "gt"))``
-internally. Actually executing a PAID block still costs real money/API
-calls; gating that behind an explicit user confirmation is a
-studio/backend/api.py concern (POST /api/graphs/run's ``confirm_paid``
-check), not this module's.
+resolves ``params.get("llm") or get_llm(...)`` (role name varies per block:
+``params.get("llm_role", "gt")`` for the generation/extraction blocks,
+``params.get("model_role", "verifier")`` for verifier) internally. Actually
+executing a PAID block still costs real money/API calls; gating that behind
+an explicit user confirmation is a studio/backend/api.py concern (POST
+/api/graphs/run's ``confirm_paid`` check), not this module's.
 
 Kept in its own module, separate from ``registry.py``/``stubs.py``, so that
 importing the stub-only ``REGISTRY`` never touches ``rag_gt`` --
@@ -80,6 +90,7 @@ _SRC = _WORKTREE_ROOT / "src"
 if str(_SRC) not in sys.path:
     sys.path.insert(0, str(_SRC))
 
+from rag_gt.blocks import assembler as _assembler  # noqa: E402
 from rag_gt.blocks import bridge_miner as _bridge_miner  # noqa: E402
 from rag_gt.blocks import bridge_quality as _bridge_quality  # noqa: E402
 from rag_gt.blocks import bridges_import as _bridges_import  # noqa: E402
@@ -102,6 +113,7 @@ from rag_gt.blocks import qa_gen_clusters as _qa_gen_clusters  # noqa: E402
 from rag_gt.blocks import qa_gen_pairs as _qa_gen_pairs  # noqa: E402
 from rag_gt.blocks import qa_import as _qa_import  # noqa: E402
 from rag_gt.blocks import report as _report  # noqa: E402
+from rag_gt.blocks import verifier as _verifier  # noqa: E402
 
 from studio.backend.registry import REGISTRY  # noqa: E402
 
@@ -125,6 +137,7 @@ LIVE_BLOCK_TYPES = frozenset(
         "gate_grounding",
         "gate_leak",
         "gate_dedup",
+        "assembler",
     }
 )
 
@@ -136,7 +149,7 @@ LIVE_BLOCK_TYPES = frozenset(
 # is Stage 3 SFU extraction -- also PAID since it makes real LLM calls (one
 # segmenter call plus one rewrite + one self-containment call per span).
 PAID_LIVE_BLOCK_TYPES = frozenset(
-    {"qa_gen_pairs", "qa_gen_clusters", "qa_gen_bridges", "fact_extract_llm"}
+    {"qa_gen_pairs", "qa_gen_clusters", "qa_gen_bridges", "fact_extract_llm", "verifier"}
 )
 
 _PHASE2_DIR_RE = re.compile(r"([^/\\]+)_phase2[/\\]")
@@ -172,9 +185,9 @@ def _wrap_chunks_import(artifacts_dir: Path) -> Callable[[dict, dict], dict]:
 
 
 def build_live_adapters(artifacts_dir: Path | str | None = None) -> dict[str, Callable[[dict, dict], dict]]:
-    """Return ``{block_type: run(inputs, params) -> dict}`` for the 18 live
-    FREE-spine blocks plus (M4b) the 4 live PAID generation blocks, all
-    writing artifacts under one shared directory."""
+    """Return ``{block_type: run(inputs, params) -> dict}`` for the 19 live
+    FREE-spine blocks plus the 5 live PAID blocks, all writing artifacts
+    under one shared directory."""
     out_dir = Path(artifacts_dir) if artifacts_dir else _default_artifacts_dir()
     out_dir.mkdir(parents=True, exist_ok=True)
     return {
@@ -196,10 +209,12 @@ def build_live_adapters(artifacts_dir: Path | str | None = None) -> dict[str, Ca
         "gate_grounding": _wrap(_gate_grounding.run, out_dir),
         "gate_leak": _wrap(_gate_leak.run, out_dir),
         "gate_dedup": _wrap(_gate_dedup.run, out_dir),
+        "assembler": _wrap(_assembler.run, out_dir),
         "qa_gen_pairs": _wrap(_qa_gen_pairs.run, out_dir),
         "qa_gen_clusters": _wrap(_qa_gen_clusters.run, out_dir),
         "qa_gen_bridges": _wrap(_qa_gen_bridges.run, out_dir),
         "fact_extract_llm": _wrap(_fact_extract_llm.run, out_dir),
+        "verifier": _wrap(_verifier.run, out_dir),
     }
 
 

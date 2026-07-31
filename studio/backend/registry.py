@@ -306,7 +306,7 @@ _BLOCKS: tuple[BlockSpec, ...] = (
         "verifier",
         _ASSEMBLY,
         "paid",
-        (PortSpec("qa", "qa"),),
+        (PortSpec("qa", "qa"), PortSpec("facts", "facts")),
         (PortSpec("qa", "qa"),),
         P.VerifierParams,
         S.run_verifier,

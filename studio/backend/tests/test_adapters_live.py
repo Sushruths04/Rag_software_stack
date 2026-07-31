@@ -2,14 +2,15 @@
 studio.backend.adapters_live.REGISTRY_LIVE.
 
 Live adapters wrap real rag_gt.blocks.* (05_BLOCK_CATALOG.md M0 milestone)
-for exactly the 18 FREE-spine blocks named in the task (chunks_import,
+for exactly the 19 FREE-spine blocks named in the task (chunks_import,
 facts_import, bridges_import, qa_import, chunker, bridge_miner,
 bridge_quality, neighbor_sampler, cluster_builder, index_builder,
 evaluator, report, gate_clause, gate_joint, gate_loo, gate_grounding,
-gate_leak, gate_dedup) plus the PAID blocks in PAID_LIVE_BLOCK_TYPES below;
-every other block type must remain the untouched stub REGISTRY entry.
-Default build_registry() (use_stubs=True) must return REGISTRY unchanged so
-the existing stub-based tests are unaffected.
+gate_leak, gate_dedup, assembler) plus the PAID blocks in
+PAID_LIVE_BLOCK_TYPES below; every other block type must remain the
+untouched stub REGISTRY entry. Default build_registry() (use_stubs=True)
+must return REGISTRY unchanged so the existing stub-based tests are
+unaffected.
 """
 from __future__ import annotations
 
@@ -22,16 +23,19 @@ LIVE_BLOCK_TYPES = {
     "bridge_miner", "bridge_quality",
     "neighbor_sampler", "cluster_builder", "index_builder", "evaluator", "report",
     "gate_clause", "gate_joint", "gate_loo", "gate_grounding", "gate_leak", "gate_dedup",
+    "assembler",
 }
 
-# The PAID blocks: qa_gen_pairs, qa_gen_clusters, qa_gen_bridges (M4b) and
-# fact_extract_llm (Stage 3 SFU extraction, TODO.md §3 row 1) now have real
-# rag_gt.blocks.* adapters too. These tests only check registry wiring
-# (spec.run identity/signature/cost class) -- NEVER invoke .run(), so no LLM
-# (real or fake) is ever touched here. Execution with a FakeLLM is covered
-# end-to-end in test_run_endpoint.py / test_blocks_fact_extract.py instead.
+# The PAID blocks: qa_gen_pairs, qa_gen_clusters, qa_gen_bridges (M4b),
+# fact_extract_llm (Stage 3 SFU extraction, TODO.md §3 row 1), and verifier
+# (Stage D cascade, TODO.md §3/§8's last row) now have real rag_gt.blocks.*
+# adapters too. These tests only check registry wiring (spec.run identity/
+# signature/cost class) -- NEVER invoke .run(), so no LLM (real or fake) is
+# ever touched here. Execution with a FakeLLM is covered end-to-end in
+# test_run_endpoint.py / test_blocks_fact_extract.py / test_blocks_verifier.py
+# instead.
 PAID_LIVE_BLOCK_TYPES = {
-    "qa_gen_pairs", "qa_gen_clusters", "qa_gen_bridges", "fact_extract_llm",
+    "qa_gen_pairs", "qa_gen_clusters", "qa_gen_bridges", "fact_extract_llm", "verifier",
 }
 
 
