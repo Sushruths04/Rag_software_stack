@@ -2,13 +2,13 @@
 studio.backend.adapters_live.REGISTRY_LIVE.
 
 Live adapters wrap real rag_gt.blocks.* (05_BLOCK_CATALOG.md M0 milestone)
-for exactly the 10 FREE-spine blocks named in the task (chunks_import,
-facts_import, bridges_import, qa_import, chunker, neighbor_sampler,
-cluster_builder, index_builder, evaluator, report) plus the PAID blocks in
-PAID_LIVE_BLOCK_TYPES below; every other block type must remain the
-untouched stub REGISTRY entry. Default build_registry() (use_stubs=True)
-must return REGISTRY unchanged so the existing stub-based tests are
-unaffected.
+for exactly the 12 FREE-spine blocks named in the task (chunks_import,
+facts_import, bridges_import, qa_import, chunker, bridge_miner,
+bridge_quality, neighbor_sampler, cluster_builder, index_builder,
+evaluator, report) plus the PAID blocks in PAID_LIVE_BLOCK_TYPES below;
+every other block type must remain the untouched stub REGISTRY entry.
+Default build_registry() (use_stubs=True) must return REGISTRY unchanged so
+the existing stub-based tests are unaffected.
 """
 from __future__ import annotations
 
@@ -18,6 +18,7 @@ from studio.backend.registry import REGISTRY, build_registry
 
 LIVE_BLOCK_TYPES = {
     "chunks_import", "facts_import", "bridges_import", "qa_import", "chunker",
+    "bridge_miner", "bridge_quality",
     "neighbor_sampler", "cluster_builder", "index_builder", "evaluator", "report",
 }
 

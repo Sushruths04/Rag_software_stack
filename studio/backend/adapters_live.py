@@ -1,11 +1,16 @@
 """Live block adapters: thin ``run(inputs, params) -> dict`` wrappers around
-``rag_gt.blocks.*`` (05_BLOCK_CATALOG.md M0 milestone) for the 10 FREE-spine
+``rag_gt.blocks.*`` (05_BLOCK_CATALOG.md M0 milestone) for the 12 FREE-spine
 blocks that have real engine adapters: chunks_import, facts_import,
-bridges_import, qa_import, chunker, neighbor_sampler, cluster_builder,
-index_builder, evaluator, report -- plus 4 PAID blocks: (M4b) the 3
-generation blocks qa_gen_pairs, qa_gen_clusters, qa_gen_bridges
-(05_BLOCK_CATALOG.md §3 items 15-17), and fact_extract_llm (Stage 3 SFU
-extraction, 05_BLOCK_CATALOG.md §3 item 7 / TODO.md §3). The PAID blocks are
+bridges_import, qa_import, chunker, bridge_miner, bridge_quality,
+neighbor_sampler, cluster_builder, index_builder, evaluator, report --
+plus 4 PAID blocks: (M4b) the 3 generation blocks qa_gen_pairs,
+qa_gen_clusters, qa_gen_bridges (05_BLOCK_CATALOG.md §3 items 15-17), and
+fact_extract_llm (Stage 3 SFU extraction, 05_BLOCK_CATALOG.md §3 item 7 /
+TODO.md §3). bridge_miner/bridge_quality (TODO.md §3/§8) are deterministic,
+$0, no-LLM blocks -- see rag_gt/blocks/bridge_miner.py's module docstring
+for why they wrap rag_gt.graph.bridge_index/bridge_linker, NOT
+rag_gt.allpdf.pipeline._build_graph's LLM-based TypedSFG classifier. The
+PAID blocks are
 wrapped with the exact same ``_wrap()`` closure as the FREE ones -- they need
 no special LLM handling here, since each block's own ``run()`` already
 resolves ``params.get("llm") or get_llm(params.get("llm_role", "gt"))``
@@ -68,6 +73,8 @@ _SRC = _WORKTREE_ROOT / "src"
 if str(_SRC) not in sys.path:
     sys.path.insert(0, str(_SRC))
 
+from rag_gt.blocks import bridge_miner as _bridge_miner  # noqa: E402
+from rag_gt.blocks import bridge_quality as _bridge_quality  # noqa: E402
 from rag_gt.blocks import bridges_import as _bridges_import  # noqa: E402
 from rag_gt.blocks import chunker as _chunker  # noqa: E402
 from rag_gt.blocks import chunks_import as _chunks_import  # noqa: E402
@@ -92,6 +99,8 @@ LIVE_BLOCK_TYPES = frozenset(
         "bridges_import",
         "qa_import",
         "chunker",
+        "bridge_miner",
+        "bridge_quality",
         "neighbor_sampler",
         "cluster_builder",
         "index_builder",
@@ -144,8 +153,8 @@ def _wrap_chunks_import(artifacts_dir: Path) -> Callable[[dict, dict], dict]:
 
 
 def build_live_adapters(artifacts_dir: Path | str | None = None) -> dict[str, Callable[[dict, dict], dict]]:
-    """Return ``{block_type: run(inputs, params) -> dict}`` for the 10 live
-    FREE-spine blocks plus (M4b) the 3 live PAID generation blocks, all
+    """Return ``{block_type: run(inputs, params) -> dict}`` for the 12 live
+    FREE-spine blocks plus (M4b) the 4 live PAID generation blocks, all
     writing artifacts under one shared directory."""
     out_dir = Path(artifacts_dir) if artifacts_dir else _default_artifacts_dir()
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -155,6 +164,8 @@ def build_live_adapters(artifacts_dir: Path | str | None = None) -> dict[str, Ca
         "bridges_import": _wrap(_bridges_import.run, out_dir),
         "qa_import": _wrap(_qa_import.run, out_dir),
         "chunker": _wrap(_chunker.run, out_dir),
+        "bridge_miner": _wrap(_bridge_miner.run, out_dir),
+        "bridge_quality": _wrap(_bridge_quality.run, out_dir),
         "neighbor_sampler": _wrap(_neighbor_sampler.run, out_dir),
         "cluster_builder": _wrap(_cluster_builder.run, out_dir),
         "index_builder": _wrap(_index_builder.run, out_dir),
