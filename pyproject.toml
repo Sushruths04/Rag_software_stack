@@ -75,8 +75,14 @@ rag-gt-diagnose-pipeline = "rag_gt.cli.diagnose_pipeline:main"
 where = ["src"]
 
 [tool.pytest.ini_options]
+testpaths = ["tests"]
 markers = [
     "live_llm: requires a reachable LLM endpoint; skipped by default. Opt in with `pytest -m live_llm`.",
 ]
 # Live-LLM tests are skipped by tests/conftest.py unless explicitly selected
 # with `pytest -m live_llm` or `pytest --run-live-llm`.
+# `testpaths` scopes a bare `pytest` invocation to the vendored engine's own
+# tests/ directory (ported from the sibling RAG_GT repo) so it never
+# recurses into studio/backend/tests, which has its own pytest.ini and is
+# meant to be run standalone via `pytest studio/backend`. Explicit path
+# arguments (as CI uses) are unaffected by this setting.

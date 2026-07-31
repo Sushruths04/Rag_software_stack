@@ -1,0 +1,94 @@
+name: CI
+
+# Runs the four test suites that make up this repo's safety net:
+#   1. studio/backend        (pytest)
+#   2. studio/core-ui         (vitest)
+#   3. studio/desktop/src-tauri (cargo test)
+#   4. src/rag_gt engine      (pytest, ported from the sibling RAG_GT repo)
+#
+# windows-latest is used for every job, not just the desktop one: the
+# backend/engine suites were only ever verified on Windows (path handling,
+# the vendored data fixtures, the win32job sidecar dependency), so mirroring
+# that here avoids introducing untested cross-platform behavior.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python-tests:
+    name: Backend + Engine (pytest)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Verified locally against Python 3.13.3; pyproject.toml requires >=3.11.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+          cache-dependency-path: |
+            pyproject.toml
+            studio/backend/requirements.txt
+
+      - name: Install engine (rag_gt) with test extras
+        run: python -m pip install -e ".[test]"
+
+      - name: Install backend requirements
+        run: python -m pip install -r studio/backend/requirements.txt
+
+      - name: Run backend suite
+        run: python -m pytest studio/backend -q
+
+      - name: Run vendored engine suite
+        run: python -m pytest tests -q
+
+  frontend-tests:
+    name: Frontend (vitest)
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: studio/core-ui
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: studio/core-ui/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run vitest
+        run: npx vitest run
+
+  desktop-tests:
+    name: Desktop shell (cargo test)
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: studio/desktop/src-tauri
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: studio/desktop/src-tauri
+
+      # tauri.conf.json declares "python-runtime" as a bundle resource for
+      # the (not-yet-implemented) embedded-Python installer. That directory
+      # is intentionally gitignored (it would hold a full Python
+      # distribution) so it never exists in a fresh checkout, but Tauri's
+      # build.rs validates every declared resource path exists even for
+      # `cargo test`, not just `tauri build`. An empty placeholder is
+      # enough to satisfy that check; it carries no functional content.
+      - name: Create python-runtime placeholder (gitignored, build.rs requires the path to exist)
+        shell: bash
+        run: mkdir -p python-runtime
+
+      - name: Run cargo test
+        run: cargo test
