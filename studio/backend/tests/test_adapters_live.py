@@ -4,10 +4,11 @@ studio.backend.adapters_live.REGISTRY_LIVE.
 Live adapters wrap real rag_gt.blocks.* (05_BLOCK_CATALOG.md M0 milestone)
 for exactly the 10 FREE-spine blocks named in the task (chunks_import,
 facts_import, bridges_import, qa_import, chunker, neighbor_sampler,
-cluster_builder, index_builder, evaluator, report); the other 23 block types
-must remain the untouched stub REGISTRY entries. Default build_registry()
-(use_stubs=True) must return REGISTRY unchanged so the existing 84
-stub-based tests are unaffected.
+cluster_builder, index_builder, evaluator, report) plus the PAID blocks in
+PAID_LIVE_BLOCK_TYPES below; every other block type must remain the
+untouched stub REGISTRY entry. Default build_registry() (use_stubs=True)
+must return REGISTRY unchanged so the existing stub-based tests are
+unaffected.
 """
 from __future__ import annotations
 
@@ -20,12 +21,15 @@ LIVE_BLOCK_TYPES = {
     "neighbor_sampler", "cluster_builder", "index_builder", "evaluator", "report",
 }
 
-# The 3 PAID generation blocks (M4b): qa_gen_pairs, qa_gen_clusters,
-# qa_gen_bridges now have real rag_gt.blocks.* adapters too. These tests only
-# check registry wiring (spec.run identity/signature/cost class) -- NEVER
-# invoke .run(), so no LLM (real or fake) is ever touched here. Execution
-# with a FakeLLM is covered end-to-end in test_run_endpoint.py instead.
-PAID_LIVE_BLOCK_TYPES = {"qa_gen_pairs", "qa_gen_clusters", "qa_gen_bridges"}
+# The PAID blocks: qa_gen_pairs, qa_gen_clusters, qa_gen_bridges (M4b) and
+# fact_extract_llm (Stage 3 SFU extraction, TODO.md §3 row 1) now have real
+# rag_gt.blocks.* adapters too. These tests only check registry wiring
+# (spec.run identity/signature/cost class) -- NEVER invoke .run(), so no LLM
+# (real or fake) is ever touched here. Execution with a FakeLLM is covered
+# end-to-end in test_run_endpoint.py / test_blocks_fact_extract.py instead.
+PAID_LIVE_BLOCK_TYPES = {
+    "qa_gen_pairs", "qa_gen_clusters", "qa_gen_bridges", "fact_extract_llm",
+}
 
 
 def test_build_registry_default_is_stub_registry_unchanged():
@@ -64,12 +68,12 @@ def test_build_registry_live_preserves_ports_params_cost_class():
         assert list(sig.parameters) == ["inputs", "params"]
 
 
-def test_build_registry_live_swaps_the_3_paid_generation_blocks():
+def test_build_registry_live_swaps_the_paid_blocks():
     """qa_gen_pairs/qa_gen_clusters/qa_gen_bridges (05_BLOCK_CATALOG.md §3
-    items 15-17) now have real rag_gt.blocks.* adapters (M4b) -- same
-    _wrap() closure pattern as the 9 FREE-spine blocks. This test only
-    resolves the registry lookup; it never calls .run(), so no LLM (real or
-    fake) is touched here."""
+    items 15-17, M4b) and fact_extract_llm (§3 item 7, TODO.md §3 row 1) now
+    have real rag_gt.blocks.* adapters -- same _wrap() closure pattern as the
+    FREE-spine blocks. This test only resolves the registry lookup; it never
+    calls .run(), so no LLM (real or fake) is touched here."""
     reg_live = build_registry(use_stubs=False)
     for block_type in PAID_LIVE_BLOCK_TYPES:
         live_spec = reg_live[block_type]

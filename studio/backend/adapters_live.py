@@ -2,15 +2,17 @@
 ``rag_gt.blocks.*`` (05_BLOCK_CATALOG.md M0 milestone) for the 10 FREE-spine
 blocks that have real engine adapters: chunks_import, facts_import,
 bridges_import, qa_import, chunker, neighbor_sampler, cluster_builder,
-index_builder, evaluator, report -- plus (M4b) the 3 PAID generation blocks:
-qa_gen_pairs, qa_gen_clusters, qa_gen_bridges (05_BLOCK_CATALOG.md §3 items
-15-17). The PAID blocks are wrapped with the exact same ``_wrap()`` closure
-as the FREE ones -- they need no special LLM handling here, since each
-block's own ``run()`` already resolves ``params.get("llm") or get_llm(
-params.get("llm_role", "gt"))`` internally. Actually executing a PAID block
-still costs real money/API calls; gating that behind an explicit user
-confirmation is a studio/backend/api.py concern (POST /api/graphs/run's
-``confirm_paid`` check), not this module's.
+index_builder, evaluator, report -- plus 4 PAID blocks: (M4b) the 3
+generation blocks qa_gen_pairs, qa_gen_clusters, qa_gen_bridges
+(05_BLOCK_CATALOG.md §3 items 15-17), and fact_extract_llm (Stage 3 SFU
+extraction, 05_BLOCK_CATALOG.md §3 item 7 / TODO.md §3). The PAID blocks are
+wrapped with the exact same ``_wrap()`` closure as the FREE ones -- they need
+no special LLM handling here, since each block's own ``run()`` already
+resolves ``params.get("llm") or get_llm(params.get("llm_role", "gt"))``
+internally. Actually executing a PAID block still costs real money/API
+calls; gating that behind an explicit user confirmation is a
+studio/backend/api.py concern (POST /api/graphs/run's ``confirm_paid``
+check), not this module's.
 
 Kept in its own module, separate from ``registry.py``/``stubs.py``, so that
 importing the stub-only ``REGISTRY`` never touches ``rag_gt`` --
@@ -71,6 +73,7 @@ from rag_gt.blocks import chunker as _chunker  # noqa: E402
 from rag_gt.blocks import chunks_import as _chunks_import  # noqa: E402
 from rag_gt.blocks import cluster_builder as _cluster_builder  # noqa: E402
 from rag_gt.blocks import evaluator as _evaluator  # noqa: E402
+from rag_gt.blocks import fact_extract_llm as _fact_extract_llm  # noqa: E402
 from rag_gt.blocks import facts_import as _facts_import  # noqa: E402
 from rag_gt.blocks import index_builder as _index_builder  # noqa: E402
 from rag_gt.blocks import neighbor_sampler as _neighbor_sampler  # noqa: E402
@@ -97,10 +100,16 @@ LIVE_BLOCK_TYPES = frozenset(
     }
 )
 
-# The 3 PAID generation blocks (M4b) -- kept separate from LIVE_BLOCK_TYPES
-# so callers that specifically care about the original FREE-spine set (e.g.
-# the M0 parity test against a fully-free chain) are unaffected.
-PAID_LIVE_BLOCK_TYPES = frozenset({"qa_gen_pairs", "qa_gen_clusters", "qa_gen_bridges"})
+# The PAID blocks -- kept separate from LIVE_BLOCK_TYPES so callers that
+# specifically care about the original FREE-spine set (e.g. the M0 parity
+# test against a fully-free chain) are unaffected. qa_gen_pairs/clusters/
+# bridges are the 3 M4b generation blocks; fact_extract_llm (05_BLOCK_CATALOG.md
+# sec. 3 item 7, TODO.md sec. 3 row 1 of the block-by-block real-wiring plan)
+# is Stage 3 SFU extraction -- also PAID since it makes real LLM calls (one
+# segmenter call plus one rewrite + one self-containment call per span).
+PAID_LIVE_BLOCK_TYPES = frozenset(
+    {"qa_gen_pairs", "qa_gen_clusters", "qa_gen_bridges", "fact_extract_llm"}
+)
 
 _PHASE2_DIR_RE = re.compile(r"([^/\\]+)_phase2[/\\]")
 
@@ -154,6 +163,7 @@ def build_live_adapters(artifacts_dir: Path | str | None = None) -> dict[str, Ca
         "qa_gen_pairs": _wrap(_qa_gen_pairs.run, out_dir),
         "qa_gen_clusters": _wrap(_qa_gen_clusters.run, out_dir),
         "qa_gen_bridges": _wrap(_qa_gen_bridges.run, out_dir),
+        "fact_extract_llm": _wrap(_fact_extract_llm.run, out_dir),
     }
 
 
