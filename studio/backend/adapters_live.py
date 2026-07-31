@@ -1,8 +1,9 @@
 """Live block adapters: thin ``run(inputs, params) -> dict`` wrappers around
-``rag_gt.blocks.*`` (05_BLOCK_CATALOG.md M0 milestone) for the 12 FREE-spine
+``rag_gt.blocks.*`` (05_BLOCK_CATALOG.md M0 milestone) for the 18 FREE-spine
 blocks that have real engine adapters: chunks_import, facts_import,
 bridges_import, qa_import, chunker, bridge_miner, bridge_quality,
-neighbor_sampler, cluster_builder, index_builder, evaluator, report --
+neighbor_sampler, cluster_builder, index_builder, evaluator, report,
+gate_clause, gate_joint, gate_loo, gate_grounding, gate_leak, gate_dedup --
 plus 4 PAID blocks: (M4b) the 3 generation blocks qa_gen_pairs,
 qa_gen_clusters, qa_gen_bridges (05_BLOCK_CATALOG.md §3 items 15-17), and
 fact_extract_llm (Stage 3 SFU extraction, 05_BLOCK_CATALOG.md §3 item 7 /
@@ -10,7 +11,13 @@ TODO.md §3). bridge_miner/bridge_quality (TODO.md §3/§8) are deterministic,
 $0, no-LLM blocks -- see rag_gt/blocks/bridge_miner.py's module docstring
 for why they wrap rag_gt.graph.bridge_index/bridge_linker, NOT
 rag_gt.allpdf.pipeline._build_graph's LLM-based TypedSFG classifier. The
-PAID blocks are
+6 gate_* blocks (TODO.md §3/§8) are also deterministic, $0, no-LLM: 4 of
+them (gate_clause/gate_joint/gate_loo/gate_grounding) are pure identity
+pass-throughs by design -- see rag_gt/blocks/gate_clause.py's module
+docstring for the full "already filtered upstream inside gate_qa_group"
+architecture note -- and 2 do real work (gate_leak wraps a new standalone
+answer_first_v2.qa_bridge_hidden check; gate_dedup wraps
+dataset_budget.dedup_pairs). The PAID blocks are
 wrapped with the exact same ``_wrap()`` closure as the FREE ones -- they need
 no special LLM handling here, since each block's own ``run()`` already
 resolves ``params.get("llm") or get_llm(params.get("llm_role", "gt"))``
@@ -82,6 +89,12 @@ from rag_gt.blocks import cluster_builder as _cluster_builder  # noqa: E402
 from rag_gt.blocks import evaluator as _evaluator  # noqa: E402
 from rag_gt.blocks import fact_extract_llm as _fact_extract_llm  # noqa: E402
 from rag_gt.blocks import facts_import as _facts_import  # noqa: E402
+from rag_gt.blocks import gate_clause as _gate_clause  # noqa: E402
+from rag_gt.blocks import gate_dedup as _gate_dedup  # noqa: E402
+from rag_gt.blocks import gate_grounding as _gate_grounding  # noqa: E402
+from rag_gt.blocks import gate_joint as _gate_joint  # noqa: E402
+from rag_gt.blocks import gate_leak as _gate_leak  # noqa: E402
+from rag_gt.blocks import gate_loo as _gate_loo  # noqa: E402
 from rag_gt.blocks import index_builder as _index_builder  # noqa: E402
 from rag_gt.blocks import neighbor_sampler as _neighbor_sampler  # noqa: E402
 from rag_gt.blocks import qa_gen_bridges as _qa_gen_bridges  # noqa: E402
@@ -106,6 +119,12 @@ LIVE_BLOCK_TYPES = frozenset(
         "index_builder",
         "evaluator",
         "report",
+        "gate_clause",
+        "gate_joint",
+        "gate_loo",
+        "gate_grounding",
+        "gate_leak",
+        "gate_dedup",
     }
 )
 
@@ -153,7 +172,7 @@ def _wrap_chunks_import(artifacts_dir: Path) -> Callable[[dict, dict], dict]:
 
 
 def build_live_adapters(artifacts_dir: Path | str | None = None) -> dict[str, Callable[[dict, dict], dict]]:
-    """Return ``{block_type: run(inputs, params) -> dict}`` for the 12 live
+    """Return ``{block_type: run(inputs, params) -> dict}`` for the 18 live
     FREE-spine blocks plus (M4b) the 4 live PAID generation blocks, all
     writing artifacts under one shared directory."""
     out_dir = Path(artifacts_dir) if artifacts_dir else _default_artifacts_dir()
@@ -171,6 +190,12 @@ def build_live_adapters(artifacts_dir: Path | str | None = None) -> dict[str, Ca
         "index_builder": _wrap(_index_builder.run, out_dir),
         "evaluator": _wrap(_evaluator.run, out_dir),
         "report": _wrap(_report.run, out_dir),
+        "gate_clause": _wrap(_gate_clause.run, out_dir),
+        "gate_joint": _wrap(_gate_joint.run, out_dir),
+        "gate_loo": _wrap(_gate_loo.run, out_dir),
+        "gate_grounding": _wrap(_gate_grounding.run, out_dir),
+        "gate_leak": _wrap(_gate_leak.run, out_dir),
+        "gate_dedup": _wrap(_gate_dedup.run, out_dir),
         "qa_gen_pairs": _wrap(_qa_gen_pairs.run, out_dir),
         "qa_gen_clusters": _wrap(_qa_gen_clusters.run, out_dir),
         "qa_gen_bridges": _wrap(_qa_gen_bridges.run, out_dir),

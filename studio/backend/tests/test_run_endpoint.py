@@ -6,11 +6,12 @@ correct scope since every live block is fast/free/local).
 
 ``use_stubs=True`` (the default) must behave exactly like the rest of the
 stub registry: zero ``rag_gt`` import. ``use_stubs=False`` swaps in the live
-block adapters (see adapters_live.py) -- including ``qa_import``, which went
-live in this module -- for whichever blocks in the graph have them; unmapped
-block types (e.g. ``gate_grounding``, which has no live adapter) stay stubs
-even in a live run — this is exercised directly so a stub artifact is never
-mistaken for a real one downstream.
+block adapters (see adapters_live.py) -- including ``qa_import`` and the 6
+``gate_*`` blocks, which went live in this module and the gate-blocks task
+respectively -- for whichever blocks in the graph have them; unmapped block
+types (e.g. ``fact_splitter``, which has no live adapter) stay stubs even in
+a live run — this is exercised directly so a stub artifact is never mistaken
+for a real one downstream.
 """
 from __future__ import annotations
 
@@ -87,26 +88,30 @@ def _cycle_graph():
 
 def _live_facts_chain_graph(facts_path: str, qa_path: str):
     """facts_import -> neighbor_sampler, both live-eligible, plus
-    qa_import -> gate_grounding to exercise the "graph must produce
-    qa/eval/report somewhere" runnability check (compiler.py Phase 5 rule 6).
+    qa_import -> gate_grounding (now also live -- see gate_clause.py's module
+    docstring for why it is a real, if identity, adapter) to exercise the
+    "graph must produce qa/eval/report somewhere" runnability check
+    (compiler.py Phase 5 rule 6), and a facts_import -> fact_splitter branch
+    to keep a genuinely still-unmapped block in the same live run.
 
-    qa_import itself now HAS a live adapter (this module), so it must be fed
-    a real, loadable ``qa_path`` and must produce a real (non-``stub:``)
-    artifact. ``gate_grounding`` has no live adapter at all, so it is the
-    block that stays honestly stub-prefixed even under ``use_stubs=False`` --
-    asserting that, now anchored on gate_grounding instead of qa_import, is
-    part of the point."""
+    qa_import and gate_grounding both HAVE live adapters (this module), so
+    they must produce real (non-``stub:``) artifacts. ``fact_splitter`` has
+    no live adapter at all (TODO.md §3: no confirmed single owning function
+    to wire yet), so it is the block that stays honestly stub-prefixed even
+    under ``use_stubs=False`` -- asserting that is part of the point."""
     return {
         "schema_version": 1,
         "blocks": [
             _block("facts_import", "facts_import", params={"path": facts_path}),
             _block("neighbor_sampler", "neighbor_sampler", params={"window": 3}),
+            _block("fact_splitter", "fact_splitter"),
             _block("qa_import", "qa_import", params={"path": qa_path}),
             _block("gate_grounding", "gate_grounding"),
         ],
         "wires": [
             _wire("w1", "facts_import", "facts", "neighbor_sampler", "facts"),
             _wire("w2", "qa_import", "qa", "gate_grounding", "qa"),
+            _wire("w3", "facts_import", "facts", "fact_splitter", "facts"),
         ],
     }
 
@@ -205,10 +210,19 @@ def test_run_live_graph_use_stubs_false_returns_real_artifacts(tmp_path):
     assert not qa_artifact["ref"].startswith("stub:")
     assert qa_artifact["meta"]["count"] == 1
 
-    # gate_grounding has no live adapter at all: stays a stub even in a live
-    # run, and must be honestly marked as such by its ref prefix.
+    # gate_grounding now HAS a live adapter too (identity pass-through by
+    # design -- see gate_clause.py's module docstring): it must yield a
+    # real, non-stub artifact carrying the same qa_import count through
+    # unchanged.
     grounding_artifact = body["artifacts"]["gate_grounding"]["qa"]
-    assert grounding_artifact["ref"].startswith("stub:")
+    assert not grounding_artifact["ref"].startswith("stub:")
+    assert grounding_artifact["meta"]["count"] == 1
+    assert grounding_artifact["meta"]["passthrough"] is True
+
+    # fact_splitter has no live adapter at all: stays a stub even in a live
+    # run, and must be honestly marked as such by its ref prefix.
+    splitter_artifact = body["artifacts"]["fact_splitter"]["facts"]
+    assert splitter_artifact["ref"].startswith("stub:")
 
 
 def test_run_live_block_failure_returns_200_ok_false_with_failed_block(tmp_path):

@@ -18,6 +18,7 @@ from rag_gt.generation.answer_first_v2 import (
     draft_neighbor_pairs,
     gate_clusters,
     gate_neighbor_pairs,
+    qa_bridge_hidden,
 )
 from rag_gt.generation.cluster_bridge import build_clusters
 from rag_gt.generation.neighbor_pairs import sample_neighbor_pairs
@@ -1012,3 +1013,48 @@ def test_warns_when_cluster_scoring_truncates_a_premise(monkeypatch):
 
     _run_cluster_build(FakeLLM(), _accepting_nli)
     assert any("premise" in w.lower() or "truncat" in w.lower() for w in fake_logger.warnings)
+
+
+# ---------------------------------------------------------------------------
+# gate_leak's real behavior -- qa_bridge_hidden, a post-assembly bridge-leak
+# check on an already-built qa record (TODO.md sec. 3/8, studio gate_leak).
+# ---------------------------------------------------------------------------
+
+
+def test_qa_bridge_hidden_keeps_a_clean_question():
+    record = {
+        "bridge_entity": "ISO 15607",
+        "question": "What must be qualified before production welding begins?",
+    }
+    assert qa_bridge_hidden(record) is True
+
+
+def test_qa_bridge_hidden_drops_a_leaked_question():
+    record = {
+        "bridge_entity": "ISO 15607",
+        "question": "What standard, referenced as ISO 15607, governs qualification?",
+    }
+    assert qa_bridge_hidden(record) is False
+
+
+def test_qa_bridge_hidden_catches_punctuation_spacing_variant():
+    """Mirrors bridge_is_hidden's own compact-form check (e.g. ISO3834 vs
+    ISO 15607) -- this function must not re-implement matching logic, only
+    reuse it."""
+    record = {
+        "bridge_entity": "ISO 15607",
+        "question": "Which document, ISO15607, applies here?",
+    }
+    assert qa_bridge_hidden(record) is False
+
+
+def test_qa_bridge_hidden_true_for_single_hop_with_no_bridge_entity():
+    """A single-hop qa record has an empty bridge_entity -- nothing to
+    leak, so the record is always kept."""
+    record = {"bridge_entity": "", "question": "What is the minimum preheat temperature?"}
+    assert qa_bridge_hidden(record) is True
+
+
+def test_qa_bridge_hidden_missing_bridge_entity_key_defaults_to_kept():
+    record = {"question": "What is the minimum preheat temperature?"}
+    assert qa_bridge_hidden(record) is True

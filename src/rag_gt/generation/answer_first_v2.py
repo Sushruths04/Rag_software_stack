@@ -713,6 +713,40 @@ def gate_clusters(
     )
 
 
+def qa_bridge_hidden(record: Mapping[str, object]) -> bool:
+    """Post-hoc bridge-leak check on an ALREADY-ASSEMBLED ``qa`` record --
+    the real behavior behind the studio ``gate_leak`` block (TODO.md
+    sec. 3 / sec. 8).
+
+    Every other bridge-leak check in this module runs DURING drafting, as
+    part of a retry loop (``_draft_question``/``_draft_with_retries`` calling
+    ``bridge_is_hidden`` against a not-yet-accepted question, in
+    ``draft_clusters``/``draft_neighbor_pairs`` above). This function is the
+    one standalone, non-drafting check: given a ``qa`` record that has
+    already survived ``gate_qa_group`` and been assembled by ``_qa_record``,
+    it re-checks the FINAL ``question`` string against the record's own
+    ``bridge_entity`` field, using the exact same substring-match rule
+    (``bridge_is_hidden`` -- never a re-implementation of that matching
+    logic). This exists as a final, independent guard for a ``qa`` artifact
+    that may have come from anywhere (e.g. ``qa_import``, or a hand-edited
+    canvas artifact), not only from a fresh drafting run.
+
+    Note: ``_qa_record`` only carries ``bridge_entity`` forward onto the
+    final record (no separate ``bridge_norm`` survives assembly -- see its
+    definition above), so this checks ``bridge_entity`` alone. That already
+    matches the drafting-time check's own dominant case, since
+    ``draft_neighbor_pairs``/``draft_clusters`` pass ``bridge_norm`` as an
+    additional surface form of the same string, not an independent bridge.
+
+    Returns True (hidden / keep) when the record has no bridge_entity at
+    all (single-hop QA -- nothing to leak) or when the bridge does not
+    appear in the question; False (leaked / drop) otherwise.
+    """
+    bridge = str(record.get("bridge_entity") or "")
+    question = str(record.get("question") or "")
+    return bridge_is_hidden(question, bridge)
+
+
 def _demoted_pair(cluster: Mapping[str, object]) -> dict:
     """Recast a failed 4-fact cluster back into the v1 2-fact bridge-pair
     shape it was seeded from."""

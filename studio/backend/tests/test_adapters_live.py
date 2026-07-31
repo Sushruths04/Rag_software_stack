@@ -2,10 +2,11 @@
 studio.backend.adapters_live.REGISTRY_LIVE.
 
 Live adapters wrap real rag_gt.blocks.* (05_BLOCK_CATALOG.md M0 milestone)
-for exactly the 12 FREE-spine blocks named in the task (chunks_import,
+for exactly the 18 FREE-spine blocks named in the task (chunks_import,
 facts_import, bridges_import, qa_import, chunker, bridge_miner,
 bridge_quality, neighbor_sampler, cluster_builder, index_builder,
-evaluator, report) plus the PAID blocks in PAID_LIVE_BLOCK_TYPES below;
+evaluator, report, gate_clause, gate_joint, gate_loo, gate_grounding,
+gate_leak, gate_dedup) plus the PAID blocks in PAID_LIVE_BLOCK_TYPES below;
 every other block type must remain the untouched stub REGISTRY entry.
 Default build_registry() (use_stubs=True) must return REGISTRY unchanged so
 the existing stub-based tests are unaffected.
@@ -20,6 +21,7 @@ LIVE_BLOCK_TYPES = {
     "chunks_import", "facts_import", "bridges_import", "qa_import", "chunker",
     "bridge_miner", "bridge_quality",
     "neighbor_sampler", "cluster_builder", "index_builder", "evaluator", "report",
+    "gate_clause", "gate_joint", "gate_loo", "gate_grounding", "gate_leak", "gate_dedup",
 }
 
 # The PAID blocks: qa_gen_pairs, qa_gen_clusters, qa_gen_bridges (M4b) and
