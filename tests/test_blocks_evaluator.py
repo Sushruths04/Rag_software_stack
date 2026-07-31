@@ -11,7 +11,7 @@ from __future__ import annotations
 import json
 
 from rag_gt.rag.eval_v2 import v2_pair_to_eval
-from rag_gt.rag.matcher import match_pair
+from rag_gt.rag.matcher import match_pair, match_pair_exact
 from rag_gt.rag.metrics import aggregate, fill_metrics
 from rag_gt.rag.retriever import build_retriever
 
@@ -21,8 +21,8 @@ CHUNKS = [
 ]
 
 FACTS = [
-    {"fact_id": "F1", "text": "The sky is blue during a clear day.", "canonical_form": "The sky is blue during a clear day."},
-    {"fact_id": "F2", "text": "Grass is green in most seasons.", "canonical_form": "Grass is green in most seasons."},
+    {"fact_id": "F1", "text": "The sky is blue during a clear day.", "canonical_form": "The sky is blue during a clear day.", "chunk_id": "c1"},
+    {"fact_id": "F2", "text": "Grass is green in most seasons.", "canonical_form": "Grass is green in most seasons.", "chunk_id": "c2"},
 ]
 
 QA_PAIRS = [
@@ -86,3 +86,47 @@ def test_evaluator_matches_manual_matcher_pipeline(tmp_path):
     written = json.loads(open(out["eval"]["ref"], encoding="utf-8").read())
     assert written["summary"] == expected_summary
     assert out["eval"]["meta"] == {**expected_summary, "top_k": 5}
+
+
+def test_evaluator_exact_id_mode_matches_manual_matcher_pipeline(tmp_path):
+    """match_mode="exact-id" (catalog Phase-1 P1.4) must run end-to-end
+    through the block -- no more NotImplementedError -- and its output must
+    equal calling match_pair_exact directly with the same fact_chunk_ids
+    lookup the block builds internally from each fact's "chunk_id" field.
+    """
+    from rag_gt.blocks.evaluator import run
+
+    out = run(_inputs(tmp_path), {"top_k": 5, "match_mode": "exact-id"}, artifacts_dir=tmp_path)
+
+    lookup = {f["fact_id"]: f["canonical_form"] for f in FACTS}
+    fact_chunk_ids = {f["fact_id"]: [f["chunk_id"]] for f in FACTS}
+    retriever = build_retriever(CHUNKS, strategy="bm25")
+    results = []
+    for pair in QA_PAIRS:
+        eval_pair = v2_pair_to_eval(pair, lookup)
+        ranked = retriever.retrieve(eval_pair["question"], top_k=5)
+        results.append(fill_metrics(match_pair_exact(eval_pair, ranked, fact_chunk_ids)))
+    expected_summary = aggregate(results).summary()
+
+    written = json.loads(open(out["eval"]["ref"], encoding="utf-8").read())
+    assert written["summary"] == expected_summary
+    assert out["eval"]["meta"] == {**expected_summary, "top_k": 5}
+    # Both facts sit exactly on the chunk that trivially matches their own
+    # question, so exact-id scores the same as overlap mode on this fixture.
+    assert expected_summary["fact_recall@5"] == 1.0
+
+
+def test_evaluator_unknown_match_mode_still_raises():
+    """A genuinely unrecognised match_mode must still raise -- only
+    "overlap" and "exact-id" are implemented; the guard is not removed
+    wholesale, just narrowed to admit the new mode. The mode check happens
+    before any input is touched, so this needs no real artifacts.
+    """
+    from rag_gt.blocks.evaluator import run
+
+    try:
+        run({}, {"top_k": 5, "match_mode": "fuzzy"})
+    except NotImplementedError as exc:
+        assert "fuzzy" in str(exc)
+    else:
+        raise AssertionError("expected NotImplementedError for match_mode='fuzzy'")
