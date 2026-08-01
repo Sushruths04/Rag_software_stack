@@ -74,7 +74,12 @@ def run(inputs: dict, params: dict, artifacts_dir: Path | str | None = None) -> 
     for index, item in enumerate(accepted, start=1):
         item["qa_id"] = f"V2Q{index:05d}"
 
-    meta = {"n_qa": len(accepted), "n_multihop": len(accepted),
+    # "count"/"multi_hop" are what runFormat.ts and every gate/assembler/
+    # verifier block use; "n_qa"/"n_multihop" are kept because the backend and
+    # frontend test suites already assert on them. Cluster QA is multi-hop by
+    # construction, so both counts are the accepted total.
+    meta = {"count": len(accepted), "multi_hop": len(accepted),
+            "n_qa": len(accepted), "n_multihop": len(accepted),
             "rejected": dict(sorted(rejected.items())), "draft_meta": draft_meta}
     ref = write_json_artifact(artifacts_dir, "qa_gen_clusters", accepted)
     return {"qa": artifact("qa", str(ref), meta)}

@@ -79,16 +79,5 @@ jobs:
         with:
           workspaces: studio/desktop/src-tauri
 
-      # tauri.conf.json declares "python-runtime" as a bundle resource for
-      # the (not-yet-implemented) embedded-Python installer. That directory
-      # is intentionally gitignored (it would hold a full Python
-      # distribution) so it never exists in a fresh checkout, but Tauri's
-      # build.rs validates every declared resource path exists even for
-      # `cargo test`, not just `tauri build`. An empty placeholder is
-      # enough to satisfy that check; it carries no functional content.
-      - name: Create python-runtime placeholder (gitignored, build.rs requires the path to exist)
-        shell: bash
-        run: mkdir -p python-runtime
-
       - name: Run cargo test
         run: cargo test

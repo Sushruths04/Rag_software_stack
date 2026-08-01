@@ -71,7 +71,11 @@ def run(inputs: dict, params: dict, artifacts_dir: Path | str | None = None) -> 
         item["qa_id"] = f"V2Q{index:05d}"
 
     n_multihop = sum(1 for qa in accepted if qa.get("hop_type") != "single")
-    meta = {"n_qa": len(accepted), "n_multihop": n_multihop,
+    # "count"/"multi_hop" are what runFormat.ts and every gate/assembler/
+    # verifier block use; "n_qa"/"n_multihop" are kept because the backend and
+    # frontend test suites already assert on them.
+    meta = {"count": len(accepted), "multi_hop": n_multihop,
+            "n_qa": len(accepted), "n_multihop": n_multihop,
             "rejected": dict(sorted(rejected.items()))}
     ref = write_json_artifact(artifacts_dir, "qa_gen_pairs", accepted)
     return {"qa": artifact("qa", str(ref), meta)}

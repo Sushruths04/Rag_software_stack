@@ -61,6 +61,12 @@ def run(inputs: dict, params: dict, artifacts_dir: Path | str | None = None) -> 
     )
     accepted = result["pairs"]
 
-    meta = {"n_qa": len(accepted), "n_multihop": len(accepted), "stats": result["stats"]}
+    # "count"/"multi_hop" are what runFormat.ts and every gate/assembler/
+    # verifier block use; "n_qa"/"n_multihop" are kept because the backend and
+    # frontend test suites already assert on them. Bridge QA is multi-hop by
+    # construction, so both counts are the accepted total.
+    meta = {"count": len(accepted), "multi_hop": len(accepted),
+            "n_qa": len(accepted), "n_multihop": len(accepted),
+            "stats": result["stats"]}
     ref = write_json_artifact(artifacts_dir, "qa_gen_bridges", accepted)
     return {"qa": artifact("qa", str(ref), meta)}
