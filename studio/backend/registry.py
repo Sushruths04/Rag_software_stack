@@ -80,7 +80,13 @@ _UTILITY = "utility"
 _BLOCKS: tuple[BlockSpec, ...] = (
     # --- Sources & imports ----------------------------------------------
     _spec(
-        "pdf_source", _SOURCES, "free", (), (PortSpec("pdf", "pdf"),), P.PdfSourceParams, S.run_pdf_source
+        "pdf_source",
+        _SOURCES,
+        "free",
+        (),
+        (PortSpec("pdf", "pdf"), PortSpec("chunks", "chunks")),
+        P.PdfSourceParams,
+        S.run_pdf_source,
     ),
     _spec(
         "chunks_import",

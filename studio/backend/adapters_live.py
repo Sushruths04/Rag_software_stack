@@ -108,6 +108,7 @@ from rag_gt.blocks import gate_leak as _gate_leak  # noqa: E402
 from rag_gt.blocks import gate_loo as _gate_loo  # noqa: E402
 from rag_gt.blocks import index_builder as _index_builder  # noqa: E402
 from rag_gt.blocks import neighbor_sampler as _neighbor_sampler  # noqa: E402
+from rag_gt.blocks import pdf_source as _pdf_source  # noqa: E402
 from rag_gt.blocks import qa_gen_bridges as _qa_gen_bridges  # noqa: E402
 from rag_gt.blocks import qa_gen_clusters as _qa_gen_clusters  # noqa: E402
 from rag_gt.blocks import qa_gen_pairs as _qa_gen_pairs  # noqa: E402
@@ -119,6 +120,7 @@ from studio.backend.registry import REGISTRY  # noqa: E402
 
 LIVE_BLOCK_TYPES = frozenset(
     {
+        "pdf_source",
         "chunks_import",
         "facts_import",
         "bridges_import",
@@ -191,6 +193,7 @@ def build_live_adapters(artifacts_dir: Path | str | None = None) -> dict[str, Ca
     out_dir = Path(artifacts_dir) if artifacts_dir else _default_artifacts_dir()
     out_dir.mkdir(parents=True, exist_ok=True)
     return {
+        "pdf_source": _wrap(_pdf_source.run, out_dir),
         "chunks_import": _wrap_chunks_import(out_dir),
         "facts_import": _wrap(_facts_import.run, out_dir),
         "bridges_import": _wrap(_bridges_import.run, out_dir),

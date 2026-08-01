@@ -2,7 +2,8 @@
 studio.backend.adapters_live.REGISTRY_LIVE.
 
 Live adapters wrap real rag_gt.blocks.* (05_BLOCK_CATALOG.md M0 milestone)
-for exactly the 19 FREE-spine blocks named in the task (chunks_import,
+for exactly the 20 FREE-spine blocks named in the task (pdf_source,
+chunks_import,
 facts_import, bridges_import, qa_import, chunker, bridge_miner,
 bridge_quality, neighbor_sampler, cluster_builder, index_builder,
 evaluator, report, gate_clause, gate_joint, gate_loo, gate_grounding,
@@ -19,6 +20,10 @@ import inspect
 from studio.backend.registry import REGISTRY, build_registry
 
 LIVE_BLOCK_TYPES = {
+    # pdf_source went live 2026-08-01: it now runs the engine Stage 0-2 front
+    # end (profile -> ingest -> chunk) instead of returning a hardcoded stub,
+    # which is what lets a Studio graph start from a raw PDF.
+    "pdf_source",
     "chunks_import", "facts_import", "bridges_import", "qa_import", "chunker",
     "bridge_miner", "bridge_quality",
     "neighbor_sampler", "cluster_builder", "index_builder", "evaluator", "report",
@@ -50,7 +55,7 @@ def test_build_registry_use_stubs_true_explicit_matches_default():
     assert build_registry(use_stubs=True) == REGISTRY
 
 
-def test_build_registry_live_swaps_exactly_the_10_free_spine_blocks():
+def test_build_registry_live_swaps_exactly_the_live_free_spine_blocks():
     reg_live = build_registry(use_stubs=False)
 
     assert set(reg_live.keys()) == set(REGISTRY.keys())  # same 33 block types

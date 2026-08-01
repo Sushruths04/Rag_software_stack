@@ -32,6 +32,10 @@ class PdfSourceParams(_StrictParams):
     path: str = ""
     display_name: str = ""
     doc_id: str = ""
+    # Beyond this page count a table-dense doc falls back to legacy
+    # extraction for FULL page coverage rather than being truncated.
+    docling_page_cap: int = 60
+    allow_docling: bool = True
 
 
 class ChunksImportParams(_StrictParams):
